@@ -44,7 +44,7 @@
 
       <div id="menu-items" class="flex-grow sm:flex md:items-center sm:space-x-0 hidden sm:flex sm:bg-transparent sm:justify-around">
         <a href="#specific-section" class="hidden sm:block">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/cufrisa-logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer">
+          <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer">
         </a>
         <hr>
         <a href="/" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">INICIO</a>
@@ -54,6 +54,7 @@
         <a href="/fidelcomisos" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">FIDELCOMISOS DE GARANTIA</a>
         <hr>
         <a href="/credicufrisa" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">CREDICUFRISA</a>
+
         <hr>
 
         <!-- Dropdown Menu Mobile -->

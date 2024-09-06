@@ -10,12 +10,12 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" style={{ backgroundImage: "url('./1 1.png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" style=" background-image: url('<?php echo get_template_directory_uri(); ?>/public/inicio.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
   <h1 class="text-4xl lg:text-4xl xl:text-6xl 2xl:text-7xl font-bold tracking-wider">SOLUCIONES DE <br/> FINANCIAMIENTO INMOBILIARIO</h1>
-  <img src="./cufrisa logo.webp" alt="Logo" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
+  <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
 </div>
 
 
@@ -36,7 +36,7 @@ get_header();
         <article class="lg:pt-12 pt-6 w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg ">
             <div class="px-4 py-5 flex-auto justify-center w-full items-center">
-              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-red-400 bg-cover bg-center"  style={{ backgroundImage:"url('./Ellipse 2.png')"}}>
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-red-400 bg-cover bg-center" style=" background-image: url('<?php echo get_template_directory_uri(); ?>/public/Ellipse 2.png')">
                 
               </div>
               <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">LÍNEA III DE INFONAVIT</h6>
@@ -52,7 +52,7 @@ get_header();
         <article class="w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg">
             <div class="px-4 py-5 flex-auto">
-              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-blue-400 bg-cover bg-center" style={{ backgroundImage:"url('./Ellipse 1.png')"}}>
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-blue-400 bg-cover bg-center" style=" background-image: url('<?php echo get_template_directory_uri(); ?>/public/Ellipse 1.png')">
                 <i class="fas fa-retweet"></i>
               </div>
               <h6 class="text-2xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">
@@ -70,7 +70,7 @@ get_header();
         <article class="pt-6 w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg">
             <div class="px-4 py-5 flex-auto">
-              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-green-400 bg-cover bg-center" style={{ backgroundImage:"url('./Ellipse 3.png')"}}>
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-48 h-48 md:w-40 lg:w-44 xl:w-48 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-green-400 bg-cover bg-center" style=" background-image: url('<?php echo get_template_directory_uri(); ?>/public/Ellipse 3.png')">
                 <i class="fas fa-fingerprint"></i>
               </div>
               <h6 class="text-2xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">
@@ -109,7 +109,7 @@ get_header();
       
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 font-bold text-2xl lg:text-lg xl:text-lg 2xl:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
-        <img src="6.png" class=" lg:w-36 xl:w-36 2xl:w-44"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/calificacion.png" class=" lg:w-36 xl:w-36 2xl:w-44"></img>
       </div>
 
 

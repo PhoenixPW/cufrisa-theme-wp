@@ -14,7 +14,7 @@
 <footer class="flex flex-col bg-[#1D3750] px-10 xl:px-24 py-9 gap-8 sm:gap-5 md:gap-2 pb-6 sm:pb-2">
         <div class="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-0">
          <div class="flex flex-col sm:flex-row gap-10 items-center">
-          <img src="./cufrisa logo.webp" alt="Logo" class="h-20 sm:h-14 smd:h-[4.5rem] lg:h-[4.5rem] xl:h-20 2xl:h-24 cursor-pointer" />
+          <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-14 smd:h-[4.5rem] lg:h-[4.5rem] xl:h-20 2xl:h-24 cursor-pointer" />
         
           <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
            <li>
@@ -37,15 +37,15 @@
          <ul class="flex gap-10 text-[#E9E9E9]">
    
           <a href="/"> 
-           <img src="./facebook-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+           <img src="<?php echo get_template_directory_uri(); ?>/public/facebook-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
           <a href="/"> 
-           <img src="./youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+           <img src="<?php echo get_template_directory_uri(); ?>/public/youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
           <a href="/"> 
-           <img src="./linkedin-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+           <img src="<?php echo get_template_directory_uri(); ?>/public/linkedin-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
          </ul>
