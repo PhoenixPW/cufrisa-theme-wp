@@ -42,7 +42,7 @@
         </button>
       </div>
 
-      <div id="menu-items" class="flex-grow sm:flex md:items-center sm:space-x-0 hidden sm:flex sm:bg-transparent sm:justify-around">
+      <div id="menu-items" class="flex-grow md:items-center sm:space-x-0 hidden sm:flex sm:bg-transparent sm:justify-around">
         <a href="#specific-section" class="hidden sm:block">
           <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer">
         </a>
