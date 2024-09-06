@@ -9,9 +9,8 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" style={{ backgroundImage: "url('./1 1.png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
@@ -28,7 +27,6 @@ get_header();
 </div>
 </section>
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 
 
@@ -110,11 +108,11 @@ get_header();
        <div class="mt-6">
         <ul class="flex flex-col sm:flex-row gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-10">
 
-          <img src="" loading="lazy" alt="Logo de institucion" class="bg-black w-20 sm:w-14 lg:w-16 2xl:w-20 h-20 sm:h-14 lg:h-16 2xl:h-20 rounded-lg"/>
-          <img src="" loading="lazy" alt="Logo de institucion" class="bg-black w-20 sm:w-14 lg:w-16 2xl:w-20 h-20 sm:h-14 lg:h-16 2xl:h-20 rounded-lg"/>
-          <img src="" loading="lazy" alt="Logo de institucion" class="bg-black w-20 sm:w-14 lg:w-16 2xl:w-20 h-20 sm:h-14 lg:h-16 2xl:h-20 rounded-lg"/>
-          <img src="" loading="lazy" alt="Logo de institucion" class="bg-black w-20 sm:w-14 lg:w-16 2xl:w-20 h-20 sm:h-14 lg:h-16 2xl:h-20 rounded-lg"/>
-          <img src="" loading="lazy" alt="Logo de institucion" class="bg-black w-20 sm:w-14 lg:w-16 2xl:w-20 h-20 sm:h-14 lg:h-16 2xl:h-20 rounded-lg"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/1.jpg" loading="lazy" alt="Logo de institucion" class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/2.png" loading="lazy" alt="Logo de institucion" class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/3.jpg" loading="lazy" alt="Logo de institucion" class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/4.jpg" loading="lazy" alt="Logo de institucion" class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
+          <img src="<?php echo get_template_directory_uri(); ?>/public/5.png" loading="lazy" alt="Logo de institucion" class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
         </ul>
 
        </div>
@@ -124,7 +122,7 @@ get_header();
       
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
-        <img src="<?php echo get_template_directory_uri(); ?>/public/calificacion.png"" loading="lazy" class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/calificacion.png" loading="lazy" class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
       </div>
 
 
@@ -132,16 +130,6 @@ get_header();
 
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
-
-
 
 
 
