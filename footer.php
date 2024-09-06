@@ -11,21 +11,57 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cufrisa' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cufrisa' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cufrisa' ), 'cufrisa', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer class="flex flex-col bg-[#1D3750] px-10 xl:px-24 py-9 gap-8 sm:gap-5 md:gap-2 pb-6 sm:pb-2">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-0">
+         <div class="flex flex-col sm:flex-row gap-10 items-center">
+          <img src="./cufrisa logo.webp" alt="Logo" class="h-20 sm:h-14 smd:h-[4.5rem] lg:h-[4.5rem] xl:h-20 2xl:h-24 cursor-pointer" />
+        
+          <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
+           <li>
+             <a href="/">LINEA III INFONAVIT</a>
+           </li>
+   
+           <li>
+            <a href="/">COMUNICADOS</a>
+           </li>
+   
+           <li>
+            <a href="/buro">BURÓ ENTIDADES FINANCIERAS</a>
+           </li>
+          </ul>
+         </div>
+   
+        <div class="flex flex-col gap-5 justify-center items-center">
+         <p class="text-[#E9E9E9] xl:text-xl 2xl:text-2xl">CONTACTO</p>
+   
+         <ul class="flex gap-10 text-[#E9E9E9]">
+   
+          <a href="/"> 
+           <img src="./facebook-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          </a>
+   
+          <a href="/"> 
+           <img src="./youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          </a>
+   
+          <a href="/"> 
+           <img src="./linkedin-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          </a>
+   
+         </ul>
+   
+        </div>
+   
+        </div>
+   
+        <div class="flex flex-col items-center justify-center text-[#E9E9E9] gap-2 sm:gap-0">
+         <a href="/privacidad" class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl">AVISO DE PRIVACIDAD</a>
+         <p class="text-[#C5BEBE] text-[0.60rem] xl:text-sm 2xl:text-lg">Copyright © 2024 CUFRISA - Todos los derechos reservados.</p>
+        </div>
+   
+       </footer>
+
+       
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
