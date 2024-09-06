@@ -33,6 +33,23 @@ get_header();
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-around text-black bg-[#E9E9E9]">
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide ">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+      </div>
+      <div class="swiper-slide ">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+      </div>
+      <div class="swiper-slide ">
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+      </div>
+
+    </div>
+    <div class="swiper-pagination" ></div>
+  </div>
+
 <h2 class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold sm:font-bold pb-3 pt-16 text-center">NUESTROS SERVICIOS</h2>
       
 <section class="flex flex-wrap">
@@ -129,6 +146,34 @@ get_header();
 
 
 </div>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      spaceBetween:20,
+      autoplay:{
+       delay: 1000,
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: -60,
+        depth: 20,
+        modifier: 1,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+    });
+
+
+    
+  </script>
+
 
 </main>
 <?php

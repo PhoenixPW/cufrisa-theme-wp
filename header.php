@@ -16,9 +16,101 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<?php wp_head(); ?>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 40%;
+      transition: transform 0.3s, opacity 0.3s;
+
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+    .swiper-slide-next,
+    .swiper-slide-prev {
+      opacity: 0.5;
+      transform: scale(0.8);
+    }
+    .swiper-slide-active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    
+    .swiper-pagination {
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 28px;
+      height: 28px;
+      background-color: #D9D9D9;
+      border: 1px solid black;
+      margin: 0 20px !important; /* Force margin between bullets */
+      
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      opacity: 1;
+      transition: background-color 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #1D3750; /* Orange color when active */
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .swiper-slide {
+       width: 60%;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .swiper-slide {
+       width: 90%;
+      }
+
+      .swiper-pagination-bullet {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+  </style>
+
 </head>
 
 <body <?php body_class(); ?>>
