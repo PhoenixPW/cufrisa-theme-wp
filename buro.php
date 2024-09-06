@@ -10,7 +10,7 @@ get_header();
 
 {/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style={{ backgroundImage: "url('./Rectangle 10 (4).png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
 <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
 <div class="flex flex-col gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words ">

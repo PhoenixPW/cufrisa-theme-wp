@@ -8,8 +8,7 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style={{ backgroundImage: "url('./Linea.png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/linea.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
 <div class="flex flex-col gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 2xl:pt-16">
   <h1 class="text-4xl sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold mb-4 sm:max-lg:mb-1 tracking-wider">

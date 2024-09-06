@@ -10,7 +10,7 @@ get_header();
 
 {/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style={{ backgroundImage: "url('./Rectangle 6.png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
 <h1 class="text-center text-4xl sm:text-5xl 2xl:text-6xl font-bold mb-4 tracking-wider">AVISO DE PRIVACIDAD</h1>
 

@@ -8,9 +8,8 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style={{ backgroundImage: "url('./1 (3) 1.png')" }}>
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/credicufrisa.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12">
 <h1 class="text-3xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center my-7 sm:max-lg:pt-8 lg:max-xl:pt-16 xl:max-2xl:pt-24 2xl:pt-14 xl:max-2xl:mb-14 2xl:mb-16">
 Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitacionales
@@ -73,7 +72,6 @@ Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitac
 </div>
 </section>
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10">
 
@@ -274,16 +272,6 @@ Incumplir tus obligaciones generará intereses moratorios. Descripción: Crédit
 </p>
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
-
-
 
 </div>
 
