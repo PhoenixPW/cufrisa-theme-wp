@@ -8,9 +8,8 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/comunicados.png')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start">
 
 <div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-6/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16">
@@ -23,7 +22,6 @@ get_header();
 </div>
 </section>
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-4 sm:px-6 lg:px-24 py-8">
 
@@ -84,14 +82,6 @@ Comunicado CUFRISA 27 de mayo 2019. USO DE IMAGEN COMERCIAL IGUAL O CONFUSAMENTE
 
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
 
 
 </div>
