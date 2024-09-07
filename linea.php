@@ -81,6 +81,11 @@ La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y 
 <br/>
 
 </p>
+<br/>
+
+<iframe class="sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br/>
+
 
 <h3 class="text-xl sm:max-md:text-lg xl:text-2xl 2xl:text-4xl text-center font-bold tracking-wide">
 PRESENTACIÓN A DETALLE DE CRÉDITO INTEGRAL     
