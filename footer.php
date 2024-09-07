@@ -18,15 +18,15 @@
         
           <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
            <li>
-             <a href="/">LINEA III INFONAVIT</a>
+             <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>">LINEA III INFONAVIT</a>
            </li>
    
            <li>
-            <a href="/">COMUNICADOS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>">COMUNICADOS</a>
            </li>
    
            <li>
-            <a href="/buro">BURÓ ENTIDADES FINANCIERAS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro'))); ?>">BURÓ ENTIDADES FINANCIERAS</a>
            </li>
           </ul>
          </div>
@@ -55,7 +55,7 @@
         </div>
    
         <div class="flex flex-col items-center justify-center text-[#E9E9E9] gap-2 sm:gap-0">
-         <a href="/privacidad" class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl">AVISO DE PRIVACIDAD</a>
+         <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl">AVISO DE PRIVACIDAD</a>
          <p class="text-[#C5BEBE] text-[0.60rem] xl:text-sm 2xl:text-lg">Copyright © 2024 CUFRISA - Todos los derechos reservados.</p>
         </div>
    
