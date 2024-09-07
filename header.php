@@ -122,90 +122,101 @@
 
 	<header id="masthead" class="site-header">
 
-	<header id="custom-header" class="fixed top-0 left-0 transition-all duration-300 w-full bg-[#1D3750] px-8 flex items-center z-30 bg-opacity-0 py-8">
-    <!-- Navigation Menu -->
-    <nav class="flex-grow flex justify-around space-x-0 items-center">
-      <!-- Hamburger Icon -->
-      <div class="flex justify-end w-full sm:w-0">
-        <button id="menu-toggle" class="sm:hidden text-white focus:outline-none">
-          <svg id="menu-icon" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+  <header id="header" class="fixed top-0 left-0 transition-all duration-300 w-full bg-[#1D3750] px-8 flex items-center z-30">
+        <!-- Navigation Menu -->
+        <nav class="flex-grow flex justify-around space-x-0 items-center">
+            <!-- Hamburger Icon -->
+            <div id="hamburgerIcon" class="flex justify-end w-full sm:w-0">
+                <button class="sm:hidden text-white focus:outline-none" id="menuToggle">
+                    <svg id="menuIcon" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
 
-      <div id="menu-items" class="flex-grow md:items-center sm:space-x-0 hidden sm:flex sm:bg-transparent sm:justify-around">
-        <a href="#specific-section" class="hidden sm:block">
-          <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer">
-        </a>
-        <hr>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">INICIO</a>
-        <hr>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">LINEA III INFONAVIT</a>
-        <hr>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">FIDELCOMISOS DE GARANTIA</a>
-        <hr>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">CREDICUFRISA</a>
+            <div id="menu" class="flex-grow sm:flex md:items-center sm:space-x-0 opacity-0 pointer-events-none sm:pointer-events-auto fixed sm:relative inset-0 bg-[#1D3750] flex flex-col justify-center sm:flex-row z-40 px-0 py-14 sm:py-0 gap-4 text-justify sm:opacity-100 transition-all duration-300 sm:bg-transparent sm:justify-around">
+                <button class="sm:hidden absolute top-4 right-4 text-white" id="menuClose">
+                    <svg class="w-10 h-10 mt-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
 
-        <hr>
+                <a href="#specific-section text-xl" class="flex justify-center mb-5 sm:mb-0 sm:block">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
+                </a>
+                <hr />
+                <a href="/" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
+                <hr />
+                <a href="/linea" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
+                <hr />
+                <a href="/fidelcomisos" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
+                <hr />
+                <a href="/credicufrisa" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
+                <hr />
 
-        <!-- Dropdown Menu Mobile -->
-        <div class="relative group sm:hidden flex flex-col gap-4">
-          <a href="<?php echo esc_url(get_permalink(get_page_by_path('fideicomisos-de-garantia'))); ?>" class="text-white hover:text-gray-300 font-normal text-xl transition-all duration-300">COMUNICADOS</a>
-          <hr>
-          <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal text-xl transition-all duration-300">NOSOTROS</a>
-          <hr>
-          <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="text-white hover:text-gray-300 font-normal text-xl transition-all duration-300">CONTACTO</a>
-          <hr>
-        </div>
+                <!-- Dropdown Menu Mobile -->
+                <div class="relative group sm:hidden flex flex-col gap-4">
+                    <a href="/comunicados" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
+                    <hr />
+                    <a href="/nosotros" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
+                    <hr />
+                    <a href="/contacto" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
+                    <hr />
+                </div>
 
-        <!-- Dropdown Menu -->
-        <div class="relative group hidden sm:block">
-          <!-- Button to trigger the dropdown -->
-          <span class="text-white hover:text-gray-300 cursor-pointer font-light sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">MAS</span>
-          
-          <!-- Dropdown Menu -->
-          <div class="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Comunicados</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Nosotros</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+                <!-- Dropdown Menu -->
+                <div class="relative group hidden sm:block">
+                    <!-- Button to trigger the dropdown -->
+                    <span class="text-white hover:text-gray-300 cursor-pointer font-light sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">MAS</span>
+
+                    <!-- Dropdown Menu -->
+                    <div class="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200">
+                        <a href="/comunicados" class="block px-4 py-2 hover:bg-gray-700 text-lg">Comunicados</a>
+                        <a href="/nosotros" class="block px-4 py-2 hover:bg-gray-700 text-lg">Nosotros</a>
+                        <a href="/contacto" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const header = document.getElementById('custom-header');
-      const menuToggle = document.getElementById('menu-toggle');
-      const menuIcon = document.getElementById('menu-icon');
-      const menuItems = document.getElementById('menu-items');
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.getElementById("header");
+            const menu = document.getElementById("menu");
+            const menuToggle = document.getElementById("menuToggle");
+            const menuClose = document.getElementById("menuClose");
+            const menuIcon = document.getElementById("menuIcon");
 
-      // Check and apply scrolling state
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-          header.classList.add('bg-opacity-80', 'py-3');
-          header.classList.remove('bg-opacity-0', 'py-8');
-        } else {
-          header.classList.add('bg-opacity-0', 'py-8');
-          header.classList.remove('bg-opacity-80', 'py-3');
-        }
-      });
+            let scrolling = false;
 
-      // Handle menu toggle
-      menuToggle.addEventListener('click', () => {
-        if (menuItems.classList.contains('hidden')) {
-          menuItems.classList.remove('hidden');
-          menuItems.classList.add('fixed', 'inset-0', 'bg-[#1D3750]', 'flex', 'flex-col', 'items-start', 'justify-start', 'z-40', 'px-0', 'py-14', 'gap-4', 'text-justify');
-          menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
-        } else {
-          menuItems.classList.add('hidden');
-          menuItems.classList.remove('fixed', 'inset-0', 'bg-[#1D3750]', 'flex', 'flex-col', 'items-start', 'justify-start', 'z-40', 'px-0', 'py-14', 'gap-4', 'text-justify');
-          menuIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
-        }
-      });
-    });
+            window.addEventListener("scroll", () => {
+                scrolling = window.scrollY > 50;
+                if (scrolling) {
+                    header.classList.add("bg-opacity-80", "py-3");
+                    header.classList.remove("bg-opacity-0", "py-8");
+                } else {
+                    header.classList.add("bg-opacity-0", "py-8");
+                    header.classList.remove("bg-opacity-80", "py-3");
+                }
+            });
+
+            menuToggle.addEventListener("click", () => {
+                menu.classList.toggle("opacity-0");
+                menu.classList.toggle("pointer-events-none");
+                if (!menu.classList.contains("opacity-0")) {
+                    menuIcon.setAttribute("d", "M6 18L18 6M6 6l12 12");
+                } else {
+                    menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+                }
+            });
+
+            menuClose.addEventListener("click", () => {
+                menu.classList.add("opacity-0");
+                menu.classList.add("pointer-events-none");
+                menuIcon.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+            });
+        });
   </script>
 
 
