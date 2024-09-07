@@ -58,7 +58,7 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
  <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
   Check List Crédito Integral (pdf)
  </p>
- <a href="/" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Semaforo 2023.pdf" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
   Descargar
  </a>
 </article>
