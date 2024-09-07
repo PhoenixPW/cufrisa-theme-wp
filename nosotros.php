@@ -17,7 +17,7 @@ get_header();
     <header class="flex flex-col justify-center h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
      <div class="flex flex-col gap-10 sm:gap-2 2xl:gap-8 items-center pb-24 sm:pb-0">
 
-     <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+     <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
 
      <h1 class="text-4xl lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-semibold sm:font-normal mb-5 2xl:mb-1 ">
       TU BENEFICIO ES NUESTRO PUNTO DE PARTIDA
@@ -31,7 +31,7 @@ get_header();
     <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                   <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg"/> 
+                   <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg" loading="lazy" alt="Icono mision"/> 
                 <h3 class="sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-xl font-semibold text-center">Misión</h3>
                 <p class="text-base sm:text-[0.68rem] lg:text-xs xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados.
@@ -43,7 +43,7 @@ get_header();
             <div>
               <div
                 class="flex flex-col items-center justify-center sm:px-0 lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg"/> 
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg" loading="lazy" alt="Icono vision"/> 
                 <h3 class="text-xl sm:text-sm md:text-base xl:text-xl  2xl:text-xl font-semibold text-center">Visión</h3>
                 <p class="text-base sm:text-[10px] lg:text-xs xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes.
@@ -55,7 +55,7 @@ get_header();
             <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg"/> 
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg" loading="lazy" alt="Icono valores"/> 
                 <h3 class="text-xl sm:text-sm md:text-base xl:text-xl 2xl:text-xl font-semibold text-center">Valores</h3>
                 <p class="text-base sm:text-[0.68rem] lg:text-xs  xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad.
@@ -81,7 +81,7 @@ get_header();
      <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg"/> 
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg" loading="lazy" alt="Icono mision"/> 
                 <h3 class="text-white text-xl sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-center">Misión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados.
@@ -93,7 +93,7 @@ get_header();
             <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg"/> 
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg" loading="lazy" alt="Icono vision"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Visión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes.
@@ -105,7 +105,7 @@ get_header();
             <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg"/> 
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg" loading="lazy" alt="Icono valores"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Valores</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad.

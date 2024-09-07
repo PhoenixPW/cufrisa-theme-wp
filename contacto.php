@@ -13,7 +13,7 @@ get_header();
     
       <div class="flex flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words items-center sm:items-stretch pb-24 sm:pb-0 ">
 
-      <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-7/12 sm:hidden" />
+      <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-7/12 sm:hidden" />
 
       <h1 class="sm:hidden text-6xl font-bold">Contacto</h1>
        <h1 class="hidden sm:block text-4xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider">
@@ -33,7 +33,7 @@ get_header();
         <ul class="text-lg sm:text-xs lg:text-sm xl:text-lg 2xl:text-lg font-light mt-2 flex flex-col gap-5 mb-6">
           <li class="flex gap-6 items-center">
           <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/localizacion.svg" class=" md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
+             <img src="<?php echo get_template_directory_uri(); ?>/public/localizacion.svg" loading="lazy" alt="Icono localizacion" class=" md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p class="w-7/12 sm:leading-4 lg:leading-5 xl:leading-6">
 Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico
@@ -43,7 +43,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
           <li class="flex gap-6 items-center">
             <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/telefono.svg" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
+             <img src="<?php echo get_template_directory_uri(); ?>/public/telefono.svg" loading="lazy" alt="Icono telefono" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
              (222) 1970977
@@ -53,7 +53,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
           <li class="flex gap-6 items-center">
           <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/calendario.svg" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
+             <img src="<?php echo get_template_directory_uri(); ?>/public/calendario.svg" loading="lazy" alt="Icono calendario" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
               Lunes a Viernes de 9:00 am a 06:00 pm
@@ -62,7 +62,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
         </ul>
 
         <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" class="flex gap-4 bg-white text-black lg:text-lg rounded py-2 sm:w-9/12 lg:w-6/12 xl:w-7/12 2xl:w-6/12 items-center justify-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" loading="lazy" alt="Icono Whatsapp" />
             Envíanos un mensaje
         </a>
 
@@ -150,7 +150,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
        <ul class="xl:text-lg 2xl:text-2xl font-medium sm:font-light mt-2 flex flex-col gap-5 mb-6">
           <li class="flex gap-6 items-center">
-            <div class="w-24 h-10 bg-[#1D3750] rounded-full">
+            <div class="w-[82px] h-10 bg-[#1D3750] rounded-full flex items-center justify-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/location_mobile.svg" loading="lazy" alt="Icono calendario" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1 "/>
             </div>
             <p class="sm:w-7/12 leading-6">
 Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico
@@ -159,7 +160,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
           </li>
 
           <li class="flex gap-6 items-center">
-            <div class="w-10 h-10 bg-[#1D3750] rounded-full">
+            <div class="w-10 h-10 bg-[#1D3750] rounded-full flex items-center justify-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/call_mobile.svg" loading="lazy" alt="Icono calendario" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
              (222) 1970977
@@ -168,7 +170,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
           </li>
 
           <li class="flex gap-6 items-center">
-            <div class="w-10 h-10 bg-[#1D3750] rounded-full">
+            <div class="w-10 h-10 bg-[#1D3750] rounded-full flex items-center justify-center">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/calendar_mobile.svg" loading="lazy" alt="Icono calendario" class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
               Lunes a Viernes de 9:00 am a 06:00 pm
@@ -177,7 +180,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
         </ul>
 
         <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" target="_blank" class="flex items-center gap-2 text-lg bg-white text-black rounded py-3 xl:w-4/12 justify-center shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" loading="lazy" alt="Icono Whatsapp"/>
             Envíanos un mensaje
         </a>
 

@@ -15,7 +15,7 @@ get_header();
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
   <h1 class="text-4xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold tracking-wider">SOLUCIONES DE <br/> FINANCIAMIENTO INMOBILIARIO</h1>
-  <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
+  <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" loading="lazy" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
 </div>
 
 <div class="hidden sm:flex absolute inset-0 flex-col justify-end ">
@@ -43,13 +43,13 @@ get_header();
   <div class="swiper mySwiper">
     <div class="swiper-wrapper ">
       <div class="swiper-slide ">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen Slider"/>
       </div>
       <div class="swiper-slide ">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen 2 Slider"/>
       </div>
       <div class="swiper-slide ">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" />
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen 3 Slider"/>
       </div>
 
     </div>
