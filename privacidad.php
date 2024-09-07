@@ -8,7 +8,6 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
 <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/nosotros.png')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -17,9 +16,6 @@ get_header();
 </div>
 </section>
 
-{
-// Mensaje del aviso de privacidad
-}
 
 <section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-8 sm:px-14 lg:px-24 xl:px-36 py-8 sm:py-28 text-lg sm:text-sm lg:text-lg 2xl:text-2xl">
 <article class="h-1/2 flex-shrink-0" >

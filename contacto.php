@@ -243,12 +243,13 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
         
       </div>
-
+      <br/>
       <h2 class="text-[#1D3750] text-3xl lg:text-4xl 2xl:text-6xl font-extrabold sm:font-bold tracking-wider 2xl:mb-0  ">¡VEN A VISITARNOS!</h2>
       <p class="text-xl sm:max-lg:text-lg xl:text-2xl 2xl:text-4xl lg:w-7/12 2xl:w-8/12 text-center tracking-normal">
        Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina.        
       </p>
       <img src="<?php echo get_template_directory_uri(); ?>./public/mapa.png" class="w-full "/>
+      <br/>
     </section>
 
 

@@ -8,9 +8,8 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/fideicomisos.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3">
 <h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios</h1>
 <div class="hidden sm:flex flex-col gap-4 sm:max-2xl:gap-0 text-left sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 break-words ml-16 sm:max-lg:ml-11">
@@ -40,7 +39,6 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 </div>
 </section>
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-20 gap-6">
 <h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
@@ -54,7 +52,7 @@ En el se aportan bienes o derechos a CUFRISA, para su administración conforme a
 </p>
 
 <section class="flex flex-col-reverse sm:flex-row gap-7 sm:max-lg:gap-5 items-center">
-<img src="./image 7.png" alt="Roles" loading="lazy" class="sm:w-7/12"></img>
+<img src="<?php echo get_template_directory_uri(); ?>./public/diagrama.png" alt="Roles" loading="lazy" class="sm:w-7/12"></img>
 <div class="flex flex-col sm:w-5/12 gap-11 sm:max-lg:gap-5 lg:max-xl:gap-9 " >
  <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl">
   <span class="font-bold tracking-wide">FIDEICOMISARIO: </span>
@@ -95,14 +93,6 @@ Presentación Fideicomiso Cufrisa (pdf)
 
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
 
 
 
