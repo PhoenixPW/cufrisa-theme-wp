@@ -243,7 +243,7 @@ Contrato y solicitud de crédito
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 CONTRATO DE CREDICUFRISA (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/CONTRATO DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/CONTRATO DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
@@ -253,7 +253,7 @@ CONTRATO DE CREDICUFRISA (pdf)
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 FORMATO DE SOLICITUD DE CREDITO (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/FORMATO SOLICITUD DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/FORMATO SOLICITUD DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
