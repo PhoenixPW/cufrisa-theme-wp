@@ -8,9 +8,7 @@ get_header();
 
         <div class="flex flex-col">
 
-      {/* Componente Hero */}
-
-    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
+    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/contacto.png')">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:max-xl:px-8 xl:px-12 sm:pt-16 xl:pl-20 ">
     
       <div class=" flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words ">
@@ -135,7 +133,6 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
     </section>
 
-    {/* Contenido de la pagina (Despues del Hero)*/}
 
     <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40">
       <div class="flex flex-col sm:hidden gap-5">
@@ -251,16 +248,9 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
       <p class="text-xl sm:max-lg:text-lg xl:text-2xl 2xl:text-4xl lg:w-7/12 2xl:w-8/12 text-center tracking-normal">
        Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina.        
       </p>
-      <img src="./image 12.png" class="w-full "/>
+      <img src="<?php echo get_template_directory_uri(); ?>./public/mapa.png" class="w-full "/>
     </section>
 
-    {
-    /*
-       -----------------
-         Pie de pagina 
-       -----------------
-    */
-    }
 
 
 
