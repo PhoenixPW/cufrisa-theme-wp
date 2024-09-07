@@ -8,8 +8,10 @@ get_header();
 
         <div class="flex flex-col">
 
+    <!-- Primer seccion (Hero) -->
 
-    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
+
+    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/nosotros.png')">
     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 flex items-center ">
     
     <header class="flex flex-col justify-center h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
@@ -115,7 +117,9 @@ get_header();
     </div>
     </section>
 
-    {/* Contenido de la pagina (Despues del Hero)*/}
+    <!-- Contenido -->
+
+    
 
     <section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-4 sm:px-8 md:px-11 lg:px-20 xl:px-36 pt-9 sm:pt-20">
     <h2 class="sm:hidden text-[#1D3750]  text-center text-4xl font-extrabold mb-9 tracking-wide">CUFRISA</h2>
@@ -221,12 +225,10 @@ get_header();
 
     <hr class="bg-[#7B7B7B] border-0 border-solid h-1 my-14"/>
 
-    {
-     // Calificacion
-    }
+  <!--Calificacion -->
 
     <section class="mb-14">
-     <img src="./Rectangle 8.png" alt="Calificacion HR AM3-" loading="lazy" class="w-full"></img>
+     <img src="<?php echo get_template_directory_uri(); ?>/public/calificados.png" alt="Calificacion HR AM3-" loading="lazy" class="w-full"></img>
      <article class="bg-[#263650] text-white gap-4 pb-8 pt-5 sm:pt-9 rounded-b-xl">
       <h2 class="text-[1.6rem] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-bold tracking-wider text-center">CALIFICACIÓN</h2>
       <div class="flex flex-col justify-center items-center gap-8">
@@ -243,15 +245,7 @@ get_header();
 
     </section>
 
-    {
-    /*
-       -----------------
-         Pie de pagina 
-       -----------------
-    */
-    }
-
-
+  <!--Pie de pagina -->
 
     </div>
 
