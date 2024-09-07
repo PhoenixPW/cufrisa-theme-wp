@@ -97,9 +97,10 @@ PRESENTACIÓN A DETALLE DE CRÉDITO INTEGRAL
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 Crédito Integral CUFRISA (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded ">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded ">
   Descargar
- </a>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
 </article>
 
 
@@ -114,18 +115,20 @@ Reglas de Operación y Check List para Desarrolladores
 
 
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
   Descargar
- </a>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
 </article>
 
 <article class="flex flex-col sm:flex-row bg-white p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
  <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
   Check List Crédito Integral (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Check List Credito Integral 1.0.pdf" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Check List Credito Integral 1.0.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded">
   Descargar
- </a>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
 </article>
 
 </div>

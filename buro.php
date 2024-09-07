@@ -14,7 +14,7 @@ get_header();
 
 <div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch pb-44 sm:pb-0">
 
-<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
 
 <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
    BURÓ DE ENTIDADES FINANCIERAS
