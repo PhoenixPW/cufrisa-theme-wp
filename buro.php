@@ -8,9 +8,8 @@ get_header();
 
 <div class="flex flex-col">
 
-{/* Componente Hero */}
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/inicio.png')">
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/buro.png')">
 <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
 <div class="flex flex-col gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words ">
@@ -25,13 +24,12 @@ get_header();
   </div>
 </div>
 
-<img src="./1.jpg" alt="Buro de entidades financieras" loading="lazy" class="hidden sm:block w-4/12 xl:max-2xl:w-3/12 2xl:w-3/12  rounded-2xl"/>
+<img src="<?php echo get_template_directory_uri(); ?>./public/buro_informacion.jpg" alt="Buro de entidades financieras" loading="lazy" class="hidden sm:block w-4/12 xl:max-2xl:w-3/12 2xl:w-3/12  rounded-2xl"/>
 
 </div>
 
 </section>
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9">
 <h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wider mb-5">FUNCIÓN</h2>
@@ -66,15 +64,6 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
 </article>
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
-
 
 
 </div>
