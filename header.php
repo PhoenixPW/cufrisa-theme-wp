@@ -141,26 +141,26 @@
                     </svg>
                 </button>
 
-                <a href="#specific-section text-xl" class="flex justify-center mb-5 sm:mb-0 sm:block">
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="flex justify-center mb-5 sm:mb-0 sm:block">
                     <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
                 </a>
                 <hr />
-                <a href="/" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
                 <hr />
-                <a href="/linea" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
                 <hr />
-                <a href="/fidelcomisos" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('fideicomisos-de-garantia'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
                 <hr />
-                <a href="/credicufrisa" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('credicufrisa'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
                 <hr />
 
                 <!-- Dropdown Menu Mobile -->
                 <div class="relative group sm:hidden flex flex-col gap-4">
-                    <a href="/comunicados" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
                     <hr />
-                    <a href="/nosotros" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
                     <hr />
-                    <a href="/contacto" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
                     <hr />
                 </div>
 
@@ -171,9 +171,9 @@
 
                     <!-- Dropdown Menu -->
                     <div class="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200">
-                        <a href="/comunicados" class="block px-4 py-2 hover:bg-gray-700 text-lg">Comunicados</a>
-                        <a href="/nosotros" class="block px-4 py-2 hover:bg-gray-700 text-lg">Nosotros</a>
-                        <a href="/contacto" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Comunicados</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Nosotros</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
                     </div>
                 </div>
             </div>

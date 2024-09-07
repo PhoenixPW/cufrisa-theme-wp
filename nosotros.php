@@ -138,7 +138,7 @@ get_header();
        <p class=" font-light text-sm sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-center sm:w-10/12 xl:w-7/12 mt-4 sm:mt-10 px-3">
         CUFRISA cuenta con una calificación AM3- con perspectiva estable por parte de HR Ratings Credit Rating Agency. Entidad administradora Línea 3 infonavit fideicomiso      
        </p>
-       <a class="bg-white text-[#263650] text-2xl 2xl:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
+       <a href="https://www.hrratings.com/rating_detail.xhtml?rel=10565" class="bg-white text-[#263650] text-2xl 2xl:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
         Consultar calificación
        </a>
       </div>

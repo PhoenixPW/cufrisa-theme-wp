@@ -18,15 +18,15 @@
         
           <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
            <li>
-             <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>">LINEA III INFONAVIT</a>
+             <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>">LINEA III INFONAVIT</a>
            </li>
    
            <li>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path(''))); ?>">COMUNICADOS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>">COMUNICADOS</a>
            </li>
    
            <li>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro'))); ?>">BURÓ ENTIDADES FINANCIERAS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro-entidades-financieras'))); ?>">BURÓ ENTIDADES FINANCIERAS</a>
            </li>
           </ul>
          </div>
@@ -44,7 +44,7 @@
            <img src="<?php echo get_template_directory_uri(); ?>/public/youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="/"> 
+          <a href="https://www.linkedin.com/company/cufrisa"> 
            <img src="<?php echo get_template_directory_uri(); ?>/public/linkedin-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
