@@ -28,25 +28,7 @@ get_header();
     <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                    
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-
-                </span>
+                   <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg"/> 
                 <h3 class="sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-xl font-semibold text-center">Misión</h3>
                 <p class="text-base sm:text-[0.68rem] lg:text-xs xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados.
@@ -58,23 +40,7 @@ get_header();
             <div>
               <div
                 class="flex flex-col items-center justify-center sm:px-0 lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg"/> 
                 <h3 class="text-xl sm:text-sm md:text-base xl:text-xl  2xl:text-xl font-semibold text-center">Visión</h3>
                 <p class="text-base sm:text-[10px] lg:text-xs xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes.
@@ -86,23 +52,7 @@ get_header();
             <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg"/> 
                 <h3 class="text-xl sm:text-sm md:text-base xl:text-xl 2xl:text-xl font-semibold text-center">Valores</h3>
                 <p class="text-base sm:text-[0.68rem] lg:text-xs  xl:text-base 2xl:text-lg font-normal text-center text-[#B0B0B0] sm:max-lg:leading-4 2xl:leading-6">
                 Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad.
@@ -128,25 +78,7 @@ get_header();
      <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                    
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-
-                </span>
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg"/> 
                 <h3 class="text-white text-xl sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-center">Misión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados.
@@ -158,23 +90,7 @@ get_header();
             <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Visión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes.
@@ -186,23 +102,7 @@ get_header();
             <div class="bg-[#1D3750] rounded-xl">
               <div
                 class="flex flex-col items-center justify-center px-4 py-8 space-y-4">
-                <span
-                  class="block p-4 bg-gray-100 rounded-md cursor-pointer hover:bg-gray-200">
-                  <svg
-                    class="transition-all duration-500 stroke-current"
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10 27.5L15 25M15 25V21.25M15 25L20 27.5M8.75 14.375L12.5998 11.0064C13.1943 10.4862 14.1163 10.6411 14.5083 11.327L15.4917 13.048C15.8837 13.7339 16.8057 13.8888 17.4002 13.3686L21.25 10M2.5 2.5H27.5M26.25 2.5V13.25C26.25 17.0212 26.25 18.9069 25.0784 20.0784C23.9069 21.25 22.0212 21.25 18.25 21.25H11.75C7.97876 21.25 6.09315 21.25 4.92157 20.0784C3.75 18.9069 3.75 17.0212 3.75 13.25V2.5"
-                      stroke=""
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                </span>
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/groups.svg"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Valores</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
                 Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad.
