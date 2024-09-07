@@ -79,7 +79,7 @@ En el se aportan bienes o derechos a CUFRISA, para su administración conforme a
 
 <br/>
 
-<iframe class="sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/ClkK2OV0u_8?si=saLFYlMnXkPsxwnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[190px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/ClkK2OV0u_8?si=saLFYlMnXkPsxwnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br/>
 <h3 class="text-[1.370rem] xl:text-3xl 2xl:text-5xl font-bold">

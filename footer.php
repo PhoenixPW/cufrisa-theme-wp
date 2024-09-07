@@ -36,11 +36,11 @@
    
          <ul class="flex gap-10 text-[#E9E9E9]">
    
-          <a href="/"> 
+          <a href="https://www.facebook.com/cufrisa/"> 
            <img src="<?php echo get_template_directory_uri(); ?>/public/facebook-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="/"> 
+          <a href="https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured"> 
            <img src="<?php echo get_template_directory_uri(); ?>/public/youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    

@@ -36,7 +36,6 @@ La línea 3 de Infonavit es un programa para empresas desarrolladoras de viviend
 </section>
 
 
-{/* Contenido de la pagina (Despues del Hero)*/}
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-7 sm:px-10 xl:px-32 py-20 gap-5">
 <h2 class="text-[#1D3750] text-[1.575rem] text-center sm:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold lg:font-bold tracking-wide mb-4">
@@ -83,7 +82,7 @@ La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y 
 </p>
 <br/>
 
-<iframe class="sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br/>
 
 
@@ -130,14 +129,6 @@ Reglas de Operación y Check List para Desarrolladores
 
 
 </section>
-
-{
-/*
- -----------------
-   Pie de pagina 
- -----------------
-*/
-}
 
 
 </div>

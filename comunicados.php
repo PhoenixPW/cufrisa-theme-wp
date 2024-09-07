@@ -34,7 +34,7 @@ Comunicado CUFRISA 9 de noviembre 2023. Pagina web que suplanta nuestro nombre. 
 
 
  Descargar
- <i class={`ml-2 `}>+</i>
+ <i class="ml-2">+</i>
  </div>
  </a>
 </article>
