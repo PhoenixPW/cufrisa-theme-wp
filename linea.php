@@ -44,12 +44,12 @@ PROYECTOS REALIZADOS
 </h2>
 
 <ul class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
-<img src="./Linea.png" alt="Proyecto 1" loading="lazy" class="w-full sm:w-1/3"/>
-<img src="./Rectangle 5.png" alt="Proyecto 2" loading="lazy" class="sm:w-1/3"/>
-<img src="./Rectangle 6.png" alt="Proyecto 3" loading="lazy" class="sm:w-1/3"/>
-<img src="./Linea.png" alt="Proyecto 4" loading="lazy" class="sm:w-1/3"/>
-<img src="./Rectangle 5.png" alt="Proyecto 5" loading="lazy" class="sm:w-1/3"/>
-<img src="./Linea.png" alt="Proyecto 6" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto.jpg" alt="Proyecto 1" loading="lazy" class="w-full sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto2.jpg" alt="Proyecto 2" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto3.jpg" alt="Proyecto 3" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto4.jpg" alt="Proyecto 4" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto5.jpg" alt="Proyecto 5" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto6.jpg" alt="Proyecto 6" loading="lazy" class="sm:w-1/3"/>
 </ul>
 
 <h3 class="text-3xl sm:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wide">
