@@ -252,6 +252,10 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
           href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
 
         <br/>
+        <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" class="bg-[#263650] w-11/12 sm:w-6/12 xl:w-7/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+        AVISO DE PRIVACIDAD
+        </a>
+        <br/>
     </section>
 
 
