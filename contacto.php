@@ -11,8 +11,11 @@ get_header();
     <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/contacto.png')">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:max-xl:px-8 xl:px-12 sm:pt-16 xl:pl-20 ">
     
-      <div class=" flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words ">
-       <h1 class="sm:hidden text-5xl font-bold">Contacto</h1>
+      <div class="flex flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words items-center sm:items-stretch pb-24 sm:pb-0 ">
+
+      <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-7/12 sm:hidden" />
+
+      <h1 class="sm:hidden text-6xl font-bold">Contacto</h1>
        <h1 class="hidden sm:block text-4xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider">
         Hagamos un trato
 

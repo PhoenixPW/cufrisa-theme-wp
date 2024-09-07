@@ -12,8 +12,11 @@ get_header();
 <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/comunicados.png')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start">
 
-<div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-6/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16">
-  <h1 class="text-3xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4 tracking-wider">COMUNICADOS INSTITUCIONALES</h1>
+<div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-6/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16 items-center sm:items-stretch pb-28 sm:pb-0 gap-10">
+
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-4/12 sm:hidden" />
+
+<h1 class="text-4xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4 tracking-wider">COMUNICADOS INSTITUCIONALES</h1>
 
 
   <p class="hidden sm:block text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-4xl font-light">Aquí encontrarás información relevante a nuestra comunidad o todos aquellos que deseen información relevante e importante sobre nuestra postura institucional sobre asuntos recientes que sean de nuestra competencia, que estén directamente relacionados a nosotros o a los sectores donde nos desenvolvemos.</p>

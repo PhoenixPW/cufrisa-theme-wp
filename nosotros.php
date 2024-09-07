@@ -15,8 +15,11 @@ get_header();
     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 flex items-center ">
     
     <header class="flex flex-col justify-center h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
-     <div class="flex flex-col gap-2 2xl:gap-8">
-      <h1 class="text-4xl lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-semibold sm:font-normal mb-5 2xl:mb-1 ">
+     <div class="flex flex-col gap-10 sm:gap-2 2xl:gap-8 items-center pb-24 sm:pb-0">
+
+     <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+
+     <h1 class="text-4xl lg:text-xl xl:text-2xl 2xl:text-3xl text-center font-semibold sm:font-normal mb-5 2xl:mb-1 ">
       TU BENEFICIO ES NUESTRO PUNTO DE PARTIDA
       </h1>
       <h2 class="hidden sm:block text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-center font-bold mb-5 2xl:mb-2">

@@ -10,7 +10,10 @@ get_header();
 
 
 <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/credicufrisa.png')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12">
+<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-28 sm:pb-0 gap-3 sm:gap-0">
+
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+
 <h1 class="text-3xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center my-7 sm:max-lg:pt-8 lg:max-xl:pt-16 xl:max-2xl:pt-24 2xl:pt-14 xl:max-2xl:mb-14 2xl:mb-16">
 Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitacionales
 </h1>

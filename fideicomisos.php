@@ -10,10 +10,15 @@ get_header();
 
 
 <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/fideicomisos.png')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3">
+<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-32 sm:pb-0 items-center sm:items-stretch">
+
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+
 <h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios</h1>
 <div class="hidden sm:flex flex-col gap-4 sm:max-2xl:gap-0 text-left sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 break-words ml-16 sm:max-lg:ml-11">
-  <h2 class="text-2xl sm:text-base lg:max-xl:text-xl xl:text-2xl 2xl:text-3xl  font-bold mb-4 tracking-wider">
+
+
+<h2 class="text-2xl sm:text-base lg:max-xl:text-xl xl:text-2xl 2xl:text-3xl  font-bold mb-4 tracking-wider">
   Cuidamos tu inversión
 
   </h2>

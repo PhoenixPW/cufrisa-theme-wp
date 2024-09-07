@@ -12,8 +12,11 @@ get_header();
 <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/buro.png')">
 <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
-<div class="flex flex-col gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words ">
-  <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
+<div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch pb-44 sm:pb-0">
+
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="w-5/12 sm:hidden" />
+
+<h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
    BURÓ DE ENTIDADES FINANCIERAS
   </h1>
   

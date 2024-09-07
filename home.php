@@ -18,6 +18,14 @@ get_header();
   <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
 </div>
 
+<div class="hidden sm:flex absolute inset-0 flex-col justify-end ">
+        <article class="bg-black bg-opacity-40 w-full sm:h-[80px] md:h-[86px] lg:h-[96px] xl:h-[110px] 2xl:h-[115px] text-center sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-center items-center">
+         <p class="w-1/2 sm:max-lg:w-8/12">
+          ENTIDAD ADMINISTRADORA AUTORIZADA POR INFONAVIT E INSTITUCIÓN FIDUCIARIA
+         </p>
+        </article>
+      </div>
+
 
 
 
