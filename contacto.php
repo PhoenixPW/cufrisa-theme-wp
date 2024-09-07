@@ -58,7 +58,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
           </li>
         </ul>
 
-        <a class="flex gap-4 bg-white text-black lg:text-lg rounded py-2 sm:w-9/12 lg:w-6/12 xl:w-7/12 2xl:w-6/12 items-center justify-center">
+        <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" class="flex gap-4 bg-white text-black lg:text-lg rounded py-2 sm:w-9/12 lg:w-6/12 xl:w-7/12 2xl:w-6/12 items-center justify-center">
             <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" />
             Envíanos un mensaje
         </a>
@@ -173,7 +173,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
           </li>
         </ul>
 
-        <a class="flex items-center gap-2 text-lg bg-white text-black rounded py-3 xl:w-4/12 justify-center shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
+        <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" target="_blank" class="flex items-center gap-2 text-lg bg-white text-black rounded py-3 xl:w-4/12 justify-center shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
             <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg"/>
             Envíanos un mensaje
         </a>

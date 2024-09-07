@@ -29,7 +29,7 @@ get_header();
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl sm:w-7/12">
 Comunicado CUFRISA 9 de noviembre 2023. Pagina web que suplanta nuestro nombre. (pdf)
 </p>
-<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 <div class="">
 
 
@@ -45,7 +45,7 @@ Comunicado CUFRISA 9 de noviembre 2023. Pagina web que suplanta nuestro nombre. 
 Comunicado CONDUSEF 1 de Noviembre 2019 SUPLANTACIÓN DE NUESTRA IDENTIDAD (pdf)
 
 </p>
-<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
 
  Descargar
@@ -59,7 +59,7 @@ Comunicado CONDUSEF 1 de Noviembre 2019 SUPLANTACIÓN DE NUESTRA IDENTIDAD (pdf)
 Comunicado CUFRISA 17 de Septiembre 2019 USOS NO AUTORIZADOS DE NUESTROS DATOS (razón social y regis) (pdf)
 
 </p>
-<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
 
  Descargar
@@ -73,7 +73,7 @@ Comunicado CUFRISA 27 de mayo 2019. USO DE IMAGEN COMERCIAL IGUAL O CONFUSAMENTE
 
 
 </p>
-<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+<a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
  Descargar
  <i class="ml-2">+</i>
