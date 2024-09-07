@@ -9,7 +9,7 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/fideicomisos.png')">
+<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/fideicomisos.png')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-32 sm:pb-0 items-center sm:items-stretch">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
@@ -57,7 +57,7 @@ En el se aportan bienes o derechos a CUFRISA, para su administración conforme a
 </p>
 
 <section class="flex flex-col-reverse sm:flex-row gap-7 sm:max-lg:gap-5 items-center">
-<img src="<?php echo get_template_directory_uri(); ?>./public/diagrama.png" alt="Roles" loading="lazy" class="sm:w-7/12"></img>
+<img src="<?php echo get_template_directory_uri(); ?>/public/diagrama.png" alt="Roles" loading="lazy" class="sm:w-7/12"></img>
 <div class="flex flex-col sm:w-5/12 gap-11 sm:max-lg:gap-5 lg:max-xl:gap-9 " >
  <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl">
   <span class="font-bold tracking-wide">FIDEICOMISARIO: </span>

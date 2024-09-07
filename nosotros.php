@@ -11,7 +11,7 @@ get_header();
     <!-- Primer seccion (Hero) -->
 
 
-    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " style="background-image: url('<?php echo get_template_directory_uri(); ?>./public/nosotros.png')">
+    <section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/nosotros.png')">
     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 flex items-center ">
     
     <header class="flex flex-col justify-center h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
