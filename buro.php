@@ -9,12 +9,17 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/buro.png')">
+<section id="hero" 
+         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         style="background-image: url('<?php echo get_field('imagen_buro')?the_field('imagen_buro'):get_template_directory_uri().'/public/buro.png' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
 <div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch pb-44 sm:pb-0">
 
-<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
+     loading="lazy" 
+     alt="Logo" 
+     class="w-5/12 sm:hidden" />
 
 <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
    BURÓ DE ENTIDADES FINANCIERAS
@@ -27,7 +32,10 @@ get_header();
   </div>
 </div>
 
-<img src="<?php echo get_template_directory_uri(); ?>/public/buro_informacion.jpg" alt="Buro de entidades financieras" loading="lazy" class="hidden sm:block w-4/12 xl:max-2xl:w-3/12 2xl:w-3/12  rounded-2xl"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/buro_informacion.jpg" 
+     alt="Buro de entidades financieras" 
+     loading="lazy" 
+     class="hidden sm:block w-4/12 xl:max-2xl:w-3/12 2xl:w-3/12  rounded-2xl"/>
 
 </div>
 
@@ -61,7 +69,9 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
  <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
   Check List Crédito Integral (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Semaforo 2023.pdf" target="_blank" class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Semaforo 2023.pdf" 
+    target="_blank" 
+    class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
  </a>
 </article>

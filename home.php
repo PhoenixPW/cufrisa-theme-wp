@@ -12,7 +12,9 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/inicio.png')">
+<section id="hero" 
+         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" 
+         style="background-image: url('<?php echo get_field("imagen_principal_inicio")?:get_template_directory_uri().'/public/inicio.png' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
@@ -21,7 +23,10 @@ get_header();
      echo get_field("titular_de_la_pagina")?the_field("titular_de_la_pagina"):"SOLUCIONES DE <br/> FINANCIAMIENTO INMOBILIARIO";
     ?>
   </h1>
-  <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" loading="lazy" class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
+  <img src="<?php echo get_field("icono_al_lado_del_titular")?the_field("icono_al_lado_del_titular"):get_template_directory_uri().'/public/logo.webp' ?>" 
+       alt="Logo" 
+       loading="lazy" 
+       class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
 </div>
 
 <div class="hidden sm:flex absolute inset-0 flex-col justify-end ">

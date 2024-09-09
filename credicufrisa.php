@@ -9,10 +9,15 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/credicufrisa.png')">
+<section id="hero" 
+         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.png' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-28 sm:pb-0 gap-3 sm:gap-0">
 
-<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
+     loading="lazy" 
+     alt="Logo" 
+     class="w-5/12 sm:hidden" />
 
 <h1 class="text-3xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center my-7 sm:max-lg:pt-8 lg:max-xl:pt-16 xl:max-2xl:pt-24 2xl:pt-14 xl:max-2xl:mb-14 2xl:mb-16">
 Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitacionales
@@ -243,9 +248,14 @@ Contrato y solicitud de crédito
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 CONTRATO DE CREDICUFRISA (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/CONTRATO DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/CONTRATO DE CREDITO.pdf" 
+    target="_blank" 
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
 </article>
 
@@ -253,9 +263,14 @@ CONTRATO DE CREDICUFRISA (pdf)
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 FORMATO DE SOLICITUD DE CREDITO (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/FORMATO SOLICITUD DE CREDITO.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/FORMATO SOLICITUD DE CREDITO.pdf" 
+    target="_blank" 
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
 </article>
 

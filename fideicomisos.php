@@ -9,10 +9,15 @@ get_header();
 <div class="flex flex-col">
 
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/fideicomisos.png')">
+<section id="hero" 
+         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         style="background-image: url('<?php echo get_field('imagen_fideicomisos')?the_field('imagen_fideicomisos'):get_template_directory_uri().'/public/fideicomisos.png' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-32 sm:pb-0 items-center sm:items-stretch">
 
-<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
+<img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
+     loading="lazy" 
+     alt="Logo" 
+     class="w-5/12 sm:hidden" />
 
 <h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios</h1>
 <div class="hidden sm:flex flex-col gap-4 sm:max-2xl:gap-0 text-left sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 break-words ml-16 sm:max-lg:ml-11">
@@ -57,7 +62,10 @@ En el se aportan bienes o derechos a CUFRISA, para su administración conforme a
 </p>
 
 <section class="flex flex-col-reverse sm:flex-row gap-7 sm:max-lg:gap-5 items-center">
-<img src="<?php echo get_template_directory_uri(); ?>/public/diagrama.png" alt="Roles" loading="lazy" class="sm:w-7/12"></img>
+<img src="<?php echo get_template_directory_uri(); ?>/public/diagrama.png" 
+     alt="Roles" 
+     loading="lazy" 
+     class="sm:w-7/12"></img>
 <div class="flex flex-col sm:w-5/12 gap-11 sm:max-lg:gap-5 lg:max-xl:gap-9 " >
  <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl">
   <span class="font-bold tracking-wide">FIDEICOMISARIO: </span>
@@ -95,9 +103,14 @@ Fideicomiso de Garantía a Detalle
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 Presentación Fideicomiso Cufrisa (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Presentacion Fideicomiso cufrisa.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Presentacion Fideicomiso cufrisa.pdf" 
+    target="_blank" 
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
 </article>
 

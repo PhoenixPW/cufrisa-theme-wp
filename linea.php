@@ -8,11 +8,16 @@ get_header();
 
 <div class="flex flex-col">
 
-<section id="hero" class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" style="background-image: url('<?php echo get_template_directory_uri(); ?>/public/linea.png')">
+<section id="hero" 
+         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.png' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
 <div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 pb-32 sm:pb-0 2xl:pt-16">
 
-  <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" loading="lazy" alt="Logo" class="w-5/12 sm:hidden" />
+  <img src="<?php echo get_template_directory_uri().'/public/logo.webp' ?>" 
+       loading="lazy" 
+       alt="Logo" 
+       class="w-5/12 sm:hidden" />
 
   <h1 class="text-4xl sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold mb-4 sm:max-lg:mb-1 tracking-wider">
   Línea 3 infonavit Crédito Inmobiliario sin intereses        
@@ -46,12 +51,30 @@ PROYECTOS REALIZADOS
 </h2>
 
 <ul class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto.jpg" alt="Proyecto 1" loading="lazy" class="w-full sm:w-1/3"/>
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto2.jpg" alt="Proyecto 2" loading="lazy" class="sm:w-1/3"/>
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto3.jpg" alt="Proyecto 3" loading="lazy" class="sm:w-1/3"/>
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto4.jpg" alt="Proyecto 4" loading="lazy" class="sm:w-1/3"/>
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto5.jpg" alt="Proyecto 5" loading="lazy" class="sm:w-1/3"/>
-<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto6.jpg" alt="Proyecto 6" loading="lazy" class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto.jpg" 
+     alt="Proyecto 1" 
+     loading="lazy" 
+     class="w-full sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto2.jpg" 
+     alt="Proyecto 2" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto3.jpg" 
+     alt="Proyecto 3" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto4.jpg" 
+     alt="Proyecto 4" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto5.jpg" 
+     alt="Proyecto 5" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_template_directory_uri(); ?>/public/proyecto6.jpg" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
 </ul>
 
 <h3 class="text-3xl sm:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wide">
@@ -97,9 +120,14 @@ PRESENTACIÓN A DETALLE DE CRÉDITO INTEGRAL
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
 Crédito Integral CUFRISA (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf" 
+    target="_blank" 
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
   </a>
 </article>
 
@@ -117,7 +145,10 @@ Reglas de Operación y Check List para Desarrolladores
  </p>
  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
   </a>
 </article>
 
@@ -125,9 +156,14 @@ Reglas de Operación y Check List para Desarrolladores
  <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
   Check List Crédito Integral (pdf)
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Check List Credito Integral 1.0.pdf" target="_blank" class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+ <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Check List Credito Integral 1.0.pdf" 
+    target="_blank" 
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" loading="lazy" alt="Icono descargar" class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
   </a>
 </article>
 
