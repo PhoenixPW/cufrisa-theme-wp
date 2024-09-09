@@ -118,13 +118,14 @@
 
 <?php
  $pod = pods("prueba_pods");
+ $logo = $pod->field("logo_navegacion");
  $menu = $pod->field("menu_pods");
  $numero_elementos_menu = count($menu);
 
  $opciones_visibles;
  $opciones_restantes;
 
- //echo count($menu)
+ //echo $logo['guid'];
  
  if($numero_elementos_menu>4)
  {
@@ -158,7 +159,7 @@
                 </button>
 
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex justify-center mb-5 sm:mb-0 sm:block">
-                    <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
+                    <img src="<?php echo !empty($logo)? $logo['guid'] : get_template_directory_uri()+'/public/logo.webp'; ?>" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
                 </a>
                 <hr />
 
