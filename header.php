@@ -124,8 +124,9 @@
 
  $opciones_visibles;
  $opciones_restantes;
-
- //echo $logo['guid'];
+ echo "Hi";
+ echo empty($logo)?"Hello":"Karl";
+// echo $logo;
  
  if($numero_elementos_menu>4)
  {
@@ -159,7 +160,7 @@
                 </button>
 
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex justify-center mb-5 sm:mb-0 sm:block">
-                    <img src="<?php echo !empty($logo)? $logo['guid'] : get_template_directory_uri()+'/public/logo.webp'; ?>" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
+                    <img src="<?php echo !empty($logo)? $logo['guid'] : get_template_directory_uri().'/public/logo.webp'; ?>" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
                 </a>
                 <hr />
 
