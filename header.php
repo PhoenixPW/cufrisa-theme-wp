@@ -124,8 +124,8 @@
 
  $opciones_visibles;
  $opciones_restantes;
- echo "Hi";
- echo empty($logo)?"Hello":"Karl";
+// echo "Hi";
+// echo empty($logo)?"Hello":"Karl";
 // echo $logo;
  
  if($numero_elementos_menu>4)

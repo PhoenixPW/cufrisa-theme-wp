@@ -10,6 +10,17 @@
  */
 
 ?>
+<?php 
+
+ $pod_footer = pods("editar_pie_de_pagina");
+
+ $logo = $pod_footer->field("logo1");
+ $liga = $pod_footer->field("liga_1");
+ $derechos = $pod_footer->field("derechos");
+
+// echo var_dump($liga);
+
+?>
 
 <footer class="flex flex-col bg-[#1D3750] px-10 xl:px-24 py-9 gap-8 sm:gap-5 md:gap-2 pb-6 sm:pb-2">
         <div class="flex flex-col sm:flex-row justify-between items-center gap-8 sm:gap-0">
@@ -36,16 +47,16 @@
    
          <ul class="flex gap-10 text-[#E9E9E9]">
    
-          <a href="https://www.facebook.com/cufrisa/"> 
-           <img src="<?php echo get_template_directory_uri(); ?>/public/facebook-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($liga)?$liga:'https://www.facebook.com/cufrisa/' ?>"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/facebook-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured"> 
-           <img src="<?php echo get_template_directory_uri(); ?>/public/youtube-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($liga)?$liga:'https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured'?>"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']: get_template_directory_uri().'/public/youtube-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="https://www.linkedin.com/company/cufrisa"> 
-           <img src="<?php echo get_template_directory_uri(); ?>/public/linkedin-svgrepo-com 1.svg" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
          </ul>
@@ -56,7 +67,7 @@
    
         <div class="flex flex-col items-center justify-center text-[#E9E9E9] gap-2 sm:gap-0">
          <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl">AVISO DE PRIVACIDAD</a>
-         <p class="text-[#C5BEBE] text-[0.60rem] xl:text-sm 2xl:text-lg">Copyright © 2024 CUFRISA - Todos los derechos reservados.</p>
+         <p class="text-[#C5BEBE] text-[0.60rem] xl:text-sm 2xl:text-lg"> <?php echo !empty($derechos)?$derechos:"Copyright © 2024 CUFRISA - Todos los derechos reservados.";?></p>
         </div>
    
        </footer>
