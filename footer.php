@@ -14,8 +14,11 @@
 
  $pod_footer = pods("editar_pie_de_pagina");
 
+ //$logo_footer = $pod_footer->field("logo_footer");
+ $paginas = $pod_footer->field("ligas"); 
  $logo = $pod_footer->field("logo1");
  $liga = $pod_footer->field("liga_1");
+// $pagina_privacidad = $pod_footer->field("liga_privacidad");
  $derechos = $pod_footer->field("derechos");
 
 // echo var_dump($liga);
@@ -28,6 +31,11 @@
           <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-14 smd:h-[4.5rem] lg:h-[4.5rem] xl:h-20 2xl:h-24 cursor-pointer" />
         
           <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
+
+           <?php 
+            if(empty($paginas))
+            {
+           ?>
            <li>
              <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>">LINEA III INFONAVIT</a>
            </li>
@@ -39,6 +47,25 @@
            <li>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro-entidades-financieras'))); ?>">BURÓ ENTIDADES FINANCIERAS</a>
            </li>
+
+           <?php
+            }
+            else
+            {
+             foreach($paginas as $pagina)
+             {
+              $id = $pagina['ID'];
+           ?>
+             <a href="<?php echo get_permalink($id)?>" >
+              <?php
+               echo strtoupper(get_the_title($id));
+              ?> 
+
+             </a>
+           <?php
+             }
+            }
+           ?>
           </ul>
          </div>
    
@@ -59,6 +86,9 @@
            <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
+          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          </a>
          </ul>
    
         </div>

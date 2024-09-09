@@ -4,7 +4,45 @@ get_header();
 
 ?>
 
+<?php 
+
+
+?>
+
+
 <main>
+  <?php 
+
+  $formulario_enviado=false;
+  $envio_correcto=false;
+  $mensaje_envio_exitoso = "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.";
+  $mensaje_envio_fallido = "Lo sentimos, hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.";
+   if ($_SERVER['REQUEST_METHOD'] === 'POST'){// && isset($_POST['enviar_formulario'])) {
+    // Recoge y sanitiza los datos del formulario
+    $nombre = sanitize_text_field($_POST['nombre']);
+    $correo = sanitize_email($_POST['correo']);
+    $telefono = sanitize_text_field($_POST['telefono']);
+    $mensaje = sanitize_textarea_field($_POST['mensaje']);
+    $formulario_enviado=true;
+    
+    $to = 'bros_z1@hotmail.com';
+    $subject = 'Nuevo mensaje desde el formulario de contacto';
+    $body = "Nombre: $nombre\nCorreo Electrónico: $correo\nTeléfono:$telefono\nMensaje:\n$mensaje";
+  
+    $headers = "From: $correo\r\n";
+    $headers .= "Reply-To: $correo\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+  
+  
+    if (mail($to, $subject, $body, $headers)) {
+        $envio_correcto=true;
+        echo '<p>Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.</p>';
+    } else {
+        echo '<p>Lo sentimos, hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.</p>';
+    }
+  }
+    ?>
 
         <div class="flex flex-col">
 
@@ -69,7 +107,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
        </div>
       </div>
 
-      <form class="hidden sm:flex flex-col bg-white w-5/12 rounded-2xl text-lg 2xl:text-2xl p-10 sm:max-lg:p-7 2xl:p-12  gap-7 sm:max-lg:gap-3 2xl:gap-6">
+      <form method="POST" class="hidden sm:flex flex-col bg-white w-5/12 rounded-2xl text-lg 2xl:text-2xl p-10 sm:max-lg:p-7 2xl:p-12  gap-7 sm:max-lg:gap-3 2xl:gap-6">
        <h2 class="text-[#1D3750] font-bold text-2xl sm:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl">Comunícate con nosotros</h2>
 
        <label
@@ -79,8 +117,9 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Nombre"
+    name="nombre"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black sm:max-lg:text-xs w-full"
-    placeholder="Username"
+    placeholder="name"
   />
 
   <span
@@ -97,6 +136,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Correo"
+    name="correo"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black sm:max-lg:text-xs w-full"
     placeholder="Username"
   />
@@ -115,6 +155,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Telefono"
+    name="telefono"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black sm:max-lg:text-xs w-full"
     placeholder="Username"
   />
@@ -127,8 +168,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 </label>
 
 
-       <textarea rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm sm:max-lg:text-xs focus:ring-offset-sky-200 text-black"></textarea>
-       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold">Enviar</button>
+       <textarea name="mensaje" rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm sm:max-lg:text-xs focus:ring-offset-sky-200 text-black"></textarea>
+       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold" name="enviar_formulario">Enviar</button>
 
       </form>
 
@@ -184,7 +225,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
             Envíanos un mensaje
         </a>
 
-        <form class="flex flex-col bg-white  rounded-2xl text-lg 2xl:text-2xl p-9 2xl:p-12  gap-7 2xl:gap-9">
+        <form method="POST" class="flex flex-col bg-white  rounded-2xl text-lg 2xl:text-2xl p-9 2xl:p-12  gap-7 2xl:gap-9">
        <h2 class="text-[#1D3750] font-bold text-2xl 2xl:text-4xl">Comunícate con nosotros</h2>
 
        <label
@@ -194,6 +235,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Nombre"
+    name="nombre"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black"
     placeholder="Username"
   />
@@ -212,6 +254,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Correo"
+    name="correo"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black"
     placeholder="Username"
   />
@@ -230,6 +273,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
   <input
     type="text"
     id="Telefono"
+    name="telefono"
     class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-2 text-black"
     placeholder="Username"
   />
@@ -242,8 +286,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 </label>
 
 
-       <textarea rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm focus:ring-offset-sky-200 text-black"></textarea>
-       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold text-white">Enviar</button>
+       <textarea name="mensaje" rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm focus:ring-offset-sky-200 text-black"></textarea>
+       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold text-white" name="enviar_formulario">Enviar</button>
 
       </form>
 
@@ -266,10 +310,41 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
 
 
+    <dialog id="modal" class="<?php echo !$formulario_enviado? "hidden":"";?> flex items-center justify-center w-full h-screen bg-black bg-opacity-70 transition-all duration-300">
+      <div class="flex flex-col gap-4 items-center w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 bg-[#e7e7e7] rounded-lg p-4 px-8 py-10">
+       <div class="relative inset-0 flex justify-end w-full left-7 sm:left-16 bottom-10">
+       <button id="botonCerrarConIcono" class="w-3/12">
+       <svg class="w-full h-[16px]" xmlns="http://www.w3.org/2000/svg" height="19pt" viewBox="0 0 329.26933 329" width="329pt"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
+        </button>
+       
+        </div>
+       <h2 class="text-3xl text-center 2xl:text-4xl font-extrabold"> 
+        <?php echo $envio_correcto?"¡Envio exitoso!":"¡Problemas en el envio!" ?>
+       </h2>
+       <p class="text-xl 2xl:text-lg text-center">
+        <?php echo $envio_correcto?$mensaje_envio_exitoso:$mensaje_envio_fallido ?>
+       </p>
+       <button type="button"  id="botonCerrar" class="bg-[#263650] text-white text-xl sm:text-lg font-semibold rounded-md w-10/12 sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 p-3 ">Volver a la pagina</button>
+      </div>
+        
+    </dialog>
 
     </div>
 
+    <script>
+      const modalMensaje = document.getElementById("modal");
+      const botonCerrar = document.getElementById("botonCerrarConIcono");
+      const botonRegresar = document.getElementById("botonCerrar");
+
+      botonRegresar.addEventListener("click", () => {
+       modalMensaje.classList.remove("flex");
+       modalMensaje.classList.add("opacity-0");
+       modalMensaje.classList.add("pointer-events-none");
+      } );
+    </script>
+
 </main>
+
 
 <?php
 get_footer();
