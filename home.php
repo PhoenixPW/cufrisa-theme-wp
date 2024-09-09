@@ -46,10 +46,10 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen Slider"/>
       </div>
       <div class="swiper-slide ">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen 2 Slider"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider2.webp" loading="lazy" alt="Imagen 2 Slider"/>
       </div>
       <div class="swiper-slide ">
-        <img src="<?php echo get_template_directory_uri(); ?>/public/slider.png" loading="lazy" alt="Imagen 3 Slider"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/public/slider3.webp" loading="lazy" alt="Imagen 3 Slider"/>
       </div>
 
     </div>
@@ -133,6 +133,28 @@ get_header();
         <img src="<?php echo get_template_directory_uri(); ?>/public/calificacion.png" loading="lazy" class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
       </div>
 
+      <?php
+      $pod2 = pods('prueba_pods');
+      $campo = $pod2->field("menu_pods");
+      if(!empty($campo))
+      {
+       echo "Encontrado2";
+       
+       foreach($campo as $pagina)
+       {
+        $id = $pagina['ID'];
+       echo $pagina;
+       print("<br/>");
+       echo get_the_title($id);
+       print("<br/>");
+       echo esc_url(get_permalink($id));
+       }
+      }
+      else
+      {
+       echo "No encontrado";
+      }
+      ?>
 
 
 

@@ -116,13 +116,29 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
+<?php
+ $pod = pods("prueba_pods");
+ $menu = $pod->field("menu_pods");
+ $numero_elementos_menu = count($menu);
+
+ $opciones_visibles;
+ $opciones_restantes;
+
+ //echo count($menu)
+ 
+ if($numero_elementos_menu>4)
+ {
+  $opciones_visibles = array_slice($menu,0,4);
+  $opciones_restantes = array_slice($menu,4);
+ }
+
+?>
 
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cufrisa' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header p-0">
 
-  <header id="header" class="fixed top-0 left-0 transition-all duration-300 w-full bg-[#1D3750] px-8 flex items-center z-30">
+  <header id="header" class="fixed top-0 left-0 transition-all duration-300 w-full bg-[#1D3750] px-8 flex items-center z-30 py-8 bg-opacity-0">
         <!-- Navigation Menu -->
         <nav class="flex-grow flex justify-around space-x-0 items-center">
             <!-- Hamburger Icon -->
@@ -145,6 +161,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
                 </a>
                 <hr />
+
+                <?php
+                 if(empty($menu))
+                 {
+                ?>
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
                 <hr />
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
@@ -176,6 +197,81 @@
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
                     </div>
                 </div>
+
+                <?php
+                 }
+                 else
+                 {
+                  if($numero_elementos_menu>4)
+                  {
+                   foreach($opciones_visibles as $pagina)
+                   {
+                    $id_pagina = $pagina['ID'];
+                    
+                ?>
+                    <a href="<?php echo get_permalink($id_pagina)?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">
+
+                     <?php echo strtoupper(get_the_title($id_pagina))?>
+
+                    </a>
+                    <hr />
+
+                <?php
+                   }
+                ?>
+                <!-- Dropdown Menu Mobile -->
+                <div class="relative group sm:hidden flex flex-col gap-4">
+                
+                <?php
+                   foreach($opciones_restantes as $pagina)
+                   {
+                    $id = $pagina['ID'];
+                ?>
+                    <a href="<?php echo get_permalink($id); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">
+                      <?php echo strtoupper(get_the_title($id));?>
+                    </a>
+                    <hr />
+
+                
+                <?php
+                   }
+
+                ?>
+                </div>
+
+                <!-- Dropdown Menu -->
+                <div class="relative group hidden sm:block">
+                    <!-- Button to trigger the dropdown -->
+                    <span class="text-white hover:text-gray-300 cursor-pointer font-light sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300">MAS</span>
+
+                    <!-- Dropdown Menu -->
+                    <div class="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200">
+
+                <?php 
+                  foreach($opciones_restantes as $pagina)
+                  {
+                   $id = $pagina['ID'];
+                ?>
+                  <a href="<?php echo get_permalink($id) ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">
+                   <?php echo strtoupper(get_the_title($id))?>
+                  </a>
+
+                <?php 
+                  }
+                ?>
+                  </div>
+                  </div>
+                <?php  
+                  }
+                  else
+                  {
+                ?>
+
+                <?php
+                  }
+                 }
+                ?>
+
             </div>
         </nav>
     </header>
@@ -221,10 +317,5 @@
 
 
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cufrisa' ); ?></button>
-			<?php
-			?>
-		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
