@@ -65,10 +65,18 @@ get_header();
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9">
-<h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wider mb-5">FUNCIÓN</h2>
-<p class="text-base sm:text-sm xl:text-xl 2xl:text-2xl">
+<h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wider mb-5">
+<?php   
 
-Con el Buró de Entidades Financieras, se logrará saber quién es quién en bancos, seguros, sociedades financieras de objeto múltiple, cajas de ahorro, afores, entre otras entidades. Con ello, podrás comparar y evaluar a las entidades financieras, sus productos y servicios y tendrás mayores elementos para elegir lo que más te convenga.
+echo get_field('titulo_buro')?the_field('titulo_buro'):"FUNCIÓN"
+
+?>
+</h2>
+<p class="text-base sm:text-sm xl:text-xl 2xl:text-2xl">
+<?php
+
+echo get_field('parrafo_buro')?the_field('parrafo_buro'):
+"Con el Buró de Entidades Financieras, se logrará saber quién es quién en bancos, seguros, sociedades financieras de objeto múltiple, cajas de ahorro, afores, entre otras entidades. Con ello, podrás comparar y evaluar a las entidades financieras, sus productos y servicios y tendrás mayores elementos para elegir lo que más te convenga.
 <br/><br/>
 
 Esta información te será útil para elegir un producto financiero y también para conocer y usar mejor los que ya tienes.
@@ -84,14 +92,17 @@ Para consultar esta información y la relativa al sector puede ingresar al sigui
 <br/><br/>
 
 La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. SOFOM ENR:​
-
+"
+?>
 </p>
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between sm:my-8">
  <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
-  Check List Crédito Integral (pdf)
+  <?php
+  echo get_field('semaforo')?the_field('semaforo'):"Semaforo (2024) PDF"
+  ?>
  </p>
- <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Semaforo 2023.pdf" 
+ <a href="<?php echo get_field('liga_semaforo')?the_field('liga_semaforo'):get_template_directory_uri().'/assets/pdf/Semaforo 2023.pdf' ?>" 
     target="_blank" 
     class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
