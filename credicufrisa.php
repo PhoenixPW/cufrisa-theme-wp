@@ -162,26 +162,26 @@ Según aprobación
 </article>
 
 
-<h2 class="text-[#1D3750] text-center text-[1.760rem] sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold sm:font-bold mb-3 sm:mb-8 tracking-wide">
+<h2 class="text-[#1D3750] text-center text-[1.760rem] sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold sm:font-bold mb-3 sm:mb-8 tracking-wide">
 REQUERIMIENTOS PARA PREAPROBACIÓN      
 </h2>
 
-<h3 class="text-2xl sm:text-xl lg:text-2xl 2xl:text-4xl font-bold">
+<h3 class="text-2xl sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold">
 PERSONAS MORALES
 </h3>
 
-<p class="text-lg sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-left leading-6">
+<p class="text-lg sm:text-base lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl text-left leading-6">
 Con representantes legales y accionistas, con sus identificaciones oficiales vigentes y CURP. Documentos oficiales necesarios para comprobar la representación y participación accionaria. Sí como los generales y registros de la empresa.
 </p>
 
 <div class="flex flex-col sm:flex-row gap-6 sm:gap-20">
 <article class="flex flex-col gap-3 sm:w-1/2">
-  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-bold ">
+  <h3 class="text-xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold ">
   SOLICITUD DE CRÉDITO
 
 
   </h3>
-  <p class="text-lg sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl leading-6">
+  <p class="text-lg sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
   Llenar el contrato de solicitud de crédito. Con datos generales de accionistas representantes y empresa.
 
   </p>
@@ -189,14 +189,14 @@ Con representantes legales y accionistas, con sus identificaciones oficiales vig
 </article>
 
 <article class="flex flex-col gap-3 sm:w-1/2">
-  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-bold">
+  <h3 class="text-xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold">
   COMPROBANTE DE DOMICILIO VIGENTE
 
 
 
   </h3>
 
-  <p class="text-lg sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl leading-6">
+  <p class="text-lg sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
   Recibo de luz, gas natural, impuesto predial. teléfono estado de cuenta bancario. (3) Con menos de 6 meses de expedición.
 
   </p>
@@ -208,12 +208,12 @@ Con representantes legales y accionistas, con sus identificaciones oficiales vig
 <div class="flex flex-col sm:flex-row gap-6 sm:gap-20">
 
 <article class="flex flex-col gap-3 sm:w-1/2">
-  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-bold">
+  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold">
   CONTAR CON UN PREPROYECTO HABITACIONAL
 
   </h3>
 
-  <p class="text-lg sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl leading-6">
+  <p class="text-lg sm:text-sm lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
   Dentro de lo posible administrado por CUFRISA.
 
   </p>
@@ -221,13 +221,13 @@ Con representantes legales y accionistas, con sus identificaciones oficiales vig
 </article>
 
 <article class="flex flex-col gap-3 sm:w-1/2">
-  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl font-bold">
+  <h3 class="text-xl sm:text-sm lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold">
   ESTADOS FINANCIEROS DEL SOLICITANTE
 
 
   </h3>
   
-  <p class="text-lg sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl leading-6">
+  <p class="text-lg sm:text-sm lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
   Activo circulante y total, Pasivo circulante y total, Capital contable, Utilidad o perdida neta y Ventas
 
 
@@ -238,19 +238,19 @@ Con representantes legales y accionistas, con sus identificaciones oficiales vig
 </article>
 </div>
 
-<h2 class="text-center text-3xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold py-5 sm:py-0">
+<h2 class="text-center text-3xl sm:text-xl lg:text-2xl xl:text-2xl 2xl:text-3xl min-[1920px]:text-4xl font-bold py-5 sm:py-0">
 Contrato y solicitud de crédito
 </h2>
 
 <div class="w-full">
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
-CONTRATO DE CREDICUFRISA (pdf)
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
+ CONTRATO DE CREDICUFRISA (pdf)
  </p>
  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/CONTRATO DE CREDITO.pdf" 
     target="_blank" 
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
        loading="lazy" 
@@ -260,12 +260,12 @@ CONTRATO DE CREDICUFRISA (pdf)
 </article>
 
 <article class="flex flex-col sm:flex-row bg-white p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
 FORMATO DE SOLICITUD DE CREDITO (pdf)
  </p>
  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/FORMATO SOLICITUD DE CREDITO.pdf" 
     target="_blank" 
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
        loading="lazy" 
@@ -277,16 +277,16 @@ FORMATO DE SOLICITUD DE CREDITO (pdf)
 </div>
 
 
-<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
+<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-base 2xl:text-lg min-[1920px]:text-xl">
 Tasa de interés aplicable al producto del 25% (tasa ordinaria) anual más IVA.CAT PROMEDIO 47.8% más IVA. <br/>Informativo. Calculado el 12 de junio de 2023. Vigencia al 12 de diciembre del 2024. Crédito sujeto a autorización de comité. Términos, condiciones y comisiones aplicables a CrediCUFRISA son los incluidos en el Contrato de Crédito vigente, inscrito en el Registro de Contratos de Adhesión (RECA), bajo el número de registro: 14754-439-035588/03-01265-0322; puedes consultar la versión vigente en https://cufrisa.com/credicufrisa o en la página de la CONDUSEF www.condusef.gob.mx
 
 </p>
-<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
+<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-base 2xl:text-lg min-[1920px]:text-xl">
 Tasa de interés moratoria:1.5 veces la tasa ordinaria (25% * 1.5 = 37.50%) (1) Se otorga de acuerdo a solicitud y capacidad de pago. El Crédito CrediCUFRISA se otorga en Moneda Nacional. (2) Pagos anticipados. La realización de Pagos Anticipados de forma parcial o total del crédito en cualquier tiempo, no generará la devolución de la comisión por apertura en ningún caso. (3) El comprobante de domicilio deberá ser presentado con una vigencia no mayor de 90 días, así como el comprobante bancario que deberá haber sido recibido en el domicilio del solicitante y de Institución Financiera distinta de CUFRISA.
 
 
 </p>
-<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">
+<p class="text-lg sm:text-xs md:text-sm lg:text-base xl:text-base 2xl:text-lg min-[1920px]:text-xl">
 Incumplir tus obligaciones generará intereses moratorios. Descripción: Crédito simple en moneda nacional ofrecido por SOLUCIONES PATRIMONIALES CUFRISA, SA DE CV, SOFOM, ENR en toda la República Mexicana y dirigido a personas morales constituidas en México. Unidad Especializada de Atención a Usuarios de SOLUCIONES PATRIMONIALES CUFRISA, SA DE CV, SOFOM, ENR Domicilio: Avenida 15 Sur 502 A, Fraccionamiento Plazuelas de Zerezotla, San Pedro Cholula, Puebla, C.P. 72764 Puebla. Teléfono: 222 890 2224 correo electrónico: Titular de la UNE: fcuevas@cufrisa.com y encargado regional: direccion@cufrisa.com Página de Internet: www.cufrisa.com
 
 </p>
