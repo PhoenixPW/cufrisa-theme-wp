@@ -8,6 +8,12 @@ get_header();
 
 <div class="flex flex-col">
 
+<!-- 
+   ------------------
+      Seccion Hero
+   ------------------
+
+-->
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
@@ -22,12 +28,20 @@ get_header();
      class="w-5/12 sm:hidden" />
 
 <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
-   BURÓ DE ENTIDADES FINANCIERAS
+
+   <?php
+    echo get_field("")?the_field(""):"BURÓ DE ENTIDADES FINANCIERAS"
+   ?>
+   
   </h1>
   
   <div class="hidden sm:block">
    <p class="text-xl sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-light sm:w-8/12 lg:w-7/12 leading-6">
-    Es una herramienta de consulta y difusión con la que podrás conocer los productos que ofrecen las entidades financieras, sus comisiones y tasas, y otra información que resulte relevante para informarte sobre su desempeño.
+
+    <?php
+    echo get_field("")?the_field(""):"Es una herramienta de consulta y difusión con la que podrás conocer los productos que ofrecen las entidades financieras, sus comisiones y tasas, y otra información que resulte relevante para informarte sobre su desempeño."
+    ?>
+
     </p>
   </div>
 </div>
@@ -38,6 +52,14 @@ get_header();
      class="hidden sm:block w-4/12 xl:max-2xl:w-3/12 2xl:w-3/12  rounded-2xl"/>
 
 </div>
+
+<!-- 
+  ---------------
+     Contenido
+  ---------------
+-->
+
+
 
 </section>
 
