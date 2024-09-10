@@ -8,6 +8,15 @@ get_header();
 
 <div class="flex flex-col">
 
+
+<!--
+
+ ------------------
+    Seccion Hero
+ ------------------
+
+-->
+
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.png' ?>')">
@@ -20,21 +29,29 @@ get_header();
        class="w-5/12 sm:hidden" />
 
   <h1 class="text-4xl sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-5xl font-bold mb-4 sm:max-lg:mb-1 tracking-wider">
-  Línea 3 infonavit Crédito Inmobiliario sin intereses        
+  <?php
+   echo get_field('titular_linea')?the_field('titular_linea'):"Línea 3 infonavit Crédito Inmobiliario sin intereses"
+  ?>        
   </h1>
 
   <div class="hidden sm:flex sm:flex-col sm:gap-4">
    <p class="sm:text-xs lg:text-sm xl:text-lg 2xl:text-2xl font-light md:w-8/12 xl:w-8/12">
-La línea 3 de Infonavit es un programa para empresas desarrolladoras de vivienda. Construye desarrollos inmobiliarios: Financiamiento hasta el 100% de la construcción. 0% de intereses con el 100% del recurso desde el inicio. Sin riesgo comercial. El mejor financiamiento para proyecto de vivienda con línea 3 de infonavit.
+   <?php 
+
+   echo get_field('cuerpo_hero_linea')?the_field('cuerpo_hero_linea'):"La línea 3 de Infonavit es un programa para empresas desarrolladoras de vivienda. Construye desarrollos inmobiliarios: Financiamiento hasta el 100% de la construcción. 0% de intereses con el 100% del recurso desde el inicio. Sin riesgo comercial. El mejor financiamiento para proyecto de vivienda con línea 3 de infonavit."
+   ?>
    </p>
 
    <h2 class="sm:text-xs lg:text-sm xl:text-xl 2xl:text-2xl font-semibold">
-  Dirigido a...
+   <?php
+    echo get_field('subtitulo_linea')?the_field('subtitulo_linea'):"Dirigido a...";
+   ?>
 
    </h2>
    <p class="sm:text-xs lg:text-sm xl:text-lg 2xl:text-2xl font-light md:w-8/12 xl:w-6/12">
-  Desarrolladoras de proyectos inmobiliarios por INFONAVIT. A través de este crédito, pueden promover a trabajadores la compra de viviendas en preventa.
-
+   <?php
+   echo get_field('subcuerpo_linea')?the_field('subcuerpo_linea'):"Desarrolladoras de proyectos inmobiliarios por INFONAVIT. A través de este crédito, pueden promover a trabajadores la compra de viviendas en preventa.";
+   ?>
    </p>
  </div>
 
@@ -43,6 +60,14 @@ La línea 3 de Infonavit es un programa para empresas desarrolladoras de viviend
 </div>
 </section>
 
+
+<!--
+
+ ---------------
+    Contenido
+ ---------------
+
+-->
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-7 sm:px-10 xl:px-32 py-20 gap-5">

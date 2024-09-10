@@ -23,14 +23,14 @@ get_header();
 
 <h1 class="text-4xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-bold mb-4 tracking-wider">
   <?php
-   echo get_field("")?the_field(""):"COMUNICADOS INSTITUCIONALES";
+   echo get_field("titular_comunicados")?the_field("titular_comunicados"):"COMUNICADOS INSTITUCIONALES";
   ?>
 </h1>
 
 
   <p class="hidden sm:block text-xl sm:text-sm lg:text-lg xl:text-xl 2xl:text-4xl font-light">
    <?php
-    echo get_field("")?the_field(""):"Aquí encontrarás información relevante a nuestra comunidad o todos aquellos que deseen información relevante e importante sobre nuestra postura institucional sobre asuntos recientes que sean de nuestra competencia, que estén directamente relacionados a nosotros o a los sectores donde nos desenvolvemos.";
+    echo get_field("cuerpo_hero_comunicados")?the_field("cuerpo_hero_comunicados"):"Aquí encontrarás información relevante a nuestra comunidad o todos aquellos que deseen información relevante e importante sobre nuestra postura institucional sobre asuntos recientes que sean de nuestra competencia, que estén directamente relacionados a nosotros o a los sectores donde nos desenvolvemos.";
     ?>
 
   </p>

@@ -30,7 +30,7 @@ get_header();
 <h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
 
    <?php
-    echo get_field("")?the_field(""):"BURÓ DE ENTIDADES FINANCIERAS"
+    echo get_field("titular_buro")?the_field("titular_buro"):"BURÓ DE ENTIDADES FINANCIERAS";
    ?>
    
   </h1>
@@ -39,7 +39,7 @@ get_header();
    <p class="text-xl sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-light sm:w-8/12 lg:w-7/12 leading-6">
 
     <?php
-    echo get_field("")?the_field(""):"Es una herramienta de consulta y difusión con la que podrás conocer los productos que ofrecen las entidades financieras, sus comisiones y tasas, y otra información que resulte relevante para informarte sobre su desempeño."
+    echo get_field("cuerpo_hero_buro")?the_field("cuerpo_hero_buro"):"Es una herramienta de consulta y difusión con la que podrás conocer los productos que ofrecen las entidades financieras, sus comisiones y tasas, y otra información que resulte relevante para informarte sobre su desempeño.";
     ?>
 
     </p>

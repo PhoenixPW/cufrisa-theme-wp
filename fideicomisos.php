@@ -8,6 +8,14 @@ get_header();
 
 <div class="flex flex-col">
 
+<!--
+ 
+ ----------------
+   Seccion Hero
+ ----------------
+
+
+-->
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
@@ -19,17 +27,27 @@ get_header();
      alt="Logo" 
      class="w-5/12 sm:hidden" />
 
-<h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios</h1>
+<h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">
+  <?php
+  echo get_field('titular_fideicomisos')?the_field('titular_fideicomisos'):"Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios"
+  ?>
+</h1>
 <div class="hidden sm:flex flex-col gap-4 sm:max-2xl:gap-0 text-left sm:w-10/12 md:w-8/12 lg:w-7/12 xl:w-6/12 2xl:w-7/12 break-words ml-16 sm:max-lg:ml-11">
 
 
 <h2 class="text-2xl sm:text-base lg:max-xl:text-xl xl:text-2xl 2xl:text-3xl  font-bold mb-4 tracking-wider">
-  Cuidamos tu inversión
+  <?php
+   echo get_field('sutitulo_fideicomisos')?the_field('subtitulo_fideicomisos'):"Cuidamos tu inversión";
+  ?>
 
   </h2>
 
   <div class="hidden sm:block">
   <p class="text-lg sm:text-sm lg:max-xl:text-base xl:text-lg 2xl:text-xl font-light leading-6">
+  <?php
+
+
+  echo get_field('cuerpo_hero_fideicomisos')?the_field('cuerpo_hero_fideicomisos'):"
   Cuando el aportante de la tierra y la empresa constructora son personas distintas, la finalidad de este contrato es verificar que se construya el desarrollo inmobiliario y se cubra a cada una de las partes su contraprestación tanto por el terreno como por las construcciones.
 <br/>        <br/>        
 
@@ -40,6 +58,8 @@ En caso de que alguna de las partes incumpla con sus obligaciones se podrá llev
 <br/>        <br/>        
 
 Adicionalmente este instrumento sirve para garantizar créditos que se obtengan para la construcción.          
+"
+?>
     
   </p>
 
@@ -50,14 +70,30 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 </section>
 
 
+<!--
+
+ ---------------
+    Contenido
+ ---------------
+
+-->
+
+
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-20 gap-6">
 <h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
-UN CONTRATO PARA ASEGURAR TU INVERSION
+
+<?php
+ echo get_field('')?the_field(''):"UN CONTRATO PARA ASEGURAR TU INVERSION";
+?>
 
 </h2>
 
 <p class="text-justify sm:text-left text-lg sm:text-sm xl:text-xl 2xl:text-3xl w-full">
-En el se aportan bienes o derechos a CUFRISA, para su administración conforme a los fines del contrato, para garantizar seguridad jurídica a las partes.
+<?php
+
+  echo get_field('')?the_field(''):"En el se aportan bienes o derechos a CUFRISA, para su administración conforme a los fines del contrato, para garantizar seguridad jurídica a las partes."
+
+?>
 
 </p>
 
