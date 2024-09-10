@@ -46,6 +46,7 @@ get_header();
 
         <div class="flex flex-col">
 
+
     <section id="hero" 
              class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
              style="background-image: url('<?php echo get_field('imagen_contacto')?the_field('imagen_contacto'):get_template_directory_uri().'/public/contacto.png' ?>')">
@@ -58,67 +59,90 @@ get_header();
            alt="Logo" 
            class="w-7/12 sm:hidden" />
 
-      <h1 class="sm:hidden text-6xl font-bold">Contacto</h1>
+      <h1 class="sm:hidden text-6xl font-bold">
+        <?php
+        echo get_field('titular_contacto_movil')?the_field('titular_contacto_movil'):"Contacto";
+        ?>
+      </h1>
        <h1 class="hidden sm:block text-4xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider">
-        Hagamos un trato
+        <?php
+        echo get_field('titular_contacto')?the_field('titular_contacto'):"Hagamos un trato";
+        ?>
 
         </h1>
         
         <div class="hidden sm:block">
         <p class="text-xl sm:text-xs lg:text-base xl:text-xl 2xl:text-xl font-light w-7/12 leading-6 lg:mb-5 2xl:mb-10">
+
+        <?php
+
+        echo get_field('descripcion_hero')?the_field('descripcion_hero'):"
         Conocer las dudas de nuestros clientes es muy importante para nosotros, te invitamos a llenar nuestro formulario para solicitar información sobre los productos y servicios que ofrecemos.
 <br/>
 <br/>
         A la brevedad posible, uno de nuestros representantes atenderá la solicitud.
+        "
+        ?>
 
         </p>
 
         <ul class="text-lg sm:text-xs lg:text-sm xl:text-lg 2xl:text-lg font-light mt-2 flex flex-col gap-5 mb-6">
           <li class="flex gap-6 items-center">
           <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/localizacion.svg" 
+             <img src="<?php echo get_field('icono_localizacion')?the_field('icono_localizacion'):get_template_directory_uri().'/public/localizacion.svg' ?>" 
                   loading="lazy" 
                   alt="Icono localizacion" 
                   class=" md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p class="w-7/12 sm:leading-4 lg:leading-5 xl:leading-6">
-Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico
 
+            <?php
+             echo get_field('direccion')?the_field('direccion'):"Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico"
+            ?>
             </p>
           </li>
 
           <li class="flex gap-6 items-center">
             <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/telefono.svg" 
+             <img src="<?php echo get_field('icono_telefono')?the_field('icono_telefono'):get_template_directory_uri().'/public/telefono.svg' ?>" 
                   loading="lazy" 
                   alt="Icono telefono" 
                   class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
-             (222) 1970977
+            <?php
+             echo get_field('telefono')?the_field('telefono'):"(222) 1970977";
+            ?>
              
             </p>
           </li>
 
           <li class="flex gap-6 items-center">
           <div class="flex justfiy-center items-center sm:w-7 md:w-8 lg:w-9 xl:w-10 sm:h-7 md:h-8 lg:h-9 xl:h-10 rounded-full bg-white">
-             <img src="<?php echo get_template_directory_uri(); ?>/public/calendario.svg" 
+             <img src="<?php echo get_field('icono_horario')?the_field('icono_horario'):get_template_directory_uri().'/public/calendario.svg' ?>" 
                   loading="lazy" 
                   alt="Icono calendario" 
                   class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
-              Lunes a Viernes de 9:00 am a 06:00 pm
+
+             <?php
+             echo get_field('horario')?the_field('horario'):"Lunes a Viernes de 9:00 am a 06:00 pm";
+             ?>
+             
             </p>
           </li>
         </ul>
 
         <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" 
            class="flex gap-4 bg-white text-black lg:text-lg rounded py-2 sm:w-9/12 lg:w-6/12 xl:w-7/12 2xl:w-6/12 items-center justify-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" 
+            <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/whatsapp.svg' ?>" 
                  loading="lazy" 
                  alt="Icono Whatsapp" />
-            Envíanos un mensaje
+            <?php
+            echo get_field('')?the_field(''):"Envíanos un mensaje"
+            ?>
+
         </a>
 
        </div>

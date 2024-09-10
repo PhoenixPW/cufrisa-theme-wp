@@ -144,7 +144,7 @@ Presentación Fideicomiso Cufrisa (pdf)
     class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
-       loading="lazy" 
+       loading="lazy"
        alt="Icono descargar" 
        class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
