@@ -9,6 +9,15 @@ get_header();
 <div class="flex flex-col">
 
 
+<!--
+
+ ------------------
+    Seccion Hero
+ ------------------
+
+-->
+
+
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.png' ?>')">
@@ -20,56 +29,101 @@ get_header();
      class="w-5/12 sm:hidden" />
 
 <h1 class="text-3xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center my-7 sm:max-lg:pt-8 lg:max-xl:pt-16 xl:max-2xl:pt-24 2xl:pt-14 xl:max-2xl:mb-14 2xl:mb-16">
-Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitacionales
+
+<?php
+ echo get_field('titular_credicufrisa')?the_field('titular_credicufrisa'):"Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitacionales";
+?>
+
 </h1>
 
 <div class="hidden sm:block container mx-auto p-4 2xl:p-0">
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 2xl:gap-0">
   
   <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">25%</h2>
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+    <?php
+     echo get_field('titulo_caracteristica_1')?the_field('titulo_caracteristica_1'):"25%";
+    ?>
+    </h2>
     <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    Tasa de interés (tasa Ordinaria) anual más IVA            
+    <?php
+     echo get_field('descripcion_caracteristica_1')?the_field('descripcion_caracteristica_1'):"Tasa de interés (tasa Ordinaria) anual más IVA"            
+    ?>
     
     </p>
   </div>
 
   <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">HASTA <br/>$10,000,000.00</h2>
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+      <?php
+      echo get_field('titulo_caracteristica_2')?the_field('titulo_caracteristica_2'):"HASTA <br/>$10,000,000.00"
+      ?>
+    </h2>
     <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    De monto máximo de crédito, con un mínimo de $500,000.00 (1)            
+
+    <?php
+    echo get_field('descripcion_caracteristica_2')?the_field('descripcion_caracteristica_2'):"De monto máximo de crédito, con un mínimo de $500,000.00 (1)"            
+    ?>
+    </p>
+  </div>
+
+  <div class="bg-transparent lg:p-6 rounded-lg text-center">
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+     <?php 
+     echo get_field('titulo_caracteristica_3')?the_field('titulo_caracteristica_3'):"HASTA 5%"
+     ?>
+     </h2>
+    <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
+    <?php
+    echo get_field('descripcion_caracteristica_3')?the_field('descripcion_caracteristica_3'):"De Comisión por Apertura más IVA"          
+    ?>
     
     </p>
   </div>
 
   <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">HASTA 5%</h2>
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+      <?php
+      echo get_field('titulo_caracteristicas_4')?the_field('titulo_caracteristicas_4'): "SIN <br/> COMISION";
+      ?>
+    </h2>
     <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    De Comisión por Apertura más IVA          
+
+    <?php
+    echo get_field('descripcion_caracteristica_4')?the_field('descripcion_caracteristica_4'):"Por pago tardío *Sin contar intereses moratorios";     
+    ?>
     
     </p>
   </div>
 
   <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">SIN <br/> COMISION</h2>
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+     <?php
+      echo get_field('titulo_caracteristica_5')?the_field('titulo_caracteristica_5'):"PLAZO DE 12 <br/>A 36 MESES";
+     ?>
+    </h2>
     <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    Por pago tardío *Sin contar intereses moratorios            
-    
+
+    <?php
+    echo get_field('descripcion_caracteristica_5')?the_field('descripcion_caracteristica_5'):"Según aprobación";
+    ?>
+
     </p>
   </div>
 
   <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">PLAZO DE 12 <br/>A 36 MESES</h2>
-    <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    Según aprobación          
-    
-    </p>
-  </div>
+    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">
+    <?php
+     
+     echo get_field('titulo_caracteristica_6')?the_field('titulo_caracteristica_6'):"SIN <br/> PENALIZACION";
 
-  <div class="bg-transparent lg:p-6 rounded-lg text-center">
-    <h2 class="text-2xl sm:text-base md:text-lg xl:text-2xl 2xl:text-3xl font-semibold mb-2">SIN <br/> PENALIZACION</h2>
+    ?>
+    
+    </h2>
     <p class="text-lg sm:text-xs md:text-xs xl:text-lg 2xl:text-xl text-white font-light">
-    por pagos adelantados (2)          
+    <?php
+    echo get_field('descripcion_caracteristica_6')?the_field('descripcion_caracteristica_6'):"por pagos adelantados (2)"  
+    ?>
     
     </p>
   </div>
@@ -79,6 +133,16 @@ Crédito pensado para el impulso de desarrollos <br/> arquitectónicos y habitac
 
 </div>
 </section>
+
+<!---
+
+
+ ------------------
+      Contenido 
+ ------------------
+
+
+-->
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10">
