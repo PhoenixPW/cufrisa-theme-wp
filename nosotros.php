@@ -160,31 +160,46 @@ get_header();
 
 
     <div class="text-center sm:text-left w-full my-7 sm:my-0  sm:mb-3">
-     <h3 class="font-bold text-3xl sm:text-2xl lg:text-3xl 2xl:text-5xl ">Nosotros</h3>
+     <h3 class="font-bold text-3xl sm:text-2xl lg:text-3xl 2xl:text-5xl ">
+      <?php
+      echo get_field('titulo_cuerpo_nosotros')?the_field('titulo_cuerpo_nosotros'):"Nosotros"
+      ?>
+    </h3>
     </div>
     <p class="text-[#7B7B7B] text-xl sm:text-base lg:text-lg xl:text-xl 2x:text-3xl md:w-11/12 xl:w-10/12 text-left  sm:text-justify font-normal">
-    SOFOM fundada en enero de 2017, damos soluciones en giros patrimoniales e inmobiliarios, como entidad administradora autorizada INFONAVIT, con esto podemos validar y administrar Crédito Integral Línea III, para ofrecer viviendas a grupos de trabajadores sin que las desarrolladoras se descapitalicen ni tengan riesgo comercial, también ofrecemos Fideicomisos de Garantía, con los cuales los desarrolladores pueden hacer uso de terrenos sin necesidad adquirirlos antes de desarrollar quedando estos bienes protegidos y con garantía de pago, también con este producto podemos dar garantía a diferentes fines dando seguridad jurídica y financiera, sumado a lo anterior también ofrecemos Credicufrisa el cual es un crédito pensado para personas morales dedicadas a desarrollos habitacionales preferentemente administrados por CUFRISA y con el cual puedan hacer frente a los múltiples gastos que conlleva la construcción; logramos esto ya que estamos autorizados y contamos con una Oficial de cumplimiento certificado por la Comisión Nacional Bancaria y de Valores (CNBV), también autorizados por la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF), regulados por el Buró de Entidades Financieras y estamos calificados desde el año 2018 por HR Ratings Credit Rating Agency con perspectiva estable y en 2022 la calificación aumentó al alza.
+<?php
+echo get_field('parrafo_nosotros')?the_field('parrafo_nosotros'):
+"    SOFOM fundada en enero de 2017, damos soluciones en giros patrimoniales e inmobiliarios, como entidad administradora autorizada INFONAVIT, con esto podemos validar y administrar Crédito Integral Línea III, para ofrecer viviendas a grupos de trabajadores sin que las desarrolladoras se descapitalicen ni tengan riesgo comercial, también ofrecemos Fideicomisos de Garantía, con los cuales los desarrolladores pueden hacer uso de terrenos sin necesidad adquirirlos antes de desarrollar quedando estos bienes protegidos y con garantía de pago, también con este producto podemos dar garantía a diferentes fines dando seguridad jurídica y financiera, sumado a lo anterior también ofrecemos Credicufrisa el cual es un crédito pensado para personas morales dedicadas a desarrollos habitacionales preferentemente administrados por CUFRISA y con el cual puedan hacer frente a los múltiples gastos que conlleva la construcción; logramos esto ya que estamos autorizados y contamos con una Oficial de cumplimiento certificado por la Comisión Nacional Bancaria y de Valores (CNBV), también autorizados por la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (CONDUSEF), regulados por el Buró de Entidades Financieras y estamos calificados desde el año 2018 por HR Ratings Credit Rating Agency con perspectiva estable y en 2022 la calificación aumentó al alza.
     <br/>
     Lo anterior nos permite dar certeza de que nuestros procesos cumplen y que somos una compañía estable en la que nuestros clientes pueden confiar. Entidad administradora Línea 3 infonavit.
-    </p>
-
+    "
+?>
+</p>
     <hr class="bg-[#7B7B7B] border-0 border-solid h-1 my-14"/>
 
   <!--Calificacion -->
 
     <section class="mb-14">
-     <img src="<?php echo get_template_directory_uri(); ?>/public/calificados.png" 
+     <img src="<?php echo get_field('imagen_calificacion')?the_field('imagen_calificacion'): get_template_directory_uri().'/public/calificados.png' ?>" 
           alt="Calificacion HR AM3-" 
           loading="lazy" 
           class="w-full"></img>
      <article class="bg-[#263650] text-white gap-4 pb-8 pt-5 sm:pt-9 rounded-b-xl">
-      <h2 class="text-[1.6rem] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-bold tracking-wider text-center">CALIFICACIÓN</h2>
+      <h2 class="text-[1.6rem] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-bold tracking-wider text-center">
+        <?php
+        echo get_field('titulo_contenedor_calificacion')?the_field('titulo_contenedor_calificacion'):"CALIFICACIÓN";
+        ?>
+      </h2>
       <div class="flex flex-col justify-center items-center gap-8">
        <p class=" font-light text-sm sm:text-sm lg:text-lg xl:text-xl 2xl:text-3xl text-center sm:w-10/12 xl:w-7/12 mt-4 sm:mt-10 px-3">
-        CUFRISA cuenta con una calificación AM3- con perspectiva estable por parte de HR Ratings Credit Rating Agency. Entidad administradora Línea 3 infonavit fideicomiso      
+        <?php
+        echo get_field('parrafo_contenedor_calificacion')?the_field('parrafo_contenedor_calificacion'):"CUFRISA cuenta con una calificación AM3- con perspectiva estable por parte de HR Ratings Credit Rating Agency. Entidad administradora Línea 3 infonavit fideicomiso"
+        ?>
        </p>
        <a href="https://www.hrratings.com/rating_detail.xhtml?rel=10565" class="bg-white text-[#263650] text-2xl 2xl:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
-        Consultar calificación
+        <?php
+        echo get_field('texto_boton_calificacion')?the_field('texto_boton_calificacion'):"Consultar calificación"
+        ?>
        </a>
       </div>
      </article>
