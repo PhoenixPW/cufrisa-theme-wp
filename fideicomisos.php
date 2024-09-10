@@ -80,7 +80,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-20 gap-6">
-<h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
+<h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
 
 <?php
  echo get_field('')?the_field(''):"UN CONTRATO PARA ASEGURAR TU INVERSION";
@@ -88,7 +88,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 
 </h2>
 
-<p class="text-justify sm:text-left text-lg sm:text-sm xl:text-xl 2xl:text-3xl w-full">
+<p class="text-justify sm:text-left text-lg sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl w-full">
 <?php
 
   echo get_field('')?the_field(''):"En el se aportan bienes o derechos a CUFRISA, para su administración conforme a los fines del contrato, para garantizar seguridad jurídica a las partes."
@@ -103,20 +103,20 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
      loading="lazy" 
      class="sm:w-7/12"></img>
 <div class="flex flex-col sm:w-5/12 gap-11 sm:max-lg:gap-5 lg:max-xl:gap-9 " >
- <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl">
+ <p class="text-lg sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
   <span class="font-bold tracking-wide">FIDEICOMISARIO: </span>
   Recibe beneficios de acuerdo a pactado en el contrato.
 
 
  </p>
 
- <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl tracking-wide">
+ <p class="text-lg sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl tracking-wide">
   <span class="font-bold">FIDEICOMITENTE: </span>
   Aporta los bienes que pueden ser: Efectivo y valores, acciones emitidas por sociedades, Inmuebles (casas, edificios,lotes, etc.) y Bienes susceptibles de transmisión.
 
  </p>
 
- <p class="text-lg sm:text-sm xl:text-xl 2xl:text-3xl tracking-wide">
+ <p class="text-lg sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl tracking-wide">
   <span class="font-bold">FIDUCIARIO (CUFRISA): </span>
   Actúa conforme a los fines del contrato, siempre y cuando éstos sean determinados, lícitos y posibles.
 
@@ -131,17 +131,17 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 <iframe class="w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[190px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" src="https://www.youtube.com/embed/ClkK2OV0u_8?si=saLFYlMnXkPsxwnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br/>
-<h3 class="text-[1.370rem] xl:text-3xl 2xl:text-5xl font-bold">
+<h3 class="text-[1.370rem] xl:text-xl 2xl:text-3xl min-[1920px]:text-4xl font-bold">
 Fideicomiso de Garantía a Detalle
 </h3>
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
 Presentación Fideicomiso Cufrisa (pdf)
  </p>
  <a href="<?php echo get_template_directory_uri(); ?>/assets/pdf/Presentacion Fideicomiso cufrisa.pdf" 
     target="_blank" 
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
        loading="lazy" 

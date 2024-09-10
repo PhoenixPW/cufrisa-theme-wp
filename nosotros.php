@@ -36,7 +36,7 @@ get_header();
     <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                   <img src="<?php echo get_template_directory_uri(); ?>/public/flag.svg" 
+                   <img src="<?php echo get_template_directory_uri().'/public/flag.svg' ?>" 
                         loading="lazy" 
                         alt="Icono mision"/> 
                 <h3 class="sm:text-base md:text-sm lg:text-base xl:text-xl 2xl:text-xl font-semibold text-center">Misión</h3>
@@ -50,7 +50,7 @@ get_header();
             <div>
               <div
                 class="flex flex-col items-center justify-center sm:px-0 lg:px-4 lg:py-8 2xl:py-1 space-y-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/public/target.svg" 
+                  <img src="<?php echo get_template_directory_uri().'/public/target.svg' ?>" 
                        loading="lazy" 
                        alt="Icono vision"/> 
                 <h3 class="text-xl sm:text-sm md:text-base xl:text-xl  2xl:text-xl font-semibold text-center">Visión</h3>

@@ -77,7 +77,7 @@ get_header();
     <div class="swiper-pagination" ></div>
   </div>
 
-<h2 class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-6xl font-extrabold sm:font-bold pb-3 pt-16 text-center">NUESTROS SERVICIOS</h2>
+<h2 class="text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold sm:font-bold pb-3 pt-16 text-center">NUESTROS SERVICIOS</h2>
       
 <section class="flex flex-wrap">
         <article class="lg:pt-12 pt-6 w-full sm:w-4/12 px-4 text-center">
@@ -88,7 +88,7 @@ get_header();
                    alt="Servicio 1" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-red-400 bg-cover bg-center"/>
                 
-              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">
+              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold">
                <?php
 
                 echo get_field("servicio_1")?the_field("servicio_1"):"LÍNEA III DE INFONAVIT";
@@ -96,7 +96,7 @@ get_header();
               
               </h6>
               <div class="flex items-center justify-center">
-               <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-2xl sm:w-12/12 xl:w-10/12 leading-6 ">
+               <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl sm:w-12/12 xl:w-10/12 leading-6 ">
                 <?php
                  echo get_field("descripcion_servicio_1")?the_field("descripcion_servicio_1"):"Con la Línea 3 de Infonavit construye desarrollos inmobiliarios con estos beneficios: Financiamos hasta el 1​00% de la construcción. 0% de intereses con el 100% del recurso desde el inicio. Sin riesgo comercial."
                 ?>
@@ -113,12 +113,12 @@ get_header();
                    loading="lazy" 
                    alt="Servicio 2" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-blue-400 bg-cover bg-center" />
-              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">
+              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold">
                 <?php
                   echo get_field("servicio_2")?the_field("servicio_2"):"CREDICUFRISA";
                 ?>
               </h6>
-              <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-2xl leading-6">
+              <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
               <?php
                echo get_field("descripcion_servicio_2")?the_field("descripcion_servicio_2"):"Crédito pensado para el impulso de desarrollos arquitectónicos y habitacionales.";
               ?>
@@ -136,12 +136,12 @@ get_header();
                    loading="lazy" 
                    alt="Servicio 3" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-green-400 bg-cover bg-center" />
-              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl font-bold">
+              <h6 class="text-2xl sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold">
                 <?php
                 echo get_field("servicio_3")?the_field("servicio_3"):"FIDEICOMISO DE GARANTÍA";
                 ?>
               </h6>
-              <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-2xl leading-6">
+              <p class="mt-2 mb-4 text-[#7B7B7B] font-bold text-lg sm:text-sm lg:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl leading-6">
               <?php
                echo get_field("descripcion_servicio_3")?the_field("descripcion_servicio_3"):"Creación de un contrato por medio del cual se aportan bienes o derechos a CUFRISA, para su administración conforme a los fines del contrato y entrega del recurso a los beneficiarios, protegiendo jurídicamente a todas las partes."
               ?>
@@ -154,7 +154,7 @@ get_header();
 
       <section class="mb-12 sm:mb-0">
        <div class="max-w-screen-xl mx-auto px-4 md:px-8">
-       <h3 class="font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-2xl text-gray-600 text-center">
+       <h3 class="font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl text-gray-600 text-center">
         ESTAMOS REGULADOS Y/O AUTORIZADOS POR:
 
        </h3>
@@ -189,7 +189,7 @@ get_header();
        </div>
       </section>
       
-      <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
+      <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
         <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.png' ?>" 
              loading="lazy" 
