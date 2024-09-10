@@ -163,59 +163,59 @@ get_header();
         <ul class="flex flex-col sm:flex-row gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-10">
 
 
-          <a href='<?php echo get_field('liga_ra_1')?the_field('liga_ra_1'):"https://www.gob.mx/cnbv" ?>'
+          <a href='<?php echo get_field('liga_entidad_1')?the_field('liga_entidad_1'):"https://www.gob.mx/cnbv" ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
-             aria-label="Ir a la pagina de la primera institucion reguladora o que autoriza a cufrisa">
+             aria-label="Ir a la pagina de la primera entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_ra_1")?the_field("logo_ra_1"):get_template_directory_uri().'/public/1.jpg' ?>" 
+          <img src="<?php echo get_field("logo_entidad_1")?the_field("logo_entidad_1"):get_template_directory_uri().'/public/1.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de la primera institucion" 
+               alt="Logo de la primera entidad" 
                class="w-20 sm:w-14 lg:w-16 2xl:w-28 rounded-lg"/>
           
           </a>
           
-          <a href='<?php echo get_field('liga_ra_2')?the_field('liga_ra_2'):"https://www.condusef.gob.mx/" ?>'
+          <a href='<?php echo get_field('liga_entidad_2')?the_field('liga_entidad_2'):"https://www.condusef.gob.mx/" ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
-             aria-label="Ir a la pagina de la segunda institucion reguladora o que autoriza a cufrisa">
+             aria-label="Ir a la pagina de la segunda entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_ra_2")?the_field("logo_ra_2"):get_template_directory_uri().'/public/2.png' ?>" 
+          <img src="<?php echo get_field("logo_entidad_2")?the_field("logo_entidad_2"):get_template_directory_uri().'/public/2.png' ?>" 
                loading="lazy" 
-               alt="Logo de la segunda institucion" 
+               alt="Logo de la segunda entidad" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
           </a>
 
-          <a href='<?php echo get_field('liga_ra_3')?the_field('liga_ra_3'):"https://portalmx.infonavit.org.mx/wps/portal/infonavit.web/proveedores-externos/para-tu-gestion/desarrolladores/programa-desarrolladores/!ut/p/z1/jZDNCoJQEEafpYXLnFHjYu00zBIpgySbTWjYTTCvqCW9fdLPIshbs5vhnJnhA4IIqIivGY-bTBRx3vU7YnvmIs6nI23peqjjemVvglC3Dd_XYPsAdBPRtbEDzLmJ1sxZOGPf0N1QA-r3mcNePvaUhf_5kgdJvn4LJD3BmBwINm9AlsGvLzwgnovkGbhVJIbJgar0mFZppV6qbnxqmrKeKKhg27YqF4LnqXoQZwW_KSdRNxB9klCewzDCbDGk5NZag8EdUCve_w!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/#:~:text=CUFRISA,fcuevas%40cufrisa.com" ?>'
+          <a href='<?php echo get_field('liga_entidad_3')?the_field('liga_entidad_3'):"https://portalmx.infonavit.org.mx/wps/portal/infonavit.web/proveedores-externos/para-tu-gestion/desarrolladores/programa-desarrolladores/!ut/p/z1/jZDNCoJQEEafpYXLnFHjYu00zBIpgySbTWjYTTCvqCW9fdLPIshbs5vhnJnhA4IIqIivGY-bTBRx3vU7YnvmIs6nI23peqjjemVvglC3Dd_XYPsAdBPRtbEDzLmJ1sxZOGPf0N1QA-r3mcNePvaUhf_5kgdJvn4LJD3BmBwINm9AlsGvLzwgnovkGbhVJIbJgar0mFZppV6qbnxqmrKeKKhg27YqF4LnqXoQZwW_KSdRNxB9klCewzDCbDGk5NZag8EdUCve_w!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/#:~:text=CUFRISA,fcuevas%40cufrisa.com" ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
-             aria-label="Ir a la pagina de la tercera institucion reguladora o que autoriza a cufrisa">
+             aria-label="Ir a la pagina de la tercera entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_ra_3")?the_field("logo_ra_3"):get_template_directory_uri().'/public/3.jpg' ?>" 
+          <img src="<?php echo get_field("logo_entidad_3")?the_field("logo_entidad_3"):get_template_directory_uri().'/public/3.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de la tercera institucion" 
+               alt="Logo de la tercera entidad" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
           </a>
 
 
-          <a href='<?php echo get_field('liga_ra_4')?the_field('liga_ra_4'):"https://cufrisa.com/buro-entidades-financieras/" ?>'
+          <a href='<?php echo get_field('liga_entidad_4')?the_field('liga_entidad_4'):"https://cufrisa.com/buro-entidades-financieras/" ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
-             aria-label="Ir a la pagina de la cuarta institucion reguladora o que autoriza a cufrisa">
-          <img src="<?php echo get_field("logo_ra_4")?the_field("logo_ra_4"):get_template_directory_uri().'/public/4.jpg' ?>" 
+             aria-label="Ir a la pagina de la cuarta entidad reguladora o que autoriza a cufrisa">
+          <img src="<?php echo get_field("logo_entidad_4")?the_field("logo_entidad_4"):get_template_directory_uri().'/public/4.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de la cuarta institucion"
+               alt="Logo de la cuarta entidad"
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
           </a>
 
 
-          <a href='<?php echo get_field('liga_ra_5')?the_field('liga_ra_5'):"https://portal.ruv.org.mx/" ?>'
+          <a href='<?php echo get_field('liga_entidad_5')?the_field('liga_entidad_5'):"https://portal.ruv.org.mx/" ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
-             aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
-          <img src="<?php echo get_field("logo_ra_5")?the_field("logo_ra_5"):get_template_directory_uri().'/public/5.png' ?>" 
+             aria-label="Ir a la pagina de la quinta entidad reguladora o que autoriza a cufrisa">
+          <img src="<?php echo get_field("logo_entidad_5")?the_field("logo_entidad_5"):get_template_directory_uri().'/public/5.png' ?>" 
                loading="lazy" 
-               alt="Logo de la quinta institucion" 
+               alt="Logo de la quinta entidad" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
           </a>
 
