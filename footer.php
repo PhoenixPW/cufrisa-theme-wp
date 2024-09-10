@@ -114,7 +114,9 @@
         </div>
    
         <div class="flex flex-col items-center justify-center text-[#E9E9E9] gap-2 sm:gap-0">
-         <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl">AVISO DE PRIVACIDAD</a>
+         <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" 
+            class="sm:max-md:text-sm xl:text-lg 2xl:text-2xl"
+            aria-label="Ir a la pagina de aviso de privacidad">AVISO DE PRIVACIDAD</a>
          <p class="text-[#C5BEBE] text-[0.60rem] xl:text-sm 2xl:text-lg"> <?php echo !empty($derechos)?$derechos:"Copyright © 2024 CUFRISA - Todos los derechos reservados.";?></p>
         </div>
    
