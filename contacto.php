@@ -220,6 +220,14 @@ get_header();
     </section>
 
 
+<!-- 
+
+ ------------------
+      Contenido
+ ------------------
+
+-->
+
     <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40">
       <div class="flex flex-col sm:hidden gap-5">
         <br/>
@@ -348,9 +356,15 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
         
       </div>
       <br/>
-      <h2 class="text-[#1D3750] text-3xl lg:text-4xl 2xl:text-6xl font-extrabold sm:font-bold  2xl:mb-0 text-center">¡VEN A VISITARNOS!</h2>
+      <h2 class="text-[#1D3750] text-3xl lg:text-4xl 2xl:text-6xl font-extrabold sm:font-bold  2xl:mb-0 text-center">
+        <?php
+        echo get_field('titulo_contacto')?the_field('titulo_contacto'):"¡VEN A VISITARNOS!";
+        ?>
+      </h2>
       <p class="text-xl sm:max-lg:text-lg xl:text-2xl 2xl:text-4xl lg:w-7/12 2xl:w-8/12 text-center tracking-normal">
-       Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina.        
+       <?php
+       echo get_field('parrafo_contacto')?the_field('parrafo_contacto'):"Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina."
+       ?>
       </p>
         <iframe class="h-[255px] sm:h-[280px] md:h-[270px] lg:h-[300px] xl:h-[360px] 2xl:h-[420px]" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100vw&amp;height=600&amp;hl=en&amp;q=15%20Sur%20502,%20Villa%20Zerezotla,%20San%20Cristobal%20Tepontla,%2072764%20Cholula%20de%20Rivadavia,%20Pue.+(CUFRISA)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
           href="https://www.gps.ie/">gps vehicle tracker</a></iframe>
