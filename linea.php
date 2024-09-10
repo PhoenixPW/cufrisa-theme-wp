@@ -176,7 +176,7 @@ echo get_field('descripcion_credito_integral')?the_field('descripcion_credito_in
 ?>
 
  </p>
- <a href="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf' ?>" 
+ <a href="<?php echo get_field('liga_credito_integral')?the_field('liga_credito_integral'):get_template_directory_uri().'/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf' ?>" 
     target="_blank" 
     class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
