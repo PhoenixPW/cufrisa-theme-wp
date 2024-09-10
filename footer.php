@@ -37,15 +37,20 @@
             {
            ?>
            <li>
-             <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>">LINEA III INFONAVIT</a>
+             <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>"
+                aria-label="Ir a la pagina de linea 3 infonavit">LINEA III INFONAVIT</a>
            </li>
    
            <li>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>">COMUNICADOS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>"
+               aria-label="Ir a la pagina de comunicados">COMUNICADOS
+            </a>
            </li>
    
            <li>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro-entidades-financieras'))); ?>">BURÓ ENTIDADES FINANCIERAS</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro-entidades-financieras'))); ?>"
+               aria-label="Ir a la pagina de buro de entidades financieras">BURÓ ENTIDADES FINANCIERAS
+             </a>
            </li>
 
            <?php
@@ -56,7 +61,8 @@
              {
               $id = $pagina['ID'];
            ?>
-             <a href="<?php echo get_permalink($id)?>" >
+             <a href="<?php echo get_permalink($id)?>" 
+                aria-label="Ir a la pagina de <?php echo get_the_title($id) ?>">
               <?php
                echo strtoupper(get_the_title($id));
               ?> 
@@ -74,20 +80,32 @@
    
          <ul class="flex gap-10 text-[#E9E9E9]">
    
-          <a href="<?php echo !empty($liga)?$liga:'https://www.facebook.com/cufrisa/' ?>"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/facebook-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($liga)?$liga:'https://www.facebook.com/cufrisa/' ?>"
+             aria-label="Ir a la primera red de contacto"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/facebook-svgrepo-com 1.svg' ?>"
+                alt="Logo red 1" 
+                class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($liga)?$liga:'https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured'?>"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']: get_template_directory_uri().'/public/youtube-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($liga)?$liga:'https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured'?>"
+             aria-label="Ir a la segunda red de contacto"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']: get_template_directory_uri().'/public/youtube-svgrepo-com 1.svg' ?>"
+                alt="Logo red 1" 
+                class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
+             aria-label="Ir a la tercera red de contacto"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
+                alt="Logo red 3" 
+                class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>" class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
+          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
+             aria-label="Ir a la cuarta red de contacto"> 
+           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
+                alt="Logo  red 4" 
+                class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
          </ul>
    

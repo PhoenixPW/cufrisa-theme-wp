@@ -148,7 +148,10 @@ get_header();
   <!--Calificacion -->
 
     <section class="mb-14">
-     <img src="<?php echo get_template_directory_uri(); ?>/public/calificados.png" alt="Calificacion HR AM3-" loading="lazy" class="w-full"></img>
+     <img src="<?php echo get_template_directory_uri(); ?>/public/calificados.png" 
+          alt="Calificacion HR AM3-" 
+          loading="lazy" 
+          class="w-full"></img>
      <article class="bg-[#263650] text-white gap-4 pb-8 pt-5 sm:pt-9 rounded-b-xl">
       <h2 class="text-[1.6rem] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-bold tracking-wider text-center">CALIFICACIÓN</h2>
       <div class="flex flex-col justify-center items-center gap-8">

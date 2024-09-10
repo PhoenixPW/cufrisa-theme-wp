@@ -192,6 +192,7 @@ get_header();
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
         <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.png' ?>" 
+             alt="Logo HR"
              loading="lazy" 
              class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
       </div>
