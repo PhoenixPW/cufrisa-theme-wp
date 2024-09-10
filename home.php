@@ -162,26 +162,64 @@ get_header();
        <div class="mt-6">
         <ul class="flex flex-col sm:flex-row gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-10">
 
+
+          <a href='<?php echo get_field('liga_ra_1')?the_field('liga_ra_1'):"https://www.gob.mx/cnbv" ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la primera institucion reguladora o que autoriza a cufrisa">
+
           <img src="<?php echo get_field("logo_ra_1")?the_field("logo_ra_1"):get_template_directory_uri().'/public/1.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de institucion" 
-               class="w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+               alt="Logo de la primera institucion" 
+               class="w-20 sm:w-14 lg:w-16 2xl:w-28 rounded-lg"/>
+          
+          </a>
+          
+          <a href='<?php echo get_field('liga_ra_2')?the_field('liga_ra_2'):"https://www.condusef.gob.mx/" ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la segunda institucion reguladora o que autoriza a cufrisa">
+
           <img src="<?php echo get_field("logo_ra_2")?the_field("logo_ra_2"):get_template_directory_uri().'/public/2.png' ?>" 
                loading="lazy" 
-               alt="Logo de institucion" 
+               alt="Logo de la segunda institucion" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+          </a>
+
+          <a href='<?php echo get_field('liga_ra_3')?the_field('liga_ra_3'):"https://portalmx.infonavit.org.mx/wps/portal/infonavit.web/proveedores-externos/para-tu-gestion/desarrolladores/programa-desarrolladores/!ut/p/z1/jZDNCoJQEEafpYXLnFHjYu00zBIpgySbTWjYTTCvqCW9fdLPIshbs5vhnJnhA4IIqIivGY-bTBRx3vU7YnvmIs6nI23peqjjemVvglC3Dd_XYPsAdBPRtbEDzLmJ1sxZOGPf0N1QA-r3mcNePvaUhf_5kgdJvn4LJD3BmBwINm9AlsGvLzwgnovkGbhVJIbJgar0mFZppV6qbnxqmrKeKKhg27YqF4LnqXoQZwW_KSdRNxB9klCewzDCbDGk5NZag8EdUCve_w!!/dz/d5/L2dBISEvZ0FBIS9nQSEh/#:~:text=CUFRISA,fcuevas%40cufrisa.com" ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la tercera institucion reguladora o que autoriza a cufrisa">
+
           <img src="<?php echo get_field("logo_ra_3")?the_field("logo_ra_3"):get_template_directory_uri().'/public/3.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de institucion" 
+               alt="Logo de la tercera institucion" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
+          </a>
+
+
+          <a href='<?php echo get_field('liga_ra_4')?the_field('liga_ra_4'):"https://cufrisa.com/buro-entidades-financieras/" ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la cuarta institucion reguladora o que autoriza a cufrisa">
           <img src="<?php echo get_field("logo_ra_4")?the_field("logo_ra_4"):get_template_directory_uri().'/public/4.jpg' ?>" 
                loading="lazy" 
-               alt="Logo de institucion"
+               alt="Logo de la cuarta institucion"
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
+          </a>
+
+
+          <a href='<?php echo get_field('liga_ra_5')?the_field('liga_ra_5'):"https://portal.ruv.org.mx/" ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
           <img src="<?php echo get_field("logo_ra_5")?the_field("logo_ra_5"):get_template_directory_uri().'/public/5.png' ?>" 
                loading="lazy" 
-               alt="Logo de institucion" 
+               alt="Logo de la quinta institucion" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+          </a>
+
+
         </ul>
 
        </div>
@@ -191,10 +229,16 @@ get_header();
       
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
-        <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.png' ?>" 
-             alt="Logo HR"
-             loading="lazy" 
-             class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
+         <a href='<?php echo get_field('liga_calificados')?the_field('liga_calificados'):esc_url(get_permalink(get_page_by_path('nosotros'))).''; ?>'
+             class="hover:opacity-50 transition-all"
+             target="_blank"
+             aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
+         <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.png' ?>" 
+              alt="Logo HR"
+              loading="lazy" 
+              class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
+         </a>
+
       </div>
 
       <?php
