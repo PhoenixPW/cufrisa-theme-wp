@@ -140,7 +140,7 @@ get_header();
                  loading="lazy" 
                  alt="Icono Whatsapp" />
             <?php
-            echo get_field('')?the_field(''):"Envíanos un mensaje"
+            echo get_field('texto_whatsapp')?the_field('texto_whatsapp'):"Envíanos un mensaje"
             ?>
 
         </a>
@@ -356,12 +356,12 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
         
       </div>
       <br/>
-      <h2 class="text-[#1D3750] text-3xl lg:text-4xl 2xl:text-6xl font-extrabold sm:font-bold  2xl:mb-0 text-center">
+      <h2 class="text-[#1D3750] text-3xl lg:text-4xl 2xl:text-5xl min-[1920px]:text-6xl font-extrabold sm:font-bold  2xl:mb-0 text-center">
         <?php
         echo get_field('titulo_contacto')?the_field('titulo_contacto'):"¡VEN A VISITARNOS!";
         ?>
       </h2>
-      <p class="text-xl sm:max-lg:text-lg xl:text-2xl 2xl:text-4xl lg:w-7/12 2xl:w-8/12 text-center tracking-normal">
+      <p class="text-xl sm:max-lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl lg:w-7/12 2xl:w-8/12 text-center tracking-normal">
        <?php
        echo get_field('parrafo_contacto')?the_field('parrafo_contacto'):"Nos encanta recibir a nuestros clientes, así que ven en cualquier momento durante las horas de oficina."
        ?>
@@ -371,7 +371,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
         <br/>
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" 
-           class="bg-[#263650] w-11/12 sm:w-6/12 xl:w-7/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+           class="bg-[#263650] w-11/12 sm:w-6/12 xl:w-7/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl min-[1920px]:text-4xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
         AVISO DE PRIVACIDAD
         </a>
         <br/>

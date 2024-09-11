@@ -117,7 +117,7 @@ echo get_field('subtitulo_cuerpo_linea')?the_field('subtitulo_cuerpo_linea'):"PR
 <p class="text-lg sm:text-sm md:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
 <?php
 
-echo get_field('')?the_field(''):"El financiamiento a través de la Línea 3, se lleva a cabo por medio de la evaluación y monitoreo de una entidad administradora, en este caso CUFRISA, la cual se encarga de evaluar la viabilidad técnica y financiera de los proyectos y, de ser factibles, la administración los recursos para paquetes de viviendas."
+echo get_field('parrafo_cuerpo_linea')?the_field('parrafo_cuerpo_linea'):"El financiamiento a través de la Línea 3, se lleva a cabo por medio de la evaluación y monitoreo de una entidad administradora, en este caso CUFRISA, la cual se encarga de evaluar la viabilidad técnica y financiera de los proyectos y, de ser factibles, la administración los recursos para paquetes de viviendas."
 
 ?>
 

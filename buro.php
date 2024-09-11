@@ -102,7 +102,8 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
   echo get_field('semaforo')?the_field('semaforo'):"Semaforo (2024) PDF"
   ?>
  </p>
- <a href="<?php echo get_field('liga_semaforo')?the_field('liga_semaforo'):get_template_directory_uri().'/assets/pdf/Semaforo 2023.pdf' ?>" 
+ <a href="<?php echo get_field('liga_semaforo')?the_field('liga_semaforo'):get_template_directory_uri().'/assets/pdf/Semaforo 2023.pdf' ?>"
+    aria-label="Descargar el PDF de semaforo" 
     target="_blank" 
     class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
