@@ -11,7 +11,7 @@ get_header();
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-         style="background-image: url('<?php echo get_field('imagen_comunicados')?the_field('imagen_comunicados'):get_template_directory_uri().'/public/comunicados.png' ?>')">
+         style="background-image: url('<?php echo get_field('imagen_comunicados')?the_field('imagen_comunicados'):get_template_directory_uri().'/public/comunicados.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start">
 
 <div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-7/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16 items-center sm:items-stretch pb-28 sm:pb-0 gap-10">
@@ -56,7 +56,7 @@ get_header();
  echo get_field('comunicado_1')?the_field('comunicado_1'):"Comunicado CUFRISA 9 de noviembre 2023. Pagina web que suplanta nuestro nombre. (pdf)"
 ?>
 </p>
-<a href="<?php echo get_field('liga_comunicado_1')?the_field('liga_comunicado_1'):get_template_directory_uri().'/assets/pdf/' ?>" 
+<a href="<?php echo get_field('liga_comunicado_1')?the_field('liga_comunicado_1'):get_template_directory_uri().'/assets/pdf/Comunicado CUFRISA 9 de noviembre 2023.pdf' ?>" 
    target="_blank" 
    class="flex sm:flex-row justify-center sm:items-center  bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
@@ -76,7 +76,7 @@ get_header();
  echo get_field('comunicado_2')?the_field('comunicado_2'):"Comunicado CONDUSEF 1 de Noviembre 2019 SUPLANTACIÓN DE NUESTRA IDENTIDAD (pdf)"
 ?>
 </p>
-<a href="<?php echo get_field('liga_comunicado_2')?the_field('liga_comunicado_2'):get_template_directory_uri().'/assets/pdf/' ?>" 
+<a href="<?php echo get_field('liga_comunicado_2')?the_field('liga_comunicado_2'):get_template_directory_uri().'/assets/pdf/Comunicado CONDUSEF 1 de Noviembre 2019.pdf' ?>" 
    target="_blank" 
    class="flex sm:flex-row justify-center sm:items-center  bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
@@ -98,7 +98,7 @@ echo get_field('comunicado_3')?the_field('comunicado_3'):"Comunicado CUFRISA 17 
 ?>
 
 </p>
-<a href="<?php echo get_field('liga_comunicado_3')?the_field('liga_comunicado_3'):get_template_directory_uri().'/assets/pdf/' ?>" 
+<a href="<?php echo get_field('liga_comunicado_3')?the_field('liga_comunicado_3'):get_template_directory_uri().'/assets/pdf/Comunicado CUFRISA 17 de Septiembre 2019.pdf' ?>" 
    target="_blank" 
    class="flex sm:flex-row justify-center sm:items-center  bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 
@@ -118,7 +118,7 @@ echo get_field('comunicado_3')?the_field('comunicado_3'):"Comunicado CUFRISA 17 
 ?>
 
 </p>
-<a href="<?php echo get_field('liga_comunicado_4')?the_field('liga_comunicado_4'):get_template_directory_uri().'/assets/pdf/' ?>" 
+<a href="<?php echo get_field('liga_comunicado_4')?the_field('liga_comunicado_4'):get_template_directory_uri().'/assets/pdf/Comunicado CUFRISA 27 de mayo 2019.pdf' ?>" 
    target="_blank" 
    class="flex sm:flex-row justify-center sm:items-center  bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
 

@@ -14,7 +14,7 @@ get_header();
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" 
-         style="background-image: url('<?php echo get_field("imagen_principal_inicio")?:get_template_directory_uri().'/public/inicio.png' ?>')">
+         style="background-image: url('<?php echo get_field("imagen_principal_inicio")?:get_template_directory_uri().'/public/inicio.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
@@ -168,7 +168,7 @@ get_header();
              target="_blank"
              aria-label="Ir a la pagina de la primera entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_entidad_1")?the_field("logo_entidad_1"):get_template_directory_uri().'/public/1.jpg' ?>" 
+          <img src="<?php echo get_field("logo_entidad_1")?the_field("logo_entidad_1"):get_template_directory_uri().'/public/cnbv.webp' ?>" 
                loading="lazy" 
                alt="Logo de la primera entidad" 
                class="w-20 sm:w-14 lg:w-16 2xl:w-28 rounded-lg"/>
@@ -180,7 +180,7 @@ get_header();
              target="_blank"
              aria-label="Ir a la pagina de la segunda entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_entidad_2")?the_field("logo_entidad_2"):get_template_directory_uri().'/public/2.png' ?>" 
+          <img src="<?php echo get_field("logo_entidad_2")?the_field("logo_entidad_2"):get_template_directory_uri().'/public/2.webp' ?>" 
                loading="lazy" 
                alt="Logo de la segunda entidad" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
@@ -191,7 +191,7 @@ get_header();
              target="_blank"
              aria-label="Ir a la pagina de la tercera entidad reguladora o que autoriza a cufrisa">
 
-          <img src="<?php echo get_field("logo_entidad_3")?the_field("logo_entidad_3"):get_template_directory_uri().'/public/3.jpg' ?>" 
+          <img src="<?php echo get_field("logo_entidad_3")?the_field("logo_entidad_3"):get_template_directory_uri().'/public/3.webp' ?>" 
                loading="lazy" 
                alt="Logo de la tercera entidad" 
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
@@ -202,7 +202,7 @@ get_header();
              class="hover:opacity-50 transition-all"
              target="_blank"
              aria-label="Ir a la pagina de la cuarta entidad reguladora o que autoriza a cufrisa">
-          <img src="<?php echo get_field("logo_entidad_4")?the_field("logo_entidad_4"):get_template_directory_uri().'/public/4.jpg' ?>" 
+          <img src="<?php echo get_field("logo_entidad_4")?the_field("logo_entidad_4"):get_template_directory_uri().'/public/4.webp' ?>" 
                loading="lazy" 
                alt="Logo de la cuarta entidad"
                class=" w-20 sm:w-14 lg:w-16 2xl:w-20  rounded-lg"/>
@@ -213,10 +213,10 @@ get_header();
              class="hover:opacity-50 transition-all"
              target="_blank"
              aria-label="Ir a la pagina de la quinta entidad reguladora o que autoriza a cufrisa">
-          <img src="<?php echo get_field("logo_entidad_5")?the_field("logo_entidad_5"):get_template_directory_uri().'/public/5.png' ?>" 
+          <img src="<?php echo get_field("logo_entidad_5")?the_field("logo_entidad_5"):get_template_directory_uri().'/public/ruv.webp' ?>" 
                loading="lazy" 
                alt="Logo de la quinta entidad" 
-               class=" w-20 sm:w-14 lg:w-16 2xl:w-28  rounded-lg"/>
+               class=" w-44 sm:w-36 lg:w-40 2xl:w-44  rounded-lg"/>
           </a>
 
 
@@ -252,6 +252,8 @@ get_header();
 
 
 </div>
+  <!-- Swiper JS -->
+  <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

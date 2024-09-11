@@ -11,7 +11,7 @@ get_header();
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-         style="background-image: url('<?php echo get_field("imagen_privacidad")?the_field("imagen_privacidad"):get_template_directory_uri().'/public/nosotros.png' ?>')">
+         style="background-image: url('<?php echo get_field("imagen_privacidad")?the_field("imagen_privacidad"):get_template_directory_uri().'/public/nosotros.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
 <h1 class="text-center text-4xl sm:text-5xl 2xl:text-6xl font-bold mb-4 tracking-wider">
     <?php

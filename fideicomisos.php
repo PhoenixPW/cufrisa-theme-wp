@@ -19,7 +19,7 @@ get_header();
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-         style="background-image: url('<?php echo get_field('imagen_fideicomisos')?the_field('imagen_fideicomisos'):get_template_directory_uri().'/public/fideicomisos.png' ?>')">
+         style="background-image: url('<?php echo get_field('imagen_fideicomisos')?the_field('imagen_fideicomisos'):get_template_directory_uri().'/public/fideicomisos.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-32 sm:pb-0 items-center sm:items-stretch">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
@@ -98,7 +98,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 </p>
 
 <section class="flex flex-col-reverse sm:flex-row gap-7 sm:max-lg:gap-5 items-center">
-<img src="<?php echo get_field('diagrama_fideicomiso')?the_field('diagrama_fideicomiso'):get_template_directory_uri().'/public/diagrama.png' ?>" 
+<img src="<?php echo get_field('diagrama_fideicomiso')?the_field('diagrama_fideicomiso'):get_template_directory_uri().'/public/diagrama.webp' ?>" 
      alt="Roles" 
      loading="lazy" 
      class="sm:w-7/12"></img>

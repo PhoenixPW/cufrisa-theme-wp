@@ -22,7 +22,7 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-         style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.png' ?>')">
+         style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
 <div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 pb-32 sm:pb-0 2xl:pt-16">
 
@@ -89,30 +89,74 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 ?>
 
 
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.webp' ?>" 
      alt="Proyecto 1" 
      loading="lazy" 
      class="w-full sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto2.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto2.webp' ?>" 
      alt="Proyecto 2" 
      loading="lazy" 
      class="sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto3.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto3.webp' ?>" 
      alt="Proyecto 3" 
      loading="lazy" 
      class="sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto4.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto4.webp' ?>" 
      alt="Proyecto 4" 
      loading="lazy" 
      class="sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto5.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto5.webp' ?>" 
      alt="Proyecto 5" 
      loading="lazy" 
      class="sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.jpg' ?>" 
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
      class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto7.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto8.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto9.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto10.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto12.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto13.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto14.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto15.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto17.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3"/>
+<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto18.webp' ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3 "/>
 
 <?php
  }

@@ -17,7 +17,7 @@ get_header();
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-         style="background-image: url('<?php echo get_field('imagen_buro')?the_field('imagen_buro'):get_template_directory_uri().'/public/buro.png' ?>')">
+         style="background-image: url('<?php echo get_field('imagen_buro')?the_field('imagen_buro'):get_template_directory_uri().'/public/buro.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
 <div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch pb-44 sm:pb-0">

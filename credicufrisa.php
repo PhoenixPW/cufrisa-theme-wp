@@ -20,7 +20,7 @@ get_header();
 
 <section id="hero"
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left"
-         style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.png' ?>')">
+         style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.webp' ?>')">
 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-28 sm:pb-0 gap-3 sm:gap-0">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp"

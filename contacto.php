@@ -49,7 +49,7 @@ get_header();
 
     <section id="hero" 
              class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
-             style="background-image: url('<?php echo get_field('imagen_contacto')?the_field('imagen_contacto'):get_template_directory_uri().'/public/contacto.png' ?>')">
+             style="background-image: url('<?php echo get_field('imagen_contacto')?the_field('imagen_contacto'):get_template_directory_uri().'/public/contacto.webp' ?>')">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:max-xl:px-8 xl:px-12 sm:pt-16 xl:pl-20 ">
     
       <div class="flex flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words items-center sm:items-stretch pb-24 sm:pb-0 ">
