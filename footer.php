@@ -18,6 +18,12 @@
  $paginas = $pod_footer->field("ligas"); 
  $logo = $pod_footer->field("logo1");
  $liga = $pod_footer->field("liga_1");
+ $logo2 = $pod_footer->field("logo2");
+ $liga2 = $pod_footer->field("liga_2");
+ $logo3 = $pod_footer->field("logo3");
+ $liga3 = $pod_footer->field("liga_3");
+ $logo4 = $pod_footer->field("logo4");
+ $liga4 = $pod_footer->field("liga_4");
 // $pagina_privacidad = $pod_footer->field("liga_privacidad");
  $derechos = $pod_footer->field("derechos");
 
@@ -87,23 +93,23 @@
                 class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($liga)?$liga:'https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured'?>"
+          <a href="<?php echo !empty($liga2)?$liga:'https://www.youtube.com/channel/UC2sDwBu_Q6NzxRKqgnOtBUg/featured'?>"
              aria-label="Ir a la segunda red de contacto"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']: get_template_directory_uri().'/public/youtube-svgrepo-com 1.svg' ?>"
+           <img src="<?php echo !empty($logo2)?$logo['guid']: get_template_directory_uri().'/public/youtube-svgrepo-com 1.svg' ?>"
                 alt="Logo red 1" 
                 class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
+          <a href="<?php echo !empty($logo3)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
              aria-label="Ir a la tercera red de contacto"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
+           <img src="<?php echo !empty($logo3)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
                 alt="Logo red 3" 
                 class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
    
-          <a href="<?php echo !empty($logo)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
+          <a href="<?php echo !empty($logo4)?$logo:'https://www.linkedin.com/company/cufrisa' ?>"
              aria-label="Ir a la cuarta red de contacto"> 
-           <img src="<?php echo !empty($logo)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
+           <img src="<?php echo !empty($logo4)?$logo['guid']:get_template_directory_uri().'/public/linkedin-svgrepo-com 1.svg' ?>"
                 alt="Logo  red 4" 
                 class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>

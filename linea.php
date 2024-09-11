@@ -79,7 +79,7 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 ?>
 </h2>
 
-<ul class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
+<div class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.jpg' ?>" 
      alt="Proyecto 1" 
      loading="lazy" 
@@ -104,7 +104,7 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
      alt="Proyecto 6" 
      loading="lazy" 
      class="sm:w-1/3"/>
-</ul>
+</div>
 
 <h3 class="text-3xl sm:text-2xl xl:text-2xl 2xl:text-3xl font-bold tracking-wide">
 
@@ -178,6 +178,7 @@ echo get_field('descripcion_credito_integral')?the_field('descripcion_credito_in
  </p>
  <a href="<?php echo get_field('liga_credito_integral')?the_field('liga_credito_integral'):get_template_directory_uri().'/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf' ?>" 
     target="_blank" 
+    aria-label="Enlace para ir al archivo de credito integral"  
     class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
@@ -205,6 +206,7 @@ echo get_field('reglas_checklist_desarrolladores')?the_field('reglas_checklist_d
  </p>
  <a href="<?php echo get_field('liga_reglas_de_operacion')?the_field('liga_reglas_de_operacion'):get_template_directory_uri().'/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf' ?>" 
     target="_blank" 
+    aria-label="Enlace para ir al archivo de las reglas de operacion"  
     class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
@@ -222,7 +224,8 @@ echo get_field('reglas_checklist_desarrolladores')?the_field('reglas_checklist_d
 
 </p>
  <a href="<?php echo get_field('liga_checklist')?the_field('liga_checklist'):get_template_directory_uri().'/assets/pdf/Check List Credito Integral 1.0.pdf' ?>" 
-    target="_blank" 
+    target="_blank"
+    aria-label="Enlace para ir al archivo de Check List"  
     class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
   <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 

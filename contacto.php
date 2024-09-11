@@ -210,7 +210,9 @@ get_header();
 
 
        <textarea name="mensaje" rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm sm:max-lg:text-xs focus:ring-offset-sky-200 text-black"></textarea>
-       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold" name="enviar_formulario">Enviar</button>
+       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold" 
+               arial-label="Boton para enviar formulario"
+               name="enviar_formulario">Enviar</button>
 
       </form>
 
@@ -247,8 +249,9 @@ get_header();
                  class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1 "/>
             </div>
             <p class="sm:w-7/12 leading-6">
-Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico
-
+            <?php
+echo get_field('direccion')?the_field('direccion'):"Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Puebla, Mexico
+"?>
             </p>
           </li>
 
@@ -260,8 +263,9 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
                  class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
-             (222) 1970977
-             
+            <?php
+echo get_field('telefono')?the_field('telefono'):"             (222) 1970977"             
+?>
             </p>
           </li>
 
@@ -273,18 +277,23 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
                  class="md:w-7 lg:w-7 xl:w-8 2xl:w-9 sm:pl-1 md:pl-1 lg:pl-2 xl:pl-2 2xl:pl-1"/>
             </div>
             <p>
-              Lunes a Viernes de 9:00 am a 06:00 pm
+            <?php
+ echo get_field('horario')?the_field('horario'):"              Lunes a Viernes de 9:00 am a 06:00 pm"
+             ?>
             </p>
           </li>
         </ul>
 
         <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" 
            target="_blank" 
+           aria-label="Enlace para abrir Whatsapp en dispositivos moviles o ir a la pagina de Whatsaap en computadoras para poder enviar un mensaje a cufrisa"  
            class="flex items-center gap-2 text-lg bg-white text-black rounded py-3 xl:w-4/12 justify-center shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">
             <img src="<?php echo get_template_directory_uri(); ?>/public/whatsapp.svg" 
                  loading="lazy" 
                  alt="Icono Whatsapp"/>
-            Envíanos un mensaje
+            <?php
+            echo "            Envíanos un mensaje"
+?>
         </a>
 
         <form method="POST" class="flex flex-col bg-white  rounded-2xl text-lg 2xl:text-2xl p-9 2xl:p-12  gap-7 2xl:gap-9">
@@ -349,7 +358,9 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
 
        <textarea name="mensaje" rows="4" placeholder="Escriba su mensaje" class="rounded p-2 px-3 w-full h-full border border-gray-400 focus:outline-0 focus:ring-1 focus:ring-offset-1 text-sm focus:ring-offset-sky-200 text-black"></textarea>
-       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold text-white" name="enviar_formulario">Enviar</button>
+       <button class="bg-[#1D3750] py-3 rounded-lg font-semibold text-white" 
+               aria-label="Boton para enviar formulario"
+               name="enviar_formulario">Enviar</button>
 
       </form>
 
@@ -371,7 +382,8 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
 
         <br/>
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('aviso-de-privacidad'))); ?>" 
-           class="bg-[#263650] w-11/12 sm:w-6/12 xl:w-7/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl min-[1920px]:text-4xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
+        aria-label="Enlace para ir a la pagina del aviso de privacidad de cufrisa"  
+        class="bg-[#263650] w-11/12 sm:w-6/12 xl:w-7/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl min-[1920px]:text-4xl py-4 2xl:py-6 rounded shadow-md hover:bg-blue-600 transition-colors duration-300">
         AVISO DE PRIVACIDAD
         </a>
         <br/>
@@ -383,7 +395,9 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
             class="<?php echo !$formulario_enviado? "hidden":"";?> flex items-center justify-center w-full h-screen bg-black bg-opacity-70 transition-all duration-300">
       <div class="flex flex-col gap-4 items-center w-11/12 sm:w-9/12 md:w-8/12 lg:w-7/12 xl:w-5/12 bg-[#e7e7e7] rounded-lg p-4 px-8 py-10">
        <div class="relative inset-0 flex justify-end w-full left-7 sm:left-16 bottom-10">
-       <button id="botonCerrarConIcono" class="w-3/12">
+       <button id="botonCerrarConIcono"
+               aria-label="Boton para cerrar la ventala que indica el estado del envio" 
+               class="w-3/12">
        <svg class="w-full h-[16px]" xmlns="http://www.w3.org/2000/svg" height="19pt" viewBox="0 0 329.26933 329" width="329pt"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
         </button>
        
@@ -394,7 +408,7 @@ Calle 15 Sur 502 A, 72764 Colonia Plazuelas de Zerezotla, San Pedro Cholula, Pue
        <p class="text-xl 2xl:text-lg text-center">
         <?php echo $envio_correcto?$mensaje_envio_exitoso:$mensaje_envio_fallido ?>
        </p>
-       <button type="button"  id="botonCerrar" class="bg-[#263650] text-white text-xl sm:text-lg font-semibold rounded-md w-10/12 sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 p-3 ">Volver a la pagina</button>
+       <button type="button" aria-label="Boton para cerrar la ventala que indica el estado del envio" id="botonCerrar" class="bg-[#263650] text-white text-xl sm:text-lg font-semibold rounded-md w-10/12 sm:w-7/12 md:w-6/12 lg:w-5/12 xl:w-4/12 p-3 ">Volver a la pagina</button>
       </div>
         
     </dialog>

@@ -196,7 +196,9 @@ echo get_field('parrafo_nosotros')?the_field('parrafo_nosotros'):
         echo get_field('parrafo_contenedor_calificacion')?the_field('parrafo_contenedor_calificacion'):"CUFRISA cuenta con una calificación AM3- con perspectiva estable por parte de HR Ratings Credit Rating Agency. Entidad administradora Línea 3 infonavit fideicomiso"
         ?>
        </p>
-       <a href="https://www.hrratings.com/rating_detail.xhtml?rel=10565" class="bg-white text-[#263650] text-2xl 2xl:text-3xl min-[1920px]:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
+       <a href="https://www.hrratings.com/rating_detail.xhtml?rel=10565" 
+          aria-label="Enlace para ir a la pagina que muestra la calificacion dada a cufrisa por HR Ratings"
+          class="bg-white text-[#263650] text-2xl 2xl:text-3xl min-[1920px]:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
         <?php
         echo get_field('texto_boton_calificacion')?the_field('texto_boton_calificacion'):"Consultar calificación"
         ?>

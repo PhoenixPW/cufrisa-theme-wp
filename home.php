@@ -18,7 +18,7 @@ get_header();
 <div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
-  <h1 class="text-4xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold tracking-wider">
+  <h1 class="text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold tracking-wider">
     <?php
      echo get_field("titular_de_la_pagina")?the_field("titular_de_la_pagina"):"SOLUCIONES DE <br/> FINANCIAMIENTO INMOBILIARIO";
     ?>
@@ -160,7 +160,7 @@ get_header();
        </h3>
 
        <div class="mt-6">
-        <ul class="flex flex-col sm:flex-row gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-10">
+        <div class="flex flex-col sm:flex-row gap-x-10 gap-y-6 flex-wrap items-center justify-center md:gap-x-10">
 
 
           <a href='<?php echo get_field('liga_entidad_1')?the_field('liga_entidad_1'):"https://www.gob.mx/cnbv" ?>'
@@ -220,7 +220,7 @@ get_header();
           </a>
 
 
-        </ul>
+        </div>
 
        </div>
 
