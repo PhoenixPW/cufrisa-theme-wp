@@ -124,7 +124,7 @@
 
  $opciones_visibles;
  $opciones_restantes;
-// echo "Hi";
+ $nombre_pagina_actual = strtoupper(get_the_title());
 // echo empty($logo)?"Hello":"Karl";
 // echo $logo;
  
@@ -168,22 +168,22 @@
                  if(empty($menu))
                  {
                 ?>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="text-white hover:text-gray-300 <?php echo in_array("INICIO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
                 <hr />
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("LINEA",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
                 <hr />
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('fideicomisos-de-garantia'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('fideicomisos-de-garantia'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("FIDEICOMISOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
                 <hr />
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('credicufrisa'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('credicufrisa'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("CREDICUFRISA",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
                 <hr />
 
                 <!-- Dropdown Menu Mobile -->
                 <div class="relative group sm:hidden flex flex-col gap-4">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("COMUNICADOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
                     <hr />
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("NOSOTROS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
                     <hr />
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="text-white hover:text-gray-300 <?php echo in_array("CONTACTO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
                     <hr />
                 </div>
 
@@ -194,9 +194,9 @@
 
                     <!-- Dropdown Menu -->
                     <div class="absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-200">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Comunicados</a>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Nosotros</a>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">Contacto</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg <?php echo in_array("COMUNICADOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>">Comunicados</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo in_array("NOSOTROS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>>Nosotros</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo in_array("CONTACTO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>>Contacto</a>
                     </div>
                 </div>
 
@@ -208,10 +208,11 @@
                   {
                    foreach($opciones_visibles as $pagina)
                    {
+                    
                     $id_pagina = $pagina['ID'];
                     
                 ?>
-                    <a href="<?php echo get_permalink($id_pagina)?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">
+                    <a href="<?php echo get_permalink($id_pagina)?>" class="<?php echo $id_pagina==get_the_ID()?"font-extrabold":"font-normal"?>  text-white hover:text-gray-300 sm:text-xl transition-all duration-300 px-6 sm:px-0">
 
                      <?php echo strtoupper(get_the_title($id_pagina))?>
 
@@ -229,7 +230,7 @@
                    {
                     $id = $pagina['ID'];
                 ?>
-                    <a href="<?php echo get_permalink($id); ?>" class="text-white hover:text-gray-300 font-normal sm:text-xl transition-all duration-300 px-6 sm:px-0">
+                    <a href="<?php echo get_permalink($id); ?>" class="text-white hover:text-gray-300 <?php echo $id==get_the_ID()?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">
                       <?php echo strtoupper(get_the_title($id));?>
                     </a>
                     <hr />
@@ -254,7 +255,7 @@
                   {
                    $id = $pagina['ID'];
                 ?>
-                  <a href="<?php echo get_permalink($id) ?>" class="block px-4 py-2 hover:bg-gray-700 text-lg">
+                  <a href="<?php echo get_permalink($id) ?>" class=" <?php echo $id==get_the_ID()?"font-bold":"font-light"?> block px-4 py-2 hover:bg-gray-700 text-lg">
                    <?php echo strtoupper(get_the_title($id))?>
                   </a>
 
