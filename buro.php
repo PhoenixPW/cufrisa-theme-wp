@@ -27,7 +27,7 @@ get_header();
      alt="Logo" 
      class="w-5/12 sm:hidden" />
 
-<h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
+<h1 class="text-4xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl min-[1920px]:text-6xl font-bold mb-4 tracking-wider text-center sm:text-left sm:w-11/12">
 
    <?php
     echo get_field("titular_buro")?the_field("titular_buro"):"BURÓ DE ENTIDADES FINANCIERAS";
@@ -36,7 +36,7 @@ get_header();
   </h1>
   
   <div class="hidden sm:block">
-   <p class="text-xl sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl font-light sm:w-8/12 lg:w-7/12 leading-6">
+   <p class="text-xl sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-light sm:w-8/12 lg:w-7/12 leading-6">
 
     <?php
     echo get_field("cuerpo_hero_buro")?the_field("cuerpo_hero_buro"):"Es una herramienta de consulta y difusión con la que podrás conocer los productos que ofrecen las entidades financieras, sus comisiones y tasas, y otra información que resulte relevante para informarte sobre su desempeño.";
@@ -65,14 +65,14 @@ get_header();
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9">
-<h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold tracking-wider mb-5">
+<h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-bold tracking-wider mb-5">
 <?php   
 
 echo get_field('titulo_buro')?the_field('titulo_buro'):"FUNCIÓN"
 
 ?>
 </h2>
-<p class="text-base sm:text-sm xl:text-xl 2xl:text-2xl">
+<p class="text-base sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
 <?php
 
 echo get_field('parrafo_buro')?the_field('parrafo_buro'):
@@ -97,7 +97,7 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
 </p>
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between sm:my-8">
- <p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl sm:w-7/12 lg:w-9/12">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
   <?php
   echo get_field('semaforo')?the_field('semaforo'):"Semaforo (2024) PDF"
   ?>
@@ -105,8 +105,12 @@ La información que corresponde a Soluciones Patrimoniales CUFRISA S.A. de C.V. 
  <a href="<?php echo get_field('liga_semaforo')?the_field('liga_semaforo'):get_template_directory_uri().'/assets/pdf/Semaforo 2023.pdf' ?>"
     aria-label="Descargar el PDF de semaforo" 
     target="_blank" 
-    class="bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl 2xl:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
   Descargar
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy"
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
  </a>
 </article>
 
