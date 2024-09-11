@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script async src="https://cdn.tailwindcss.com"></script>
   <!-- Swiper JS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<?php wp_head(); ?>
 
@@ -57,6 +57,8 @@
     .swiper-slide img {
       display: block;
       width: 100%;
+      height: 200px;
+      object-fit:contain;
     }
 
     .swiper-slide-next,
@@ -76,8 +78,8 @@
     }
 
     .swiper-pagination-bullet {
-      width: 28px;
-      height: 28px;
+      width: 30px;
+      height: 30px;
       background-color: #D9D9D9;
       border: 1px solid black;
       margin: 0 20px !important; /* Force margin between bullets */
@@ -104,8 +106,8 @@
       }
 
       .swiper-pagination-bullet {
-        width: 36px;
-        height: 36px;
+        width: 18px;
+        height: 18px;
       }
     }
 

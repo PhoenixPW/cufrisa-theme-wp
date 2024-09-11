@@ -2,6 +2,9 @@
 /* Template Name: Linea III */
 get_header(); 
 
+$pod_proyectos = pods("editar_proyectos_cufrisa");
+$proyectos = $pod_proyectos->field("proyectos_realizados");
+
 ?>
 
 <main>
@@ -78,8 +81,14 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 
 ?>
 </h2>
-
 <div class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
+
+<?php
+ if(empty($proyectos))
+ {
+?>
+
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.jpg' ?>" 
      alt="Proyecto 1" 
      loading="lazy" 
@@ -104,6 +113,26 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
      alt="Proyecto 6" 
      loading="lazy" 
      class="sm:w-1/3"/>
+
+<?php
+ }
+ else
+ {
+  foreach($proyectos as $proyecto)
+  {
+
+   ?>
+   <img src="<?php echo $proyecto['guid'] ?>" 
+     alt="Proyecto 6" 
+     loading="lazy" 
+     class="sm:w-1/3 object-contain h-56"/>
+
+   <?php 
+  }
+   ?>
+<?php
+ }
+?>
 </div>
 
 <h3 class="text-3xl sm:text-2xl xl:text-2xl 2xl:text-3xl font-bold tracking-wide">
@@ -149,14 +178,20 @@ echo get_field('segundo_subtitulo_linea')?the_field('segundo_subtitulo_linea'):"
 </p>
 <br/>
 
-<iframe class="w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]" 
-        src="https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
+<?php
+
+echo get_field('video_linea3')?the_field('video_linea3'):
+"
+<iframe class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' 
+        src='https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd'
+        title='YouTube video player' 
+        frameborder='0' 
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' 
+        referrerpolicy='strict-origin-when-cross-origin' 
         allowfullscreen>
 </iframe>
+"
+?>
 
 <br/>
 
