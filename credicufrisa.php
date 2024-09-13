@@ -6,7 +6,7 @@ get_header();
 
 <main>
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 
 <!--
@@ -19,9 +19,9 @@ get_header();
 
 
 <section id="hero"
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left"
+         class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left"
          style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-28 sm:pb-0 gap-3 sm:gap-0">
+<div class="sm:absolute inset-0 bg-gradient-to-t from-black/90 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-10 pt-32 sm:pt-0 sm:pb-0 gap-3 sm:gap-0">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp"
      loading="lazy"
@@ -145,7 +145,7 @@ get_header();
 -->
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10 rounded-t-[1.92rem]">
 
 <article class="flex flex-col sm:hidden text-center gap-3">
 <div class="px-5">
