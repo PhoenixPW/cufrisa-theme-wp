@@ -1864,11 +1864,6 @@ video {
     width: 17px;
   }
 
-  .sm\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2437,11 +2432,6 @@ video {
     width: 24px;
   }
 
-  .lg\:columns-3 {
-    -moz-columns: 3;
-         columns: 3;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2695,11 +2685,6 @@ video {
 
   .xl\:w-\[30px\] {
     width: 30px;
-  }
-
-  .xl\:columns-4 {
-    -moz-columns: 4;
-         columns: 4;
   }
 
   .xl\:gap-7 {

@@ -122,7 +122,12 @@ get_header();
                        alt="Icono mision"/> 
                 <h3 class="text-white text-xl sm:text-base md:text-lg xl:text-xl 2xl:text-2xl font-semibold text-center">Misión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
-                Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados.
+
+                <?php
+                echo get_field('texto_mision')?the_field('texto_mision'):"Ofrecer a nuestros clientes enfocados al giro inmobiliario, la mejor opción para que brinden viviendas dignas y de calidad a la sociedad mexicana otorgándoles seguridad y certeza tanto jurídica y financiera a través de servicios personalizados."
+
+                ?>
+                
                 </p>
               </div>
             </div>
@@ -136,8 +141,9 @@ get_header();
                        alt="Icono vision"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Visión</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
-                Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes.
-
+                <?php
+                echo get_field('texto_vision')?the_field('texto_vision'):"Consolidarnos como uno de los mejores fiduciarios, así como la mejor entidad administradora y financiera a nivel nacional, con capital humano suficiente y capacidad operativa para controlar y administrar diversos productos financieros e inmobiliarios, siempre tomando en consideración la consolidación del patrimonio de la empresa para crecer con pasos firmes y sólidos, garantizando la operación de Cufrisa y seguridad de nuestros clientes."
+                ?>
                 </p>
               </div>
             </div>
@@ -150,7 +156,10 @@ get_header();
                        alt="Icono valores"/> 
                 <h3 class="text-xl 2xl:text-2xl font-semibold text-center text-white">Valores</h3>
                 <p class="text-base 2xl:text-xl font-extralight text-center text-white">
-                Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad.
+                  
+                <?php
+                echo get_field('texto_valores')?the_field('texto_valores'):"Transparencia, Excelencia, Responsabilidad, Pasión, Resolución y Honestidad."
+                ?>
 
                 </p>
               </div>

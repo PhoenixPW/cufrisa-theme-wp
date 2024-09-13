@@ -152,7 +152,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 echo get_field('video_fideicomisos')?the_field('video_fideicomisos'):
 "
 
-<iframe class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[190px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' src='https://www.youtube.com/embed/ClkK2OV0u_8?si=saLFYlMnXkPsxwnf' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
+<iframe loading='lazy' class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[190px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' src='https://www.youtube.com/embed/ClkK2OV0u_8?si=saLFYlMnXkPsxwnf' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
 "
 ?>
 

@@ -17,9 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script async src="https://cdn.tailwindcss.com"></script>
-  <!-- Swiper JS -->
-  <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 	<?php wp_head(); ?>
 
@@ -47,6 +45,7 @@
     }
 
     .swiper-slide {
+      background-color:transparent;
       background-position: center;
       background-size: cover;
       width: 40%;
@@ -57,8 +56,8 @@
     .swiper-slide img {
       display: block;
       width: 100%;
-      height: 200px;
-      object-fit:contain;
+      height: 250px;
+      object-fit:cover;
     }
 
     .swiper-slide-next,
@@ -122,20 +121,23 @@
  $pod = pods("prueba_pods");
  $logo = $pod->field("logo_navegacion");
  $menu = $pod->field("menu_pods");
- $numero_elementos_menu = count($menu);
+ $numero_elementos_menu = $menu?count($menu):-1;
 
+// echo var_dump($menu);
  $opciones_visibles;
  $opciones_restantes;
  $nombre_pagina_actual = strtoupper(get_the_title());
+// echo is_front_page()?:"Si":"Nain";
 // echo empty($logo)?"Hello":"Karl";
 // echo $logo;
  
- if($numero_elementos_menu>4)
+ if($numero_elementos_menu>4 )
  {
   $opciones_visibles = array_slice($menu,0,4);
   $opciones_restantes = array_slice($menu,4);
  }
 
+// echo esc_url(home_url('/'));
 ?>
 
 <div id="page" class="site">
@@ -161,10 +163,10 @@
                     </svg>
                 </button>
 
-                <a href="<?php echo esc_url(home_url('/')); ?>"
+                <a href="<?php echo esc_url(home_url('/'));  ?>"
                    aria-label="Enlace para ir a la pagina de inicio del cufrisa" 
                    class="flex justify-center mb-5 sm:mb-0 sm:block">
-                    <img src="<?php echo !empty($logo)? $logo['guid'] : get_template_directory_uri().'/public/logo.webp'; ?>" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
+                   <img src="<?php echo !empty($logo)? $logo['guid'] : get_template_directory_uri().'/public/logo.webp'; ?>" alt="Logo" class="h-20 sm:h-7 lg:h-10 xl:h-12 cursor-pointer" />
                 </a>
                 <hr />
 
@@ -172,36 +174,37 @@
                  if(empty($menu))
                  {
                 ?>
+                
                 <a href="<?php echo esc_url(home_url('/')); ?>"
                    aria-label="Enlace para ir a la pagina de inicio del cufrisa"
-                   class="text-white hover:text-gray-300 <?php echo in_array("INICIO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
+                   class="text-white hover:text-gray-300 <?php echo is_front_page()?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">INICIO</a>
                 <hr />
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>" 
                    aria-label="Enlace para ir a la pagina de la linea 3"
-                   class="text-white hover:text-gray-300 <?php echo in_array("LINEA",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
+                   class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"LINEA")?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">LINEA III INFONAVIT</a>
                 <hr />
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('fideicomisos-de-garantia'))); ?>" 
                    aria-label="Enlace para ir a la pagina de fideicomisos"
-                   class="text-white hover:text-gray-300 <?php echo in_array("FIDEICOMISOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDELCOMISOS DE GARANTIA</a>
+                   class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"FIDEICOMISOS")?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">FIDEICOMISOS DE GARANTIA</a>
                 <hr />
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('credicufrisa'))); ?>" 
                    aria-label="Enlace para ir a la pagina de credicufrisa"
-                   class="text-white hover:text-gray-300 <?php echo in_array("CREDICUFRISA",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
+                   class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"CREDICUFRISA")?'font-extrabold':'font-normal'?> sm:text-xs md:text-sm lg:text-base xl:text-xl transition-all duration-300 px-6 sm:px-0">CREDICUFRISA</a>
                 <hr />
 
                 <!-- Dropdown Menu Mobile -->
                 <div class="relative group sm:hidden flex flex-col gap-4">
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" 
                        aria-label="Enlace para ir a la pagina de comunicados en dispositivos moviles"
-                       class="text-white hover:text-gray-300 <?php echo in_array("COMUNICADOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
+                       class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"COMUNICADOS")?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">COMUNICADOS</a>
                     <hr />
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" 
                        aria-label="Enlace para ir a la pagina de nosotros en dispositivos moviles"
-                       class="text-white hover:text-gray-300 <?php echo in_array("NOSOTROS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
+                       class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"NOSOTROS")?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">NOSOTROS</a>
                     <hr />
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" 
                        aria-label="Enlace para ir a la pagina de contacto en dispositivos moviles"
-                       class="text-white hover:text-gray-300 <?php echo in_array("CONTACTO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
+                       class="text-white hover:text-gray-300 <?php echo str_contains($nombre_pagina_actual,"CONTACTO")?'font-extrabold':'font-normal'?> sm:text-xl transition-all duration-300 px-6 sm:px-0">CONTACTO</a>
                     <hr />
                 </div>
 
@@ -215,15 +218,15 @@
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>" 
                         aria-label="Enlace para ir a la pagina de comunicados"
                             
-                           class="block px-4 py-2 hover:bg-gray-700 text-lg <?php echo in_array("COMUNICADOS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>">Comunicados</a>
+                           class="block px-4 py-2 hover:bg-gray-700 text-lg <?php echo str_contains($nombre_pagina_actual,"COMUNICADOS")?'font-extrabold':'font-normal'?>">Comunicados</a>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('nosotros'))); ?>" 
                         aria-label="Enlace para ir a la pagina de nosotros"
 
-                           class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo in_array("NOSOTROS",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>>Nosotros</a>
+                           class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo str_contains($nombre_pagina_actual,"NOSOTROS")?'font-extrabold':'font-normal'?>>Nosotros</a>
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contacto'))); ?>" 
                         aria-label="Enlace para ir a la pagina de contacto"
 
-                           class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo in_array("CONTACTO",$nombre_pagina_actual)?'font-extrabold':'font-normal'?>>Contacto</a>
+                           class="block px-4 py-2 hover:bg-gray-700 text-lg" <?php echo str_contains($nombre_pagina_actual,"CONTACTO")?'font-extrabold':'font-normal'?>>Contacto</a>
                     </div>
                 </div>
 
@@ -303,9 +306,27 @@
                   }
                   else
                   {
+                    foreach($menu as $pagina)
+                    {
+                     
+                     $id_pagina = $pagina['ID'];
+ 
                 ?>
 
+                    <a href="<?php echo get_permalink($id_pagina)?>" 
+                       aria-label=" <?php echo 'Enlace para ir a la pagina llamada'.get_the_title($id_pagina) ?> "
+                       class="<?php echo $id_pagina==get_the_ID()?"font-extrabold":"font-normal"?>  text-white hover:text-gray-300 sm:text-xl transition-all duration-300 px-6 sm:px-0">
+
+                     <?php echo strtoupper(get_the_title($id_pagina))?>
+
+                    </a>
+                    <hr />
+
+
+
+
                 <?php
+                   }
                   }
                  }
                 ?>

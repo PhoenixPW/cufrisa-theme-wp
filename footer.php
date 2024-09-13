@@ -36,28 +36,22 @@
          <div class="flex flex-col sm:flex-row gap-10 items-center">
           <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" alt="Logo" class="h-20 sm:h-14 smd:h-[4.5rem] lg:h-[4.5rem] xl:h-20 2xl:h-24 cursor-pointer" />
         
-          <ul class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
+          <div class="flex flex-col text-center sm:text-left text-white sm:max-md:text-sm xl:text-lg 2xl:text-2xl font-light gap-3">
 
            <?php 
             if(empty($paginas))
             {
            ?>
-           <li>
              <a href="<?php echo esc_url(get_permalink(get_page_by_path('linea-iii-infonavit'))); ?>"
                 aria-label="Ir a la pagina de linea 3 infonavit">LINEA III INFONAVIT</a>
-           </li>
    
-           <li>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('comunicados'))); ?>"
                aria-label="Ir a la pagina de comunicados">COMUNICADOS
             </a>
-           </li>
    
-           <li>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('buro-entidades-financieras'))); ?>"
                aria-label="Ir a la pagina de buro de entidades financieras">BURÓ ENTIDADES FINANCIERAS
              </a>
-           </li>
 
            <?php
             }
@@ -78,13 +72,13 @@
              }
             }
            ?>
-          </ul>
+          </div>
          </div>
    
         <div class="flex flex-col gap-5 justify-center items-center">
          <p class="text-[#E9E9E9] xl:text-xl 2xl:text-2xl">CONTACTO</p>
    
-         <ul class="flex gap-10 text-[#E9E9E9]">
+         <div class="flex gap-10 text-[#E9E9E9]">
    
           <a href="<?php echo !empty($liga)?$liga:'https://www.facebook.com/cufrisa/' ?>"
              aria-label="Ir a la primera red de contacto"> 
@@ -113,7 +107,7 @@
                 alt="Logo  red 4" 
                 class="h-8 sm:max-md:h-6 xl:h-9 2xl:h-11"/>
           </a>
-         </ul>
+         </div>
    
         </div>
    

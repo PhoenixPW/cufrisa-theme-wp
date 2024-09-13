@@ -58,7 +58,7 @@ get_header();
   <div class="swiper mySwiper">
     <div class="swiper-wrapper ">
       <div class="swiper-slide ">
-        <img src="<?php echo get_field("slider_1")?the_field("slider_1"):get_template_directory_uri().'/public/slider.png' ?>" 
+        <img src="<?php echo get_field("slider_1")?the_field("slider_1"):get_template_directory_uri().'/public/slider.webp' ?>" 
              loading="lazy" 
              alt="Imagen Slider"/>
       </div>
@@ -83,7 +83,7 @@ get_header();
         <article class="lg:pt-12 pt-6 w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg ">
             <div class="px-4 py-5 flex-auto justify-center w-full items-center">
-              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 2.png" 
+              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 2.webp" 
                    loading="true" 
                    alt="Servicio 1" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-red-400 bg-cover bg-center"/>
@@ -109,7 +109,7 @@ get_header();
         <article class="w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg">
             <div class="px-4 py-5 flex-auto">
-              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 1.png" 
+              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 1.webp" 
                    loading="lazy" 
                    alt="Servicio 2" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-blue-400 bg-cover bg-center" />
@@ -132,7 +132,7 @@ get_header();
         <article class="pt-6 w-full sm:w-4/12 px-4 text-center">
           <div class="relative flex flex-col min-w-0 break-words bg-transparent w-full rounded-lg">
             <div class="px-4 py-5 flex-auto">
-              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 3.png" 
+              <img src="<?php echo get_template_directory_uri(); ?>/public/Ellipse 3.webp" 
                    loading="lazy" 
                    alt="Servicio 3" 
                    class="text-white text-center inline-flex items-center justify-center w-48 h-48 sm:w-36 md:w-40 lg:w-44 xl:w-48 sm:h-36 md:h-40 lg:h-44 xl:h-48 mb-5 shadow-lg rounded-full bg-green-400 bg-cover bg-center" />
@@ -233,7 +233,7 @@ get_header();
              class="hover:opacity-50 transition-all"
              target="_blank"
              aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
-         <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.png' ?>" 
+         <img src="<?php echo get_field("logo_hr")?the_field("logo_hr"):get_template_directory_uri().'/public/calificacion.webp' ?>" 
               alt="Logo HR"
               loading="lazy" 
               class="sm:w-32 lg:w-36 xl:w-36 2xl:w-44"></img>
@@ -253,7 +253,7 @@ get_header();
 
 </div>
   <!-- Swiper JS -->
-  <script async src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

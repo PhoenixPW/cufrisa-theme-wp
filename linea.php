@@ -81,82 +81,97 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 
 ?>
 </h2>
-<div class="flex flex-col sm:flex-row flex-wrap w-full mb-16">
+<div class="flex flex-col sm:block sm:columns-2 lg:columns-3 xl:columns-4 mb-16">
 
 <?php
  if(empty($proyectos))
  {
 ?>
 
-
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.webp' ?>" 
      alt="Proyecto 1" 
      loading="lazy" 
-     class="w-full sm:w-1/3"/>
-<img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto2.webp' ?>" 
+     class=" "/>
+
+ <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto2.webp' ?>" 
      alt="Proyecto 2" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto3.webp' ?>" 
      alt="Proyecto 3" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto4.webp' ?>" 
      alt="Proyecto 4" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto5.webp' ?>" 
      alt="Proyecto 5" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+     
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto7.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto8.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto9.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto10.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto12.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto13.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto14.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto15.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto17.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3"/>
+     class=" "/>
+     
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto18.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class="sm:w-1/3 "/>
+     class=" "/>
 
 <?php
  }
@@ -227,6 +242,7 @@ echo get_field('segundo_subtitulo_linea')?the_field('segundo_subtitulo_linea'):"
 echo get_field('video_linea3')?the_field('video_linea3'):
 "
 <iframe class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' 
+        loading='lazy'
         src='https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd'
         title='YouTube video player' 
         frameborder='0' 

@@ -25,7 +25,7 @@ get_header();
     $mensaje = sanitize_textarea_field($_POST['mensaje']);
     $formulario_enviado=true;
     
-    $to = 'bros_z1@hotmail.com';
+    $to = get_field('')?the_field(''):'bros_z1@hotmail.com';
     $subject = 'Nuevo mensaje desde el formulario de contacto';
     $body = "Nombre: $nombre\nCorreo Electrónico: $correo\nTeléfono:$telefono\nMensaje:\n$mensaje";
   
@@ -134,7 +134,7 @@ get_header();
           </li>
         </ul>
 
-        <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" 
+        <a href="https://api.whatsapp.com/send/?phone=<?php echo get_field('numero_whatsapp')?the_field('numero_whatsapp'):'522215983528'?>&text&type=phone_number&app_absent=0" 
            class="flex gap-4 bg-white text-black lg:text-lg rounded py-2 sm:w-9/12 lg:w-6/12 xl:w-7/12 2xl:w-6/12 items-center justify-center">
             <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/whatsapp.svg' ?>" 
                  loading="lazy" 
@@ -284,7 +284,7 @@ echo get_field('telefono')?the_field('telefono'):"             (222) 1970977"
           </li>
         </ul>
 
-        <a href="https://api.whatsapp.com/send/?phone=522215983528&text&type=phone_number&app_absent=0" 
+        <a href="https://api.whatsapp.com/send/?phone=<?php echo get_field('numero_whatsapp')?the_field('numero_whatsapp'):'522215983528'?>&text&type=phone_number&app_absent=0" 
            target="_blank" 
            aria-label="Enlace para abrir Whatsapp en dispositivos moviles o ir a la pagina de Whatsaap en computadoras para poder enviar un mensaje a cufrisa"  
            class="flex items-center gap-2 text-lg bg-white text-black rounded py-3 xl:w-4/12 justify-center shadow-md hover:shadow-lg transition-shadow duration-300 mb-6">

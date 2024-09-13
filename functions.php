@@ -141,7 +141,7 @@ function cufrisa_scripts() {
 	wp_enqueue_style( 'cufrisa-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'cufrisa-style', 'rtl', 'replace' );
 
-	wp_enqueue_style( 'cufrise_output', get_template_directory_uri().'/src/output.css');
+	wp_enqueue_style( 'cufrise_output', get_template_directory_uri().'/src/output2.css');
 
 	wp_enqueue_script( 'cufrisa-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
