@@ -1026,6 +1026,11 @@ video {
   border-bottom-left-radius: 0.75rem;
 }
 
+.rounded-t-\[1\.92rem\] {
+  border-top-left-radius: 1.92rem;
+  border-top-right-radius: 1.92rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1146,9 +1151,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.via-black\/0 {
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .via-black\/80 {
   --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-black\/0 {
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
 }
 
 .to-black\/40 {
@@ -1300,6 +1314,10 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1334,6 +1352,10 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
 }
 
 .pt-5 {
@@ -1710,6 +1732,10 @@ video {
     pointer-events: auto;
   }
 
+  .sm\:absolute {
+    position: absolute;
+  }
+
   .sm\:relative {
     position: relative;
   }
@@ -1800,6 +1826,10 @@ video {
     height: 80px;
   }
 
+  .sm\:min-h-screen {
+    min-height: 100vh;
+  }
+
   .sm\:w-0 {
     width: 0px;
   }
@@ -1862,6 +1892,11 @@ video {
 
   .sm\:w-\[17px\] {
     width: 17px;
+  }
+
+  .sm\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
   }
 
   .sm\:grid-cols-3 {
@@ -1990,6 +2025,11 @@ video {
     padding-bottom: 0px;
   }
 
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .sm\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -2013,6 +2053,10 @@ video {
 
   .sm\:pr-14 {
     padding-right: 3.5rem;
+  }
+
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 
   .sm\:pt-16 {
@@ -2432,6 +2476,11 @@ video {
     width: 24px;
   }
 
+  .lg\:columns-3 {
+    -moz-columns: 3;
+         columns: 3;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2685,6 +2734,11 @@ video {
 
   .xl\:w-\[30px\] {
     width: 30px;
+  }
+
+  .xl\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
   }
 
   .xl\:gap-7 {

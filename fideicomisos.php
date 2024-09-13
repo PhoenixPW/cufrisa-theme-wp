@@ -6,7 +6,7 @@ get_header();
 
 <main>
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 <!--
  
@@ -18,16 +18,16 @@ get_header();
 -->
 
 <section id="hero" 
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         class="relative w-full min-h-12/12 sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_fideicomisos')?the_field('imagen_fideicomisos'):get_template_directory_uri().'/public/fideicomisos.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-32 sm:pb-0 items-center sm:items-stretch">
+<div class="sm:absolute inset-0 bg-gradient-to-t from-black via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-12 pt-28 sm:pt-0 sm:pb-0 items-center sm:items-stretch">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
      loading="lazy" 
      alt="Logo" 
      class="w-5/12 sm:hidden" />
 
-<h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9">
+<h1 class="text-[2.6rem] sm:text-2xl lg:max-xl:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-center sm:pt-4 lg:pt-8 xl:max-2xl:pt-9 [@media(max-height:850px)]:leading-10">
   <?php
   echo get_field('titular_fideicomisos')?the_field('titular_fideicomisos'):"Fideicomiso de Garantía para Desarrollos <br/> Inmobiliarios"
   ?>
@@ -79,7 +79,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 -->
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-20 gap-6">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-10 sm:py-20 gap-6 rounded-t-[1.92rem]">
 <h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
 
 <?php
@@ -88,7 +88,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 
 </h2>
 
-<p class="text-justify sm:text-left text-lg sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl w-full">
+<p class="text-justify sm:text-left text-lg  sm:text-sm xl:text-lg 2xl:text-xl min-[1920px]:text-2xl w-full">
 <?php
 
   echo get_field('texto_cuerpo_fideicomisos')?the_field('texto_cuerpo_fideicomisos'):"En el se aportan bienes o derechos a CUFRISA, para su administración conforme a los fines del contrato, para garantizar seguridad jurídica a las partes."
