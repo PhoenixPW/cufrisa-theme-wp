@@ -6,15 +6,15 @@ get_header();
 
 <main>
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 
 <section id="hero" 
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_comunicados')?the_field('imagen_comunicados'):get_template_directory_uri().'/public/comunicados.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start">
+<div class="sm:absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/90 via-black/0 to-black/0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:pb-0 [@media(max-height:840px)]:pt-36 pt-64 sm:pt-0">
 
-<div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-7/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16 items-center sm:items-stretch pb-28 sm:pb-0 gap-10">
+<div class="flex flex-col lg:gap-4 xl:gap-8 text-center sm:text-left sm:w-10/12 md:w-8/12 xl:w-7/12 2xl:w-7/12 break-words sm:ml-8 lg:ml-10 xl:ml-16 items-center sm:items-stretch [@media(max-height:840px)]:pb-20 pb-24 sm:pb-0 gap-10">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
      loading="lazy" 
@@ -48,7 +48,7 @@ get_header();
 
 -->
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-4 sm:px-6 lg:px-24 py-8">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-4 sm:px-6 lg:px-24 py-8 rounded-t-[1.92rem]">
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-base lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12">
