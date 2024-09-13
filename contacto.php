@@ -44,13 +44,13 @@ get_header();
   }
     ?>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col bg-black">
 
 
     <section id="hero" 
-             class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+             class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" 
              style="background-image: url('<?php echo get_field('imagen_contacto')?the_field('imagen_contacto'):get_template_directory_uri().'/public/contacto.webp' ?>')">
-    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:max-xl:px-8 xl:px-12 sm:pt-16 xl:pl-20 ">
+    <div class="w-full sm:absolute inset-0  bg-gradient-to-t from-black/90 via-black/0 to-black/0 bg-black bg-opacity-40 flex items-center justify-center sm:justify-start sm:max-xl:px-8 xl:px-12 [@media(max-height:850px)]:pt-24 pt-40 sm:pt-16 xl:pl-20 ">
     
       <div class="flex flex-col gap-3 2xl:gap-5 text-left sm:w-7/12 break-words items-center sm:items-stretch pb-24 sm:pb-0 ">
 
@@ -230,7 +230,7 @@ get_header();
 
 -->
 
-    <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40">
+    <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40 rounded-t-[1.92rem]">
       <div class="flex flex-col sm:hidden gap-5">
         <br/>
        <h2 class="text-[#1D3750] text-4xl font-bold text-center">Hagamos un trato</h2> 
