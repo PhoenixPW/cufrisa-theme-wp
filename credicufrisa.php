@@ -145,7 +145,7 @@ get_header();
 -->
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10 rounded-t-[1.92rem]">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black  bg-[#E9E9E9] px-6 sm:px-10 md:px-12 lg:px-20 xl:px-40 2xl:px-28 py-9 sm:max-lg:pt-11 xl:max-2xl:pt-14 2xl:py-24 gap-5  2xl:gap-10 rounded-t-3xl">
 
 <article class="flex flex-col sm:hidden text-center gap-3">
 <div class="px-5">

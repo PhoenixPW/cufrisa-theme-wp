@@ -6,18 +6,18 @@ get_header();
 
 <main>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col bg-black ">
 
     <!-- Primer seccion (Hero) -->
 
 
     <section id="hero" 
-             class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " 
+             class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center " 
              style="background-image: url('<?php echo get_field("imagen_nosotros")?the_field("imagen_nosotro"):get_template_directory_uri().'/public/nosotros.webp' ?>')">
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 flex items-center ">
+    <div class="sm:absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40 flex items-center [@media(max-height:850px)]:pt-20 pt-36 ">
     
-    <header class="flex flex-col justify-center h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
-     <div class="flex flex-col gap-10 sm:gap-2 2xl:gap-8 items-center pb-24 sm:pb-0">
+    <header class="flex flex-col justify-center sm:h-screen md:gap-0 xl:gap-7 md:mb-0 xl:mb-5 sm:pt-16 lg:pt-20 xl:max-2xl:pt-32 px-14 sm:px-2 lg:px-5 xl:px-14">
+     <div class="flex flex-col gap-10 sm:gap-2 2xl:gap-8 items-center [@media(max-height:850px)]:pb-12 pb-24 sm:pb-0">
 
      <img src="<?php echo get_template_directory_uri().'/public/logo.webp' ?>" 
           loading="lazy" 
@@ -37,7 +37,7 @@ get_header();
      </div>
     
     <div class="hidden sm:grid grid-cols-1 gap-0 sm:grid-cols-3 lg:gap-1 ">
-    <div>
+     <div>
               <div
                 class="flex flex-col items-center justify-center lg:px-4 lg:py-8 2xl:py-1 space-y-4">
                    <img src="<?php echo get_field('icono_mision')?the_field('icono_mision'):get_template_directory_uri().'/public/flag.svg' ?>" 
@@ -110,7 +110,7 @@ get_header();
 
     
 
-    <section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-4 sm:px-8 md:px-11 lg:px-20 xl:px-36 pt-9 sm:pt-20">
+    <section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-4 sm:px-8 md:px-11 lg:px-20 xl:px-36 pt-9 sm:pt-20 rounded-t-3xl sm:rounded-none">
     <h2 class="sm:hidden text-[#1D3750]  text-center text-4xl font-extrabold mb-9 tracking-wide">CUFRISA</h2>
 
     <div class="grid sm:hidden grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-1 ">

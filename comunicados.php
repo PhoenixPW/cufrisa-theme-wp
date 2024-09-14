@@ -48,7 +48,7 @@ get_header();
 
 -->
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-4 sm:px-6 lg:px-24 py-8 rounded-t-[1.92rem]">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-4 sm:px-6 lg:px-24 py-8 rounded-t-3xl">
 
 <article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
 <p class="text-center sm:text-left text-xl sm:text-sm md:text-base lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12">

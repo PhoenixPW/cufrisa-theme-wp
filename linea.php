@@ -74,14 +74,15 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
 
 
 <section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-7 sm:px-10 xl:px-32 py-20 gap-5">
-<h2 class="text-[#1D3750] text-[1.575rem] text-center sm:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide mb-4">
+<div>
+<h2 class="bg-[#1D3750] text-white text-[1.575rem] text-center sm:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide mb-0 w-full py-4 rounded-t-xl">
 <?php
 
 echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTOS REALIZADOS";
 
 ?>
 </h2>
-<div class="flex flex-col sm:block sm:columns-2 lg:columns-3 xl:columns-4 mb-16">
+<div class="flex flex-col sm:block sm:columns-2 lg:columns-3 xl:columns-4 mb-16 bg-[#DEDEDE] p-9 pb-8 rounded-b-2xl">
 
 <?php
  if(empty($proyectos))
@@ -91,87 +92,87 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto.webp' ?>" 
      alt="Proyecto 1" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
  <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto2.webp' ?>" 
      alt="Proyecto 2" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto3.webp' ?>" 
      alt="Proyecto 3" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto4.webp' ?>" 
      alt="Proyecto 4" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto5.webp' ?>" 
      alt="Proyecto 5" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto6.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
      
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto7.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto8.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto9.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto10.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto12.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto13.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto14.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto15.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto17.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
      
 <img src="<?php echo get_field('')?the_field(''):get_template_directory_uri().'/public/proyecto18.webp' ?>" 
      alt="Proyecto 6" 
      loading="lazy" 
-     class=" "/>
+     class="mb-4 rounded-2xl"/>
 
 <?php
  }
@@ -192,6 +193,7 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 <?php
  }
 ?>
+</div>
 </div>
 
 <h3 class="text-3xl sm:text-2xl xl:text-2xl 2xl:text-3xl font-bold tracking-wide">

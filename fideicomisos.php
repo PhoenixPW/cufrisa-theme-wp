@@ -79,7 +79,7 @@ Adicionalmente este instrumento sirve para garantizar créditos que se obtengan 
 -->
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-10 sm:py-20 gap-6 rounded-t-[1.92rem]">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-8 sm:px-10 lg:px-14 xl:px-36 py-10 sm:py-20 gap-6 rounded-t-3xl">
 <h2 class="text-[#1D3750] text-3xl text-center sm:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide sm:tracking-normal lg:tracking-wide 2xl:tracking-normal ">
 
 <?php
