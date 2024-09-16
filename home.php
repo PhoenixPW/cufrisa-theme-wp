@@ -229,7 +229,7 @@ get_header();
       
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
-         <a href='<?php echo get_field('liga_calificados')?the_field('liga_calificados'):esc_url(get_permalink(get_page_by_path('nosotros'))).''; ?>'
+         <a href='<?php echo get_field('liga_calificados')?the_field('liga_calificados'):'https://www.hrratings.com/rating_detail.xhtml?rel=10565'; ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
              aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
