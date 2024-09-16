@@ -230,7 +230,7 @@ get_header();
 
 -->
 
-    <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40 rounded-t-3xl">
+    <section class="relative w-full min-h-screen md:h-screen 2xl:h-full  flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-8 sm:gap-6 lg:gap-8 px-5 sm:px-12 md:px-14 lg:px-20  xl:px-40 rounded-t-3xl sm:rounded-none">
       <div class="flex flex-col sm:hidden gap-5">
         <br/>
        <h2 class="text-[#1D3750] text-4xl font-bold text-center">Hagamos un trato</h2> 

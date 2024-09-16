@@ -9,13 +9,13 @@ get_header();
 <main>
 
 <?php //echo the_field("slider_1")?>
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" 
          style="background-image: url('<?php echo get_field("imagen_principal_inicio")?:get_template_directory_uri().'/public/inicio.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex  items-right justify-center">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
   <h1 class="text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold tracking-wider">
@@ -29,9 +29,9 @@ get_header();
        class="h-32 lg:h-32 xl:h-44 2xl:h-52" />
 </div>
 
-<div class="hidden sm:flex absolute inset-0 flex-col justify-end ">
-        <article class="bg-black bg-opacity-40 w-full sm:h-[80px] md:h-[86px] lg:h-[96px] xl:h-[110px] 2xl:h-[115px] text-center sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-center items-center">
-         <p class="w-1/2 sm:max-lg:w-8/12">
+<div class="flex absolute inset-0 flex-col justify-end ">
+        <article class="bg-black bg-opacity-40 w-full sm:h-[80px] md:h-[86px] lg:h-[96px] xl:h-[110px] 2xl:h-[115px] text-center [@media(max-height:850px)]:text-base text-lg sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-center items-center pb-10 sm:pb-0">
+         <p class="w-9/12 lg:w-1/2 sm:max-lg:w-8/12">
           <?php
           
           echo get_field("subtitulo")?the_field("subtitulo"):"ENTIDAD ADMINISTRADORA AUTORIZADA POR INFONAVIT E INSTITUCIÓN FIDUCIARIA";
@@ -53,7 +53,7 @@ get_header();
 
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-around text-black bg-[#E9E9E9]">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-around text-black bg-[#E9E9E9] rounded-t-3xl sm:rounded-none">
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper ">

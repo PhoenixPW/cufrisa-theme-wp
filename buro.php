@@ -64,7 +64,7 @@ get_header();
 </section>
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9 rounded-3xl sm:rounded-none">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9 rounded-t-3xl sm:rounded-none">
 <h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-bold tracking-wider mb-5">
 <?php   
 
