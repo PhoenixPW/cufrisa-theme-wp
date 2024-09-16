@@ -6,7 +6,7 @@ get_header();
 
 <main> 
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 <!-- 
    ------------------
@@ -16,11 +16,11 @@ get_header();
 -->
 
 <section id="hero" 
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_buro')?the_field('imagen_buro'):get_template_directory_uri().'/public/buro.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
+<div class="sm:absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-t from-black/50 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-70 flex items-center px-12 sm:pt-16 sm:pl-20 ">
 
-<div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch pb-44 sm:pb-0">
+<div class="flex flex-col gap-11 sm:gap-3 2xl:gap-5 sm:text-left sm:w-7/12 lg:w-6/12 break-words items-center sm:items-stretch [@media(max-height:840px)]:pt-28 pt-36 sm:pt-0 [@media(max-height:840px)]:pb-16 pb-32 sm:pb-0">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
      loading="lazy" 
@@ -64,7 +64,7 @@ get_header();
 </section>
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] gap-2 sm:gap-1 px-12 lg:px-20 xl:px-28 py-9 rounded-3xl sm:rounded-none">
 <h2 class="w-full text-left text-[#1D3750] text-2xl sm:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-bold tracking-wider mb-5">
 <?php   
 
