@@ -6,13 +6,13 @@ get_header();
 
 <main> 
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 
 <section id="hero" 
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field("imagen_privacidad")?the_field("imagen_privacidad"):get_template_directory_uri().'/public/nosotros.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+<div class="sm:absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-t from-black/90 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-40 flex items-center justify-center pt-56 sm:pt-0 pb-32 sm:pb-0">
 <h1 class="text-center text-4xl sm:text-5xl 2xl:text-6xl font-bold mb-4 tracking-wider">
     <?php
     echo get_field('titular_privacidad')?the_field('titular_privacidad'):"AVISO DE PRIVACIDAD";
@@ -23,7 +23,7 @@ get_header();
 </section>
 
 
-<section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-8 sm:px-14 lg:px-24 xl:px-36 py-8 sm:py-28 text-lg sm:text-sm lg:text-lg 2xl:text-2xl">
+<section class="relative w-full min-h-screen flex flex-col text-black bg-[#E9E9E9] px-8 sm:px-14 lg:px-24 xl:px-36 py-8 sm:py-28 text-lg sm:text-sm lg:text-lg 2xl:text-2xl rounded-t-3xl sm:rounded-none">
 <article class="h-1/2 flex-shrink-0" >
 <p class="flex h-full text-justify  " >
 
