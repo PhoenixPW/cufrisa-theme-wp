@@ -9,7 +9,7 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
 
 <main>
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-black">
 
 
 <!--
@@ -21,10 +21,10 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
 -->
 
 <section id="hero" 
-         class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
+         class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.webp' ?>')">
-<div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
-<div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 pb-32 sm:pb-0 2xl:pt-16">
+<div class="sm:absolute inset-0  bg-gradient-to-t from-black/60 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
+<div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 [@media(max-height:850px)]:pb-16 pb-24 sm:pb-0 [@media(max-height:850px)]:pt-28 pt-36 sm:pt-0 2xl:pt-16">
 
   <img src="<?php echo get_template_directory_uri().'/public/logo.webp' ?>" 
        loading="lazy" 
@@ -73,7 +73,51 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
 -->
 
 
-<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-7 sm:px-10 xl:px-32 py-20 gap-5">
+<section class="relative w-full min-h-screen flex flex-col items-center justify-center text-black bg-[#E9E9E9] px-7 sm:px-10 xl:px-32 [@media(max-height:850px)]:py-10 py-16 sm:py-20 gap-5 rounded-t-3xl sm:rounded-none">
+
+<h3 class="text-3xl sm:text-2xl xl:text-2xl 2xl:text-3xl font-bold tracking-wide">
+
+<?php
+echo get_field('subtitulo_cuerpo_linea')?the_field('subtitulo_cuerpo_linea'):"PROCESO"
+?>
+
+</h3>
+
+<p class="text-lg sm:text-sm md:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
+<?php
+
+echo get_field('parrafo_cuerpo_linea')?the_field('parrafo_cuerpo_linea'):"El financiamiento a través de la Línea 3, se lleva a cabo por medio de la evaluación y monitoreo de una entidad administradora, en este caso CUFRISA, la cual se encarga de evaluar la viabilidad técnica y financiera de los proyectos y, de ser factibles, la administración los recursos para paquetes de viviendas."
+
+?>
+
+</p>
+
+<h4 class="text-lg  xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold ">
+<?php
+echo get_field('segundo_subtitulo_linea')?the_field('segundo_subtitulo_linea'):"PASOS PARA INICIAR TU PROYECTO"
+?>
+</h4>
+
+<p class="text-lg sm:text-sm md:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
+<?php     
+ echo get_field('continuacion_cuerpo_linea')?the_field('continuacion_cuerpo_linea'):
+ "El Consejo de Administración del INFONAVIT, autoriza el paquete de Línea 3 dede las viviendas a desarrollar y autoriza de manera preliminar a la empresa constructora.
+ <br/>
+ <br/>
+ La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y Financiera para asegurar que el proyecto sea viable y cumpla con todos los requisitos que marca Infonavit para una Línea 3 y las autoridades de donde se lleve a cabo las viviendas.
+
+ <br/>
+ <br/>
+
+ La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y Financiera para asegurar que el proyecto sea viable y cumpla con todos los requisitos que marca Infonavit para una Línea 3 y las autoridades de donde se lleve a cabo las viviendas.
+
+ <br/>"
+ 
+?>
+
+</p>
+
+
 <div>
 <h2 class="bg-[#1D3750] text-white text-[1.575rem] text-center sm:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide mb-0 w-full py-4 rounded-t-xl">
 <?php
@@ -194,52 +238,12 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
  }
 ?>
 </div>
+
 </div>
 
-<h3 class="text-3xl sm:text-2xl xl:text-2xl 2xl:text-3xl font-bold tracking-wide">
 
 <?php
-echo get_field('subtitulo_cuerpo_linea')?the_field('subtitulo_cuerpo_linea'):"PROCESO"
-?>
 
-</h3>
-
-<p class="text-lg sm:text-sm md:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
-<?php
-
-echo get_field('parrafo_cuerpo_linea')?the_field('parrafo_cuerpo_linea'):"El financiamiento a través de la Línea 3, se lleva a cabo por medio de la evaluación y monitoreo de una entidad administradora, en este caso CUFRISA, la cual se encarga de evaluar la viabilidad técnica y financiera de los proyectos y, de ser factibles, la administración los recursos para paquetes de viviendas."
-
-?>
-
-</p>
-
-<h4 class="text-lg  xl:text-lg 2xl:text-xl min-[1920px]:text-2xl font-bold ">
-<?php
-echo get_field('segundo_subtitulo_linea')?the_field('segundo_subtitulo_linea'):"PASOS PARA INICIAR TU PROYECTO"
-?>
-</h4>
-
-<p class="text-lg sm:text-sm md:text-base xl:text-lg 2xl:text-xl min-[1920px]:text-2xl">
-<?php     
- echo get_field('continuacion_cuerpo_linea')?the_field('continuacion_cuerpo_linea'):
- "El Consejo de Administración del INFONAVIT, autoriza el paquete de Línea 3 dede las viviendas a desarrollar y autoriza de manera preliminar a la empresa constructora.
- <br/>
- <br/>
- La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y Financiera para asegurar que el proyecto sea viable y cumpla con todos los requisitos que marca Infonavit para una Línea 3 y las autoridades de donde se lleve a cabo las viviendas.
-
- <br/>
- <br/>
-
- La empresa Constructora entrega a CUFRISA la información Técnica, Jurídica y Financiera para asegurar que el proyecto sea viable y cumpla con todos los requisitos que marca Infonavit para una Línea 3 y las autoridades de donde se lleve a cabo las viviendas.
-
- <br/>"
- 
-?>
-
-</p>
-<br/>
-
-<?php
 
 echo get_field('video_linea3')?the_field('video_linea3'):
 "
