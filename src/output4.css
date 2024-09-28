@@ -1192,6 +1192,11 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
+.via-black\/40 {
+  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .via-black\/80 {
   --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -1350,8 +1355,9 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-12 {
@@ -1374,6 +1380,10 @@ video {
   padding-bottom: 8rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1386,12 +1396,12 @@ video {
   padding-top: 4rem;
 }
 
-.pt-28 {
-  padding-top: 7rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pt-28 {
+  padding-top: 7rem;
 }
 
 .pt-36 {
@@ -3241,8 +3251,8 @@ video {
     padding-bottom: 3rem;
   }
 
-  .\[\@media\(max-height\:850px\)\]\:pb-16 {
-    padding-bottom: 4rem;
+  .\[\@media\(max-height\:850px\)\]\:pb-6 {
+    padding-bottom: 1.5rem;
   }
 
   .\[\@media\(max-height\:850px\)\]\:pt-20 {
@@ -3251,10 +3261,6 @@ video {
 
   .\[\@media\(max-height\:850px\)\]\:pt-24 {
     padding-top: 6rem;
-  }
-
-  .\[\@media\(max-height\:850px\)\]\:pt-28 {
-    padding-top: 7rem;
   }
 
   .\[\@media\(max-height\:850px\)\]\:text-base {

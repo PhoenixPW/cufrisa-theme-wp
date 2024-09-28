@@ -21,7 +21,7 @@ get_header();
 <section id="hero"
          class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left"
          style="background-image: url('<?php echo get_field('imagen_credicufrisa')?the_field('imagen_credicufrisa'):get_template_directory_uri().'/public/credicufrisa.webp' ?>')">
-<div class="sm:absolute inset-0 bg-gradient-to-t from-black/90 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-10 pt-32 sm:pt-0 sm:pb-0 gap-3 sm:gap-0">
+<div class="sm:absolute inset-0 bg-gradient-to-t from-black/90 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center px-12 items-center pb-5 pt-20 sm:pt-0 sm:pb-0 gap-3 sm:gap-0">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp"
      loading="lazy"

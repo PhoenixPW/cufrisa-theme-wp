@@ -81,7 +81,6 @@
       height: 30px;
       background-color: #D9D9D9;
       border: 1px solid black;
-      margin: 0 20px !important; /* Force margin between bullets */
       
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
       opacity: 1;

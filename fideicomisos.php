@@ -20,7 +20,7 @@ get_header();
 <section id="hero" 
          class="relative w-full min-h-12/12 sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_fideicomisos')?the_field('imagen_fideicomisos'):get_template_directory_uri().'/public/fideicomisos.webp' ?>')">
-<div class="sm:absolute inset-0 bg-gradient-to-t from-black sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-12 pt-28 sm:pt-0 sm:pb-0 items-center sm:items-stretch">
+<div class="sm:absolute inset-0 bg-gradient-to-t from-black sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center gap-8 sm:max-xl:gap-3 pb-12 pt-20 sm:pt-0 sm:pb-0 items-center sm:items-stretch">
 
 <img src="<?php echo get_template_directory_uri(); ?>/public/logo.webp" 
      loading="lazy" 

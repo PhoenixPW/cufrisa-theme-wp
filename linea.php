@@ -24,7 +24,7 @@ $proyectos = $pod_proyectos->field("proyectos_realizados");
          class="relative w-full sm:min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-left" 
          style="background-image: url('<?php echo get_field('imagen_linea')?the_field('imagen_linea'):get_template_directory_uri().'/public/linea.webp' ?>')">
 <div class="sm:absolute inset-0  bg-gradient-to-t from-black/60 via-black/0 to-black/0 bg-black bg-opacity-60 flex flex-col justify-center gap-8">
-<div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 [@media(max-height:850px)]:pb-16 pb-24 sm:pb-0 [@media(max-height:850px)]:pt-28 pt-36 sm:pt-0 2xl:pt-16">
+<div class="flex flex-col items-center sm:items-start gap-10 sm:gap-4 text-center sm:text-left px-7 sm:px-0 sm:w-9/12 md:w-9/12 xl:9/10 break-words sm:ml-16 [@media(max-height:850px)]:pb-6 pb-12 sm:pb-0 [@media(max-height:850px)]:pt-20 pt-28 sm:pt-0 2xl:pt-16">
 
   <img src="<?php echo get_template_directory_uri().'/public/logo.webp' ?>" 
        loading="lazy" 
@@ -117,8 +117,110 @@ echo get_field('segundo_subtitulo_linea')?the_field('segundo_subtitulo_linea'):"
 
 </p>
 
+<br/>
 
+
+
+
+<?php
+
+
+echo get_field('video_linea3')?the_field('video_linea3'):
+"
+<iframe class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' 
+        loading='lazy'
+        src='https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd'
+        title='YouTube video player' 
+        frameborder='0' 
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' 
+        referrerpolicy='strict-origin-when-cross-origin' 
+        allowfullscreen>
+</iframe>
+"
+?>
+
+<br/>
+
+
+<h3 class="text-xl sm:max-md:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl text-center font-bold tracking-wide">
+
+<?php
+echo get_field('presentacion_credito')?the_field('presentacion_credito'):"PRESENTACIÓN A DETALLE DE CRÉDITO INTEGRAL"
+?>
+</h3>
+
+<article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center mb-6 rounded gap-7 sm:gap-0 sm:justify-between">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
+
+<?php
+echo get_field('descripcion_credito_integral')?the_field('descripcion_credito_integral'):"Crédito Integral CUFRISA (pdf)"
+?>
+
+ </p>
+ <a href="<?php echo get_field('liga_credito_integral')?the_field('liga_credito_integral'):get_template_directory_uri().'/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf' ?>" 
+    target="_blank" 
+    aria-label="Enlace para ir al archivo de credito integral"  
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+  Descargar
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
+</article>
+
+
+<h3 class="text-center text-2xl sm:max-md:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold tracking-wide mb-4 sm:mb-0 ">
+<?php
+echo get_field('reglas_checklist_desarrolladores')?the_field('reglas_checklist_desarrolladores'):"Reglas de Operación y Check List para Desarrolladores"
+?>
+</h3>
+
+<div class="w-full">
+<article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 mb-8 sm:mb-0 sm:justify-between">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
+
+<?php     
+ echo get_field('descripcion_reglas_de_operacion')?the_field('descripcion_reglas_de_operacion'):"Reglas de Operación Crédito Integral Cufrisa (pdf)"
+?>
+
+ </p>
+ <a href="<?php echo get_field('liga_reglas_de_operacion')?the_field('liga_reglas_de_operacion'):get_template_directory_uri().'/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf' ?>" 
+    target="_blank" 
+    aria-label="Enlace para ir al archivo de las reglas de operacion"  
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+  Descargar
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
+</article>
+
+<article class="flex flex-col sm:flex-row bg-white p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
+<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
+<?php
+ echo get_field('descripcion_checklist')?the_field('descripcion_checklist'):"Check List Crédito Integral (pdf)"
+?>
+
+</p>
+ <a href="<?php echo get_field('liga_checklist')?the_field('liga_checklist'):get_template_directory_uri().'/assets/pdf/Check List Credito Integral 1.0.pdf' ?>" 
+    target="_blank"
+    aria-label="Enlace para ir al archivo de Check List"  
+    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
+  Descargar
+  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
+       loading="lazy" 
+       alt="Icono descargar" 
+       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
+  </a>
+</article>
+
+</div>
+
+<br/>
 <div>
+
 <h2 class="bg-[#1D3750] text-white text-[1.575rem] text-center sm:text-3xl xl:text-3xl 2xl:text-4xl min-[1920px]:text-5xl font-extrabold lg:font-bold tracking-wide mb-0 w-full py-4 rounded-t-xl">
 <?php
 
@@ -241,102 +343,6 @@ echo get_field('titulo_cuerpo_linea')?the_field('titulo_cuerpo_linea'):"PROYECTO
 
 </div>
 
-
-<?php
-
-
-echo get_field('video_linea3')?the_field('video_linea3'):
-"
-<iframe class='w-full sm:w-8/12 lg:w-8/12 xl:w-8/12 2xl:w-9/12 h-[195px] sm:h-[200px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[550px]' 
-        loading='lazy'
-        src='https://www.youtube.com/embed/of_v2gLg8Lg?si=faYNTek5vfgTHlQd'
-        title='YouTube video player' 
-        frameborder='0' 
-        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' 
-        referrerpolicy='strict-origin-when-cross-origin' 
-        allowfullscreen>
-</iframe>
-"
-?>
-
-<br/>
-
-
-<h3 class="text-xl sm:max-md:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl text-center font-bold tracking-wide">
-
-<?php
-echo get_field('presentacion_credito')?the_field('presentacion_credito'):"PRESENTACIÓN A DETALLE DE CRÉDITO INTEGRAL"
-?>
-</h3>
-
-<article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center mb-6 rounded gap-7 sm:gap-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
-
-<?php
-echo get_field('descripcion_credito_integral')?the_field('descripcion_credito_integral'):"Crédito Integral CUFRISA (pdf)"
-?>
-
- </p>
- <a href="<?php echo get_field('liga_credito_integral')?the_field('liga_credito_integral'):get_template_directory_uri().'/assets/pdf/Promocion Credito Integral CUFRISA 4.pdf' ?>" 
-    target="_blank" 
-    aria-label="Enlace para ir al archivo de credito integral"  
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
-  Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
-       loading="lazy" 
-       alt="Icono descargar" 
-       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
-  </a>
-</article>
-
-
-<h3 class="text-center text-2xl sm:max-md:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl font-bold tracking-wide mb-4 sm:mb-0 ">
-<?php
-echo get_field('reglas_checklist_desarrolladores')?the_field('reglas_checklist_desarrolladores'):"Reglas de Operación y Check List para Desarrolladores"
-?>
-</h3>
-
-<div class="w-full">
-<article class="flex flex-col sm:flex-row bg-[#DEDEDE] p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 mb-8 sm:mb-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
-
-<?php     
- echo get_field('descripcion_reglas_de_operacion')?the_field('descripcion_reglas_de_operacion'):"Reglas de Operación Crédito Integral Cufrisa (pdf)"
-?>
-
- </p>
- <a href="<?php echo get_field('liga_reglas_de_operacion')?the_field('liga_reglas_de_operacion'):get_template_directory_uri().'/assets/pdf/ANEXO A - Reglas de Operacion credito integral.pdf' ?>" 
-    target="_blank" 
-    aria-label="Enlace para ir al archivo de las reglas de operacion"  
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
-  Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
-       loading="lazy" 
-       alt="Icono descargar" 
-       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
-  </a>
-</article>
-
-<article class="flex flex-col sm:flex-row bg-white p-5 2xl:p-6 w-full items-center rounded gap-7 sm:gap-0 sm:justify-between">
-<p class="text-center sm:text-left text-xl sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl sm:w-7/12 lg:w-9/12">
-<?php
- echo get_field('descripcion_checklist')?the_field('descripcion_checklist'):"Check List Crédito Integral (pdf)"
-?>
-
-</p>
- <a href="<?php echo get_field('liga_checklist')?the_field('liga_checklist'):get_template_directory_uri().'/assets/pdf/Check List Credito Integral 1.0.pdf' ?>" 
-    target="_blank"
-    aria-label="Enlace para ir al archivo de Check List"  
-    class="flex sm:flex-row justify-center bg-[#263650] w-11/12 sm:w-4/12 xl:w-3/12 text-center text-white text-xl sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl py-4 2xl:py-6 rounded hover:bg-blue-600 transition-colors duration-300">
-  Descargar
-  <img src="<?php echo get_template_directory_uri(); ?>/public/descargas.svg" 
-       loading="lazy" 
-       alt="Icono descargar" 
-       class="ml-2 sm:w-[17px] md:w-[20px] lg:w-[21px] xl:w-[24px] 2xl:w-[30px]"/>
-  </a>
-</article>
-
-</div>
 
 
 </section>

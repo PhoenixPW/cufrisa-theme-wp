@@ -184,30 +184,30 @@ echo get_field('parrafo_nosotros')?the_field('parrafo_nosotros'):
     "
 ?>
 </p>
-    <hr class="bg-[#7B7B7B] border-0 border-solid h-1 my-14"/>
+    <hr id="inicioCalificacion" class="bg-[#7B7B7B] border-0 border-solid h-1 my-14"/>
 
   <!--Calificacion -->
 
-    <section class="mb-14">
-     <img src="<?php echo get_field('imagen_calificacion')?the_field('imagen_calificacion'): get_template_directory_uri().'/public/calificados.webp' ?>" 
+    <section class="sm:flex mb-14">
+     <img id="imagenCalificacion" src="<?php echo get_field('imagen_calificacion')?the_field('imagen_calificacion'): get_template_directory_uri().'/public/calificados.webp' ?>" 
           alt="Calificacion HR AM3-" 
           loading="lazy" 
-          class="w-full"></img>
-     <article class="bg-[#263650] text-white gap-4 pb-8 pt-5 sm:pt-9 rounded-b-xl">
-      <h2 class="text-[1.6rem] sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl min-[1920px]:text-6xl font-bold tracking-wider text-center">
+          class="sm:w-1/2 rounded-t-xl sm:rounded-r-none sm:rounded-l-xl"></img>
+     <article class="sm:flex sm:flex-col sm:justify-center bg-[#263650] text-white 2xl:gap-4 pb-8 pt-5 sm:pt-9 rounded-b-xl sm:rounded-l-none sm:rounded-r-xl sm:w-1/2">
+      <h2 class="text-[1.6rem] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl min-[1920px]:text-6xl font-bold tracking-wider text-center">
         <?php
         echo get_field('titulo_contenedor_calificacion')?the_field('titulo_contenedor_calificacion'):"CALIFICACIÓN";
         ?>
       </h2>
       <div class="flex flex-col justify-center items-center gap-8">
-       <p class=" font-light text-sm sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl text-center sm:w-10/12 xl:w-7/12 mt-4 sm:mt-10 px-3">
+       <p class=" font-light text-sm sm:text-sm lg:text-base xl:text-xl 2xl:text-2xl min-[1920px]:text-3xl text-center md:w-10/12 xl:w-10/12 mt-4 lg:mt-10 px-3">
         <?php
         echo get_field('parrafo_contenedor_calificacion')?the_field('parrafo_contenedor_calificacion'):"CUFRISA cuenta con una calificación AM3- con perspectiva estable por parte de HR Ratings Credit Rating Agency. Entidad administradora Línea 3 infonavit fideicomiso"
         ?>
        </p>
        <a href="https://www.hrratings.com/rating_detail.xhtml?rel=10565" 
           aria-label="Enlace para ir a la pagina que muestra la calificacion dada a cufrisa por HR Ratings"
-          class="bg-white text-[#263650] text-2xl 2xl:text-3xl min-[1920px]:text-4xl rounded py-4 xl:py-5 2xl:py-10 px-9 sm:px-14 2xl:px-20">
+          class="bg-white text-[#263650] text-2xl sm:max-lg:text-xl 2xl:text-3xl min-[1920px]:text-4xl rounded py-4 sm:py-2 lg:py-4 xl:py-5 2xl:py-4 px-9 lg:px-14 2xl:px-20">
         <?php
         echo get_field('texto_boton_calificacion')?the_field('texto_boton_calificacion'):"Consultar calificación"
         ?>

@@ -1,6 +1,8 @@
 <?php
 /* Template Name: Inicio */
 get_header(); 
+$pod_proyectos = pods("editar_proyectos_cufrisa");
+$proyectos = $pod_proyectos->field("prueba_slider");
 
 ?>
 
@@ -15,7 +17,7 @@ get_header();
 <section id="hero" 
          class="relative w-full min-h-screen bg-cover bg-center bg-black text-white flex items-center justify-center" 
          style="background-image: url('<?php echo get_field("imagen_principal_inicio")?:get_template_directory_uri().'/public/inicio.webp' ?>')">
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 sm:from-black/0 via-black/0 to-black/0 bg-black bg-opacity-60 flex  items-right justify-center">
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 sm:from-black/0 via-black/40 to-black/0 bg-black bg-opacity-60 flex  items-right justify-center">
 
 <div class="flex flex-col-reverse sm:flex-row gap-10 lg:gap-5 xl:gap-8 text-center sm:text-right pb-20 sm:pb-0 sm:mr-20 w-11/12 items-center justify-center sm:justify-end ">
   <h1 class="text-3xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold tracking-wider">
@@ -30,7 +32,7 @@ get_header();
 </div>
 
 <div class="flex absolute inset-0 flex-col justify-end ">
-        <article class="bg-black bg-opacity-40 w-full sm:h-[80px] md:h-[86px] lg:h-[96px] xl:h-[110px] 2xl:h-[115px] text-center [@media(max-height:850px)]:text-base text-lg sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-center items-center pb-10 sm:pb-0">
+        <article class="sm:bg-black sm:bg-opacity-40 w-full sm:h-[80px] md:h-[86px] lg:h-[96px] xl:h-[110px] 2xl:h-[115px] text-center [@media_(max-height:850px)_and_(max-width:500px)]:text-base text-lg sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl flex justify-center items-center pb-20 sm:pb-0">
          <p class="w-9/12 lg:w-1/2 sm:max-lg:w-8/12">
           <?php
           
@@ -57,6 +59,11 @@ get_header();
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper ">
+
+     <?php 
+      if(empty($proyectos))
+      {
+     ?>
       <div class="swiper-slide ">
         <img src="<?php echo get_field("slider_1")?the_field("slider_1"):get_template_directory_uri().'/public/slider.webp' ?>" 
              loading="lazy" 
@@ -73,6 +80,24 @@ get_header();
              alt="Imagen 3 Slider"/>
       </div>
 
+    <?php 
+      }
+      else
+      {
+       foreach($proyectos as $p)
+       {
+        
+    ?>
+       <div class="swiper-slide">
+        <img src="<?php echo $p['guid'];?>"
+             loading="lazy"
+             alt="Imagen Slider"
+        />
+       </div>
+    <?php
+      }
+     }
+    ?>
     </div>
     <div class="swiper-pagination" ></div>
   </div>
@@ -229,7 +254,7 @@ get_header();
       
       <div class="flex flex-col w-full items-center sm:items-end sm:pr-14 sm:max-lg:pt-5 font-bold text-2xl sm:text-base lg:text-lg xl:text-lg 2xl:text-xl min-[1920px]:text-2xl gap-10 sm:gap-5 mb-14 sm:mb-9">
         <h3>CALIFICADOS POR:</h3>
-         <a href='<?php echo get_field('liga_calificados')?the_field('liga_calificados'):'https://www.hrratings.com/rating_detail.xhtml?rel=10565'; ?>'
+         <a href='<?php echo get_field('liga_calificados')?the_field('liga_calificados'):esc_url(get_permalink(get_page_by_path('nosotros'))).'#inicioCalificacion'; ?>'
              class="hover:opacity-50 transition-all"
              target="_blank"
              aria-label="Ir a la pagina de la quinta institucion reguladora o que autoriza a cufrisa">
